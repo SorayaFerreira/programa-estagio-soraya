@@ -1,5 +1,5 @@
 # Gestão de Projetos
-O Shape Up é o framework utilizado para gerência desse projeto. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), 
+O Shape Up é o framework utilizado para gerência desse projeto, visando organização e entrega de valor. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), todavia a seguir são descritos conceitos centrais que podem auxiliar a compreensão do método de maneira resumida.
 
 ### Sumário
 #### Shaping
