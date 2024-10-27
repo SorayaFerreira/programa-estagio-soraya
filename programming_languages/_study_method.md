@@ -1,6 +1,9 @@
+# Metodologia
+O método de estudo proposto como solução para o problema a seguir pode ser modelado e aplicado para maioria de linguagens de programação.
+
 ## Problema
 
-- Iremos utilizar a linguagem de programação TypeScript em algumas das próximas demandas técnicas e no desenvolvimento do Bufunfa. 
+- Utilizaremos a linguagem de programação TypeScript em algumas das próximas demandas técnicas e no desenvolvimento do Bufunfa. 
 - Você precisa aprender a programar em JavaScript+TypeScript (estamos partindo do pressuposto de que você ainda não conhece nada sobre a linguagem)
 - Aprender _a aprender_ uma nova linguagem de programação é uma habilidade muito importante para o seu futuro como desenvolvedor
 

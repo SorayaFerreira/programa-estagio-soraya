@@ -21,7 +21,7 @@ A estruturação deste repositório de conhecimento ambiciona ser muito simples 
 
 Nesse contexto, a fim de organizar e permitir um trabalho eficiente, foram estabelecidas algumas conveções de padronização, que devem ser seguidas, caso queira contribuir com este projeto.
 
-
+---------------------------------------
 ### Markdown 📌
 Para escrita de documentação, é utilizada a linguagem de marcação Markdown. Já a diagramação pode ser feita baseado no [Mermaid](https://mermaid.js.org/), que apresenta um [tutorial](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/) para auxíliar a utilização, ou no [Astah](https://astah.net/products/astah-community/), ou no [Draw.io](https://app.diagrams.net/). Por fim, a criação de ilustrações é apoiada pela ferramenta [Excalidraw](https://excalidraw.com/).
 
@@ -60,7 +60,9 @@ As mensagens devem seguir as seguintes orientações:
 - Os tipos previstos são: 
    - (feat): cria uma nova feature.
    - (fix): resolve um erro ou bug da aplicação.
-   - (docs): modifica qualquer detalhe relacionado à documentação já existente.
+   - (docs): adiociona documentação.
+   - (correct): corrige detalhes na documentação já existente.
+   - (update): incrementa informações significativas para documentação já existente.
 - Se o tipo do commit não se encaixa em nenhum dos especificados, ele é omitido.
 - A breve descrição explana o que o commit faz, logo, deve começar com um verbo conjugado na terceira pessoa do singular, no tempo presente do indicativo.
 - A mensagem deve começar com letra minúscula e não deve terminar com ponto "."
