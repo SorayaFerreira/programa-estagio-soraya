@@ -1,5 +1,5 @@
 # Programa de Estágio - Cento Software
 
-Check back later, we will populate this soon.
+Volte mais tarde, vamos popular este arquivo em breve.
 
-[Follow-up](https://github.com/SorayaFerreira)
+[Siga](https://github.com/SorayaFerreira)
