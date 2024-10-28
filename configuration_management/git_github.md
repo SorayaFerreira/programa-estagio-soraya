@@ -1,4 +1,4 @@
-# Anotações sobre Git e GitHub
+# Anotações sobre Git e GitHub 🐱‍👤🐙
 
 Git é uma técnica de versionamento de código criada por Linus torvalds. Ela permite que os desenvolvedores acompanhem as mudanças no código fonte ao longo do tempo, mantendo um histórico de todas as mudanças, versões criadas, ramificações, entre outros dados. É necessário, para utilizar localmente, instalar e configurar o Git Bach na máquina.
 Já o Github é uma plataforma hospedada em nuvem que permite a manipulação com Git de maneira remota e compartilhada.
@@ -7,7 +7,10 @@ Para criar uma conta no github é necessário clicar em “Sign up”, inserir e
 
 Durante a utilização, é possível deparar-se com o Markdown, que é uma linguagem simples de marcação capaz de converter um texto em HTML válido. É uma forma mais simples de se escrever um HTML, e um arquivo com tal linguagem tem extensão `.md`.
 
+> Consulte a página disponível na [âncora](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para saber mais sobre Markdown.
+
 GIST: são repositórios Git. São muito parecidos com o Github, porém ele permitem o compartilhamento de arquivos e trechos de código com outros desenvolvedores, mesmo que o usuário não seja o autor original do código. É possível criar um GIST por meio do próprio Github.
+
 
 ## Principais Comandos
 A seguir, anotações sobre certos comandos iniciais para utilizar no terminal do Git Bash.
