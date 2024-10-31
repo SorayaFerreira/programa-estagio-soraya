@@ -23,6 +23,10 @@ Logo:
 > Definir uma maneira de revisar o que está sendo aprendido.
 - Conforme ocorre o progresso no nível de complexidade dos programas construídos, conceitos básicos são incorporados e requisitados, o que constitui uma forma de revisão. Sendo assim, é preciso manter consistência na prática da linguagem de programação. Ademais, certos detalhes podem ser registrados em comentários nos códigos dos exercícios, permitindo futuras consultas.
 
+> Formar um cronograma.
+- No curso do [freeCodeCamp()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/), os "módulos" estão separados em projetos, e certa quantidade de projetos gera um certificado, totalizando `cinco` certificados. Como haverá, aproximadamente `doze` ciclos, é viável estabelecer a meta de cumprir entre `dois` e `três` projetos a cada ciclo. Isso para o estudo de javascript, que pode ser apoiado pela [playlist do curso em vídeo](https://youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&si=nKwNZ1SEFWsPbG60).
+- Já acerca do typescript, o tutorial no W3Schools é dividido em páginas, e há um total de 24 páginas. Logo, o objetivo é ler e exercitar no mínimo duas páginas a cada ciclo, sempre complementando o aprendizado com vídeos no YouTube, como os presentes na [playlist da rocketseat](https://youtube.com/playlist?list=PL85ITvJ7FLohXigfxBqzpZxzRG8TaRSj2&si=lzTsa1kXsO8BgUTn), ou do [CBFCursos](https://youtube.com/playlist?list=PLx4x_zx8csUhtPMrkiGvFJVE5LX8Qat5s&si=QTPK5KKkjSbzPCYd), por exemplo.
+
 <div align=center><img src="https://github.com/user-attachments/assets/e54c67c3-4c44-464f-8abf-706e45842ae5"></div>
 
 

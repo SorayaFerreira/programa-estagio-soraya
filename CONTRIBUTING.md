@@ -47,13 +47,15 @@ Para escrita de documentação, é utilizada a linguagem de marcação [Markdown
 ### Commits 💾🗒
 
 Template da mensagem do commit:
-```
+```sh
 <(tipo)>: <breve descrição>
 <LINHA EM BRANCO>
 <descrição maior>
 <LINHA EM BRANCO>
 <footer>
 ```
+
+
 As mensagens devem seguir as seguintes orientações:
 - O cabeçalho, presente na primeira linha do template, é obrigatório.
 - As linhas do commit não podem ultrapassar o número de 100 caracteres.
