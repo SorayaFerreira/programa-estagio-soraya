@@ -55,7 +55,6 @@ Template da mensagem do commit:
 <footer>
 ```
 
-
 As mensagens devem seguir as seguintes orientações:
 - O cabeçalho, presente na primeira linha do template, é obrigatório.
 - As linhas do commit não podem ultrapassar o número de 100 caracteres.

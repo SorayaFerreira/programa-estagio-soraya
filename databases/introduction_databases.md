@@ -50,6 +50,21 @@ Redis é uma sigla para "REmote DIctionary Server". Suporta o armazenamento de i
 
 Utilizar mermaid.js
 
+```mermaid
+    erDiagram
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : "liable for"
+    DELIVERY-ADDRESS ||--o{ ORDER : receives
+    INVOICE ||--|{ ORDER : covers
+    ORDER ||--|{ ORDER-ITEM : includes
+    PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+    PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+```
+
+
+
+
 ---
 ### Structured Query Language (SQL)
 Linguagem de Consulta Estruturada

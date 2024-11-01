@@ -11,6 +11,7 @@ Durante a utilização, é possível deparar-se com o Markdown, que é uma lingu
 
 GIST: são repositórios Git. São muito parecidos com o Github, porém ele permitem o compartilhamento de arquivos e trechos de código com outros desenvolvedores, mesmo que o usuário não seja o autor original do código. É possível criar um GIST por meio do próprio Github.
 
+![Git e GitHub](https://arquivo.devmedia.com.br/marketing/img/guia-git-e-github-37585.png)
 
 ## Principais Comandos
 A seguir, anotações sobre certos comandos iniciais para utilizar no terminal do Git Bash.
