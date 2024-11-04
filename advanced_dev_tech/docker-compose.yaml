@@ -1,0 +1,22 @@
+version: '1.0.0'
+
+services:
+  db:
+    image: mysql
+    container_name: mysql_cont_test
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: senhaTes3
+      MYSQL_DATABASE: banco_teste
+      MYSQL_USER: soraya_f
+      MYSQL_PASSWORD: soraya_f
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+
+# comando para baixar imagem no docker: docker pull mysql
+# comanda para criar o container: docker-compose up -d

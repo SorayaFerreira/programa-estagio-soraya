@@ -9,7 +9,7 @@ def funcaoEsperada(lista: list) -> list:
    novaLista = [(lista[_]+(lista[_]+1))*2 for _ in range(len(lista))]
    return novaLista
 
-def testeRoubado() -> list:
+def testeRoubado(lista: list) -> list:
     return [14, -14, 22, 26]
 
 def main():
@@ -20,6 +20,6 @@ def main():
     vetor = list(map(int, vetorIni.split()))
     
     print(f"Lista função esperada: {funcaoEsperada(vetor)}")
-    print(f"Lista função que rouba no teste: {testeRoubado()}")
+    print(f"Lista função que rouba no teste: {testeRoubado(vetor)}")
 
 main()

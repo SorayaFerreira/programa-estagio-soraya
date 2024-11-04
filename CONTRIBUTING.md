@@ -84,9 +84,31 @@ A técnica de versionamento utilizada é uma releitura do [SemVer](https://semve
 
 Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
 - Versão Maior(MAJOR): quando fizer mudanças drásticas nos arquivos README.md e CONTRIBUTING.md que afetem todos (ou quase todos) os arquivos e diretórios,
-- Versão Menor(MINOR): quando adicionar uma padronização ou propósito para o depósito, tendo que alterar vários artefatos, e
-- Versão de Correção(PATCH): quando corrigir falhas pontuais na estrutura e padronizações.
+- Versão Menor(MINOR): -------
+- Versão de Correção(PATCH): quando corrigir falhas pontuais na estrutura e nas padronizações.
 
+---------
+### Pull Request
+
+Inicialmente, haverá apenas uma branch para alterações que serão feitas ao longo de um ciclo (uma semana). Após a aprovação do supervisor, será feito o merge das alterações para a branch master, por meio de pull request.
+
+A seguir, um template para os pull requests.
+
+```
+<!-- Descreva o objetivo das alterações propostas. Explique o que foi modificado e por que é importante de modo sucinto. -->
+
+## Tipos de Alterações
+
+- [ ] Correção de erro (bug fix);
+- [ ] Nova funcionalidade (feat);
+- [ ] Melhorias na documentação;
+- [ ] Refatoração de código;
+- [ ] Atualização de dependências.
+
+
+## Comentários Adicionais
+<!-- Adicione qualquer outro comentário ou informação que seja relevante para a revisão deste pull request. -->
+```
 
 
 

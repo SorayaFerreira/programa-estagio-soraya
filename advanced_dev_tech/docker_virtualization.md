@@ -23,6 +23,33 @@ O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, 
 
 **Docker Compose** é uma ferramenta utilizada para configurar o gerenciamento de multiplos containers, cada um executando um serviço diferente e que "conversam" entre si. Tal configuração é feita em um arquivo **YAML**, com extensão `.yml`. Uma vez escrito o documento de configuração, basta executar apenas um comando para iniciar todos os serviços nos containers.
 
-Já o **Dockerfile** é um arquivo de texto com instruções detalhadas para criação de uma imagem, que será utilizada pelo docker com o comando de build para criar o container.
+Já o **Dockerfile** é um arquivo de texto com instruções detalhadas para criação de uma imagem, que será utilizada pelo docker com o comando de build para criar o container. Sua extensão é `.dockerfile`
 
+### Concorrentes do Docker
+- **Podman**: o nome é abreviação de `gerenciador pod`. Trata-se de uma plataforma que, assim como o docker, tem o objetivo de executar e gerenciar containers. Ele foi criado por colaboradores da Red Hat com a comunidade open-source e faz uso da biblioteca `libpod`. Sua principal diferença é não ter _daemon_, ou seja, não apresenta um processo com privilégios de administrador sendo executado no background, o que torna o Podman mais seguro.
+- **LXC**: `LinuX Containers` é um projeto de aplicações em container, também de código aberto. Ele não tem uma interface gráfica, mas de linha de comando. Além disso, seus containers se comportam como máquinas virtuais mais leves e possibilita maior controle da configuração.
 
+### YAML
+Esta é uma linguagem de serialização de dados, mas geralmente utilizada para arquivos de configuração, assim como JSON e XML. A sigla significa "Yet Another Markup Language" e ela é usada para escrever o documento Docker Compose. 
+
+Principais características:
+- Arquivos com tal linguagem podem ter extensão `.yml` ou `.yaml`;
+- Utiliza identação para indicar aninhamento, tal qual o Python.
+- Exemplo:
+```yaml
+#Comment: This is a supermarket list using YAML
+#Note that - character represents the list
+---
+food: 
+  - vegetables: tomatoes #first list item
+  - fruits: #second list item
+      citrics: oranges 
+      tropical: bananas
+      nuts: peanuts
+      sweets: raisins
+...
+```
+- Visite este [guia](https://www.redhat.com/en/blog/yaml-beginners).
+
+### Variáveis de Ambiente
+São cadeias de caracteres (strings) que usualmente guardam dados de configuração de aplicações, sendo utilizadas pela própria aplicação durante o funcionamento. Elas podem ser aplicadas em containers do Docker, quando é preciso realizar uma configuração dinâmica, ou para registrar dados sensíveis, como senhas. Para tanto, arquivos com extensão `.env` são definidos para que o Docker leia com prioridade, contudo essas variáveis podem ser descritas em outros documentos como o dockerfile.
