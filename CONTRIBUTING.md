@@ -75,8 +75,8 @@ As mensagens devem seguir as seguintes orientações:
 Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas, que são inspiradas no Gitflow:
 - Se a branch for feita a partir da branch main, o nome deve ser um número inteiro seguindo de `.0`. O número à esquerda do ponto segue a sequência de criação das branches, começando em `10`. Exemplos: `10.0`, `11.0`, `12.0`
 - Já se a branch for feita a partir de outra branch, além da main, seu nome começará com o inteiro à esquerda do ponto no nome da branch origem, seguido de `.` e o número da sequência de branches feitas a partir da origem. Por exemplo: `11.1`, `11.2`, `11.3`.
-- Após a numeração, é preciso elaborar um label, em português, que resumem o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `11.2 ciclo/ciclo_tres`, `10.12 entrega/titulo_entrega_resumido`, `aprovacao/ciclo_numero`.
-- O label _ciclo_ corresponde à branch _develop_, _entrega_, à branch _feature_ e _aprovacao_, à branch _release_ do padrão Gitflow  
+- Após a numeração, é preciso elaborar um label, em português, que resumem o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `11.2 ciclos`, `10.12 entrega/titulo_entrega_resumido`, `aprovacao/ciclo_numero`.
+- O label _ciclo_ corresponde à branch _develop_, _entrega/_, à branch _feature_ e _aprovacao/_, à branch _release_ do padrão Gitflow  
 
 -------------------------
 ### Versionamento 🏗
