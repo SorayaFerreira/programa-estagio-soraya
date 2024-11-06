@@ -63,6 +63,5 @@ Já esta metodologia busca dividir o processo em ciclos, sendo que, em cada cicl
 
 ### Tipos de Testes
 - Testes unitários: testa uma parte individual do sistema, como funções, procedimentos ou módulos.
-- Testes de integração: testa agrupamentos de módulos.
-> Posso dizer que o de cima testa "componentes"? 
+- Testes de integração: testa agrupamentos de módulos, componentes.
 - Testes funcionais: testa funcionalidades, recursos e usabilidade, conferindo os requisitos.

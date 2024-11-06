@@ -23,7 +23,7 @@ O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, 
 
 **Docker Compose** é uma ferramenta utilizada para configurar o gerenciamento de multiplos containers, cada um executando um serviço diferente e que "conversam" entre si. Tal configuração é feita em um arquivo **YAML**, com extensão `.yml`. Uma vez escrito o documento de configuração, basta executar apenas um comando para iniciar todos os serviços nos containers.
 
-Já o **Dockerfile** é um arquivo de texto com instruções detalhadas para criação de uma imagem, que será utilizada pelo docker com o comando de build para criar o container. Sua extensão é `.dockerfile`
+Já o **Dockerfile** é um arquivo de texto com instruções detalhadas para criação de uma imagem, que será utilizada pelo docker com o comando de build para criar o container. É um arquivo sem extensão, porém seu nome ser exatamente `Dockerfile`.
 
 ### Concorrentes do Docker
 - **Podman**: o nome é abreviação de `gerenciador pod`. Trata-se de uma plataforma que, assim como o docker, tem o objetivo de executar e gerenciar containers. Ele foi criado por colaboradores da Red Hat com a comunidade open-source e faz uso da biblioteca `libpod`. Sua principal diferença é não ter _daemon_, ou seja, não apresenta um processo com privilégios de administrador sendo executado no background, o que torna o Podman mais seguro.

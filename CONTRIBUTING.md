@@ -72,10 +72,11 @@ As mensagens devem seguir as seguintes orientações:
 --------------------
 ### Nomenclatura de Branches 🌿
 
-Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas:
+Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas, que são inspiradas no Gitflow:
 - Se a branch for feita a partir da branch main, o nome deve ser um número inteiro seguindo de `.0`. O número à esquerda do ponto segue a sequência de criação das branches, começando em `10`. Exemplos: `10.0`, `11.0`, `12.0`
 - Já se a branch for feita a partir de outra branch, além da main, seu nome começará com o inteiro à esquerda do ponto no nome da branch origem, seguido de `.` e o número da sequência de branches feitas a partir da origem. Por exemplo: `11.1`, `11.2`, `11.3`.
-- Após a numeração, é preciso elaborar um label – de uma a duas palavras, em português, que resumem o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `11.2 praticas_estagiario`, `10.12 testes`.
+- Após a numeração, é preciso elaborar um label, em português, que resumem o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `11.2 ciclo/ciclo_tres`, `10.12 entrega/titulo_entrega_resumido`, `aprovacao/ciclo_numero`.
+- O label _ciclo_ corresponde à branch _develop_, _entrega_, à branch _feature_ e _aprovacao_, à branch _release_ do padrão Gitflow  
 
 -------------------------
 ### Versionamento 🏗
@@ -97,17 +98,23 @@ A seguir, um template para os pull requests.
 ```
 <!-- Descreva o objetivo das alterações propostas. Explique o que foi modificado e por que é importante de modo sucinto. -->
 
+## Checklist
+Confira se o PR se as padronizações:
+- [ ] As mensagens de commit seguem as normas do CONTRIBUTING.md.
+- [ ] As alterações foram revisadas e estão prontas para aprovação do supervisor?
+
 ## Tipos de Alterações
+Que tipos de alterações foram feitas?
 
-- [ ] Correção de erro (bug fix);
-- [ ] Nova funcionalidade (feat);
+- [ ] Finalização de um ciclo;
+- [ ] Finalização de uma entrega;
 - [ ] Melhorias na documentação;
-- [ ] Refatoração de código;
-- [ ] Atualização de dependências.
+- [ ] Melhorias na organização do repositório.
 
+## Qual é o estado atual?
 
-## Comentários Adicionais
-<!-- Adicione qualquer outro comentário ou informação que seja relevante para a revisão deste pull request. -->
+## Como é o novo estado?
+
 ```
 
 

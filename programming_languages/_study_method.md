@@ -1,9 +1,5 @@
-# Metodologia
-O método de estudo proposto como solução para o problema a seguir pode ser modelado e aplicado para maioria de linguagens de programação.
-
-## Problema
-
-- Utilizaremos a linguagem de programação TypeScript em algumas das próximas demandas técnicas e no desenvolvimento do Bufunfa. 
+## Problema ⭕🔴
+- Iremos utilizar a linguagem de programação TypeScript em algumas das próximas demandas técnicas e no desenvolvimento do Bufunfa. 
 - Você precisa aprender a programar em JavaScript+TypeScript (estamos partindo do pressuposto de que você ainda não conhece nada sobre a linguagem)
 - Aprender _a aprender_ uma nova linguagem de programação é uma habilidade muito importante para o seu futuro como desenvolvedor
 
@@ -11,6 +7,7 @@ Logo:
 
 - Precisamos estabelecer juntos uma metodologia de aprendizado -- o que aprender, como aprender, por onde começar, etc.
 - Esta metodologia será voltada para aprender JavaScript+TypeScript (sua necessidade atual), mas deve ser possível adaptá-la para outras linguagens de programação no futuro. 
+- 🆕 A solução deve indicar alguma estrutura de tópicos ou módulos para encaixar os estudos dentro dos ciclos.
 
 ## Solução
 
@@ -29,6 +26,56 @@ Logo:
 
 <div align=center><img src="https://github.com/user-attachments/assets/e54c67c3-4c44-464f-8abf-706e45842ae5"></div>
 
+### Listagem dos Módulos de Estudo
+#### Projetos Free Code Camp 🟣:
+- Learn Introductory JavaScript by Building a Pyramid Generator;
+- Review JavaScript Fundamentals by Building a Gradebook App;
+- Learn Basic JavaScript by Building a Role Playing Game;
+- Learn Basic Debugging by Building a Random Backgruond Color Changer;
+- Learn Form Validation by Building a Calorie Counter;
+- Review DOM Manipulation by Building a Rock, Paper, Scissors Game;
+- Learn Basic String and Array Methods by Building a Music Player;
+- **Certification Project**: Build a Palindrome Checker Project;
+- Learn the Date Object by Building a Date Formatter;
+- Learn Modern JavaScript Methods by Building Football Team Cards;
+- Learn LocalStorage by Building a Todo App;
+- Learn Recursion by Building a Decimal to Binary Converter;
+- **Certification Project**: Build a Roman Numeral Converter Project;
+- Learn Regular Expressions by Building a Spam Filter;
+- Learn Basic Algorithmic Thinking by Building a Number Sorter;
+- Learn Advanced Array Methods by Building a Statistics Calculator; 
+- Learn Functional Programming by Building a Spreadsheet;
+- **Certification Project**:Build a Telephone Number Validator Project;
+- Learn Basic OOP by Building a Shopping Cart;
+- Learn Intermediate OOP by Building a Platformer Game;
+- Review Algorithmic Thinking by Building a Dice Game;
+- **Certification Project**: Build a Cash Register Project;
+- Learn Fetch and Promises by Building an fCC Authors Page;
+- Learn Asynchronous Programming by Building an fCC Forum Leaderboard;
+- **Certification Project**: Build a Pokémon Search App Project; 
+
+#### Tópicos de TS W3Schools 🟢: 
+|||
+|--------------|--------------| 
+|HOME|Introduction|     
+|Get Started|Simple Types|
+|Special Types|Arrays|
+|Tuples|Object Types|
+|Enums|Aliases & Interfaces|
+|Union Types|Functions|
+|Casting|Classes|
+|Classes|Basic Generics|
+|Utility Types|Keyof|
+|Null|Definitely Typed|
+|5 Updates||
+
+#### Módulos Playlist de JS Curso em Vídeo 🟡:
+|||
+|--------------|--------------|
+|Conhecendo o JavaScript|Dando os primeiros passos #03|
+|Criando o seu primeiro script #04|Comandos Básicos do JavaScript|
+|Entendendo o DOM|Condições em JavaScript|
+|Repetições em JavaScript|Avançando os estudos em JavaScript|
 
 ### Escopo
 

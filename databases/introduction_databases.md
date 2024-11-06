@@ -63,8 +63,8 @@ O diagrama entidade-relacionamento pode ajudar a identificar as entidades – fu
         datetime instante_abertura
         datetime instante_fechamento
         int operador_funcionario FK
-    }
-
+    } 
+    
     VENDAS {
         serial id PK
         varchar forma_pagamento
@@ -122,10 +122,6 @@ O diagrama entidade-relacionamento pode ajudar a identificar as entidades – fu
         int papel_id FK
     }
 ```
-
-
-
-
 ---
 ### Structured Query Language (SQL)
 A sigla significa "Linguagem de Consulta Estruturada". Ela é utilizada para armazenar, manipular, remover, pesquisar e analisar informações em um banco de dados relacional. 
