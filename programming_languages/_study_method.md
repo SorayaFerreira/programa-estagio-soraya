@@ -27,6 +27,20 @@ Logo:
 <div align=center><img src="https://github.com/user-attachments/assets/e54c67c3-4c44-464f-8abf-706e45842ae5"></div>
 
 ### Listagem dos Módulos de Estudo
+
+|Ciclo|Módulo|Descrição|Base teórica|
+|-------------|------------|-----------|---------|
+|003|Introdução a JS I|Sintaxe, variáveis, tipos primitivos, funções||
+|004|Introdução a JS II|DOM, loops e condicionais||
+|005|Orientação a objetos em JS|Objetos, atributos, métodos|[Início do tópico no freeCodeCamp()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#learn-functional-programming-by-building-a-spreadsheet)|
+|006|Orientação a Objetos II|herança, polimorfismo e arrays||
+|007|Introdução ao TS|tipagem estática, interfaces simples||
+|008|Classes e Herança em TS|classes, objetos, herança e polimorfismo em TS||
+|009|Módulos em TS|import e export de módulos, namespaces||
+|010|Recuperar atrasos|recuperação de qualquer atraso ou esclarecimento de quaisquer dúvidas||
+|011, 012|Prática em projeto|aplicar os conhecimentos adquiridos em um projeto próprio ou da Cento||
+
+
 #### Projetos Free Code Camp 🟣:
 - Learn Introductory JavaScript by Building a Pyramid Generator;
 - Review JavaScript Fundamentals by Building a Gradebook App;
