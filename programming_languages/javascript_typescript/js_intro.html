@@ -15,12 +15,17 @@ várias vezes. O último nome foi INTERNET.
 ficou assim porque na época em que surgiu estava
 na moda falar de "java". Foi uma tática de marketing.
 
+
 • ECMA SCRIPT é a versão padronizada do javascript, 
 que surgiu porque a Microsoft queria "plagiar" e 
 criar outra linguagem parecida.
 
 • \' para colocar aspas simples dentro da string.
 
+• variáveis podem começar com "letras, $ ou _". Podem
+apresentar números, letras e acentos, exceto espaços.
+"typeof var" para ver o tipo da variável. "null" é 
+objeto para js.
 -->
 
 <!DOCTYPE html>
@@ -30,17 +35,44 @@ criar outra linguagem parecida.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Script</title>
 </head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Be welcome, </p>
-    
-    
-</body>
+<body></body>
 </html>
 
+<style>
+    body {
+        background-color: rgb(240, 173, 184);
+        color: rgb(53, 52, 52);
+        font: normal 20pt Arial;
+    }
+</style>
+
 <script>
-    window.alert('Hello, World!!!!'); // apenas botão ok
     window.confirm('Are you enjoying JS?'); //botão ok e cancelar
-    nome = window.prompt('What\'s your name'); 
+    var name = window.prompt('What\'s your name'); 
+    window.alert('Nice to meet you, ' + name + '!');
+
+    
+    document.write('<h1>Hello, World!</h1>');
+    document.write(`<h3>Be welcome, ${name}!</h3> `);
+    document.write(`<p>Your name has ${name.length} letters.</p><br>`);
+
+    var num1 = window.prompt('Enter an integer number: '); //retorna string
+    var num2 = Number.parseFloat(window.prompt('Enter another one: '));
+    var sum = Number.parseInt(num1) + num2;
+    //window.alert('The sum is equal to ' + sum);
+
+    window.alert(`The sum is equal to ${sum.toFixed(2).replace('.', ',')}`);
+    //toFixed(2) coloca duas casas decimais no sum.
+    //replace('.', ','); troca o ponto do número decimal por vírgula
+  
+    /*
+    String(num1);
+    num1.toString();
+    Number(num1);
+    Number.parseFloat(num1);
+    name.length;
+    name.toUpperCase();
+    name.toLowerCase();
+    */
 
 </script>
