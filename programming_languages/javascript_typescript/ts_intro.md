@@ -1,4 +1,4 @@
-# TypeScript 
+# TypeScript 📘🔵
 
 ## Introdução
 
@@ -56,7 +56,20 @@ Declarando funções:
     }
 ```
 
-Os tipos primitivos em TypeScript são: boolean, bigint, null, number, string, symbol, undefined, any, unknown, never, void.
+Os tipos primitivos em TypeScript são: boolean, bigint, null, number, string, symbol, undefined, any, unknown, never, void, object.
+
+Outros tipos:
+
+|Tipo|Explicação|
+|----------|----------|
+|unknown|tipo superior|
+|never|tipo inferior|
+|object literal|ex. { property: Type }|
+|void|para funções sem retorno documentado|
+|T[]|vetor mutável, também escrito como <T>|
+|[T, T]|tuplas, que têm tamanho fixo, mas mutável|
+|(t: T) => U|funções. Ex.: `let fst: (a: any, b: any) => any = (a, b) => a;`|
+
 
 - É possível criar novos tipos combinando os primitivos. Há duas formas, com `unions` e `generics`.
 
@@ -76,3 +89,15 @@ function fn(arg: Empty) {
 // No error, but this isn't an 'Empty' ?
 fn({ k: 10 });
 ```
+
+- *Unit types* são subtipos dos tipos primitivos que contêm estritamente um valor primitivo. É como dizer que a string "foo" tem o tipo "foo". 
+
+
+-------------------------
+*Sobre Paradigmas de Programação*, [vídeo](https://youtu.be/sqKnYS-ZXsQ?si=Ep64J9IPRHdxeoTl):
+- Imperativos: Programação Procedural, Programação Orientada a Objetos.
+- Declarativos: Programação Funcional, Programação Lógica.
+
+*Programação Funcional*: existem linguagens puramente funcionais, como Closure, OCamel Haskell e Lisp. 
+
+------------------

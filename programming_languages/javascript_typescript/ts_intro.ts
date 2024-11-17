@@ -1,18 +1,32 @@
 // Introdução a TypeScript
-
 //APARENTEMENTE, é necessário ter extensão .ts para funcionar o typescript.
 
 /*
-
-
 > boolean !== Boolean
 
+//Hello World mais básico em typescript
+
+function helloWorld(person: string): string {
+    return "Olá, " + person;
+}
+
+let user = "Mundo!";
+
+console.log(helloWorld(user));
 */
 
-const firstName: string = "Soraya";
-//let firstName = "Soraya";
+interface Person {
+    firstName: string;
+    lastName: string;
+}
 
-console.log(typeof firstName);
+function helloWorld(person: Person) {
+    return "Hello, " + person.firstName + " " + person.lastName;
+}
 
-const json = JSON.parse("55");
-console.log(typeof json);
+const user = { 
+    firstName: "Soraya",
+    lastName: "Ferreira"
+}
+
+console.log(helloWorld(user));
