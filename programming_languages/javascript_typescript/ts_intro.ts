@@ -9,7 +9,7 @@
 
 */
 
-let firstName: string = "Soraya";
+const firstName: string = "Soraya";
 //let firstName = "Soraya";
 
 console.log(typeof firstName);
