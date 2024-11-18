@@ -1,5 +1,7 @@
 # TypeScript 📘🔵
 
+Inicialmente, a linguagem javascript foi criada para atender um demanda "pequena", isto é, para escrever poucas linhas de código no client-side, por isso ela é muito simples. No entanto, com o decorrer do tempo, sua popularidade e sua abrangência cresceram, e a linguagem passou a ser utilizada também no server-side, por exemplo. Com isso, houve a necessidade de aprimorar certos aspectos do javascript que poderiam causar bugs complexos, então surgiu o TypeScript.
+
 ## Introdução
 
 ![Logo TypeScript](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrOXd86iDXx-hL8ZoHFwV7SR5ihBzQcvOgg&s)

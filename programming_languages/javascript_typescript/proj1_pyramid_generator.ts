@@ -14,10 +14,11 @@
 // console.log(popped); 
 
 //----------------------------
+
 //const são constantes, igual no C99
 const character: string = "#";
 const count: number = 8;
-const rows = [];
+const rows: string[] = [];
 const inverted: boolean = false;
 
 // O FOR e o IF são iguaisinhos do C99 e Java
@@ -26,13 +27,10 @@ function padRow(rowNumber: number, rowCount: number): string {
     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
   }
   
-
-
-  
-  /*while (rows.length < count) {
-    rows.push(padRow(rows.length + 1, count));
-  }*/
-    //.repeat(num) repete a string.
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+  //.repeat(num) repete a string.
 
 //coisas falsas: false, 0, "", null, undefined e NaN;
 // === is used to check if two values are equal and share the same type
