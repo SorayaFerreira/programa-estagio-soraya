@@ -1,17 +1,17 @@
 //Review JavaScript Fundamentals by Building a Gradebook App
 
-function getAverage(scores) {
+function getAverage(scores: number[]): number {
     // recebe uma lista de notas e retorna a média
 
-    let total = 0;
-    for (let i = 0; i < scores.length; i++) {
+    let total: number = 0;
+    for (let i: number = 0; i < scores.length; i++) {
       total += scores[i];
     }
 
     return total/scores.length;
 }
 
-function getGrade(score) {
+function getGrade(score: number): string {
     // Recebe uma nota e classifica entre A++ e F
 
     if(score < 60) {
@@ -29,9 +29,9 @@ function getGrade(score) {
     }
 }
 
-function hasPassingGrade(score) {
+function hasPassingGrade(score: number): boolean {
     
-    const grade = getGrade(score);
+    const grade: string = getGrade(score);
 
     if (grade === "F") {
         return false;
@@ -40,12 +40,13 @@ function hasPassingGrade(score) {
     }
 }
 
-function studentMsg(totalScores, studentScore) {
+// union type
+function studentMsg(totalScores: number[], studentScore: number): string | void {
     //Retorna mensagem, informando se o aluno passou ou não.
 
-    const average = getAverage(totalScores);
-    const grade = getGrade(studentScore);
-    const ok = hasPassingGrade(studentScore);
+    const average: number = getAverage(totalScores);
+    const grade: string = getGrade(studentScore);
+    const ok: boolean = hasPassingGrade(studentScore);
 
     if (ok === true) {
         return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
@@ -53,5 +54,7 @@ function studentMsg(totalScores, studentScore) {
         return `Class average: ${average}. Your grade: ${grade}. You failed the course.`
     }
 }
+
+//let nome: string = prompt("Digite seu nome: ");
 
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
