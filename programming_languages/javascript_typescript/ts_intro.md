@@ -6,6 +6,10 @@ Inicialmente, a linguagem javascript foi criada para atender um demanda "pequena
 
 ![Logo TypeScript](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrOXd86iDXx-hL8ZoHFwV7SR5ihBzQcvOgg&s)
 
+[Documentação do TypeScript](https://www.typescriptlang.org/docs): as informações presentes neste documento são majoritariamente retiradas da documentação oficial, que, felizmente, é muito bem arranjada e acessível tanto para desenvolvedores mais experientes, quanto para desenvolvedores iniciantes. Ela será utilizada como referência principal ao longo da pesquisa sobre TypeScript, uma vez que é a fonte mais confiável e completa.
+
+## Registros
+
 JS é uma linguagem fracamente tipada. Então, o TS surgiu para permitir que os devs adicionem tipos aos dados em javascript.
 
 Há duas formas de atribuir tipos em TS:
