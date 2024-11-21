@@ -15,7 +15,9 @@
 
 //----------------------------
 
-//const são constantes, igual no C99
+//const são valores constantes.
+// se a variável não ter seu valor inicial alterado
+// ao longo do código, ela DEVE ter tipo const.
 const character: string = "#";
 const count: number = 8;
 const rows: string[] = [];

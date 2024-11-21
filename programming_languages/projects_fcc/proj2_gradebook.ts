@@ -14,15 +14,26 @@ function getAverage(scores: number[]): number {
 function getGrade(score: number): string {
     // Recebe uma nota e classifica entre A++ e F
 
+    /*
+        Aqui, seria mais "idiomático" do js
+        ter feito um switch case. Parece que o JS
+        aceita comparações dentro dos cases, ao contrário
+        da linguagem C, que compara apenas valores constantes.
+    */
+
     if(score < 60) {
         return "F";
-    } else if (score < 70 ) {
+    }
+    if (score < 70 ) {
         return "D";
-    } else if (score < 80) {
+    }
+    if (score < 80) {
         return "C";
-    } else if (score < 90) {
+    }
+    if (score < 90) {
         return "B";
-    } else if (score < 100) {
+    } 
+    if (score < 100) {
         return "A";
     } else {
         return "A++";
