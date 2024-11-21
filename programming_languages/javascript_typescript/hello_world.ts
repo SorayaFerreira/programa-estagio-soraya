@@ -1,5 +1,4 @@
 // Introdução a TypeScript
-//APARENTEMENTE, é necessário ter extensão .ts para funcionar o typescript.
 
 /*
 > boolean !== Boolean

@@ -74,7 +74,24 @@ As mensagens devem seguir as seguintes orientações:
 
 Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas, que são inspiradas no Gitflow:s
 - É preciso elaborar um label, em português, que resume o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `ciclos`, `entrega/titulo_entrega_resumido`, `aprovacao/ciclo_numero`.
-- O label _ciclo_ corresponde à branch _develop_, _entrega/_, à branch _feature_ e _aprovacao/_, à branch _release_ do padrão Gitflow  
+- O label _ciclos_ corresponde à branch _develop_, _entrega/_, à branch _feature_ e do padrão Gitflow. Não possui branch `release`. 
+
+```mermaid
+gitGraph TB:
+    commit
+    commit
+    branch ciclos
+    commit
+    branch entrega
+    commit
+    commit
+    commit
+    checkout ciclos
+    merge entrega
+    commit
+    checkout main
+    merge ciclos
+```
 
 -------------------------
 ### Versionamento 🏗
