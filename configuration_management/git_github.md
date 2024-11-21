@@ -1,4 +1,4 @@
-# Anotações sobre Git e GitHub 🐱‍👤🐙
+# Anotações sobre Git e GitHub 😼🐙
 
 Git é uma técnica de versionamento de código criada por Linus torvalds. Ela permite que os desenvolvedores acompanhem as mudanças no código fonte ao longo do tempo, mantendo um histórico de todas as mudanças, versões criadas, ramificações, entre outros dados. É necessário, para utilizar localmente, instalar e configurar o Git Bach na máquina.
 Já o Github é uma plataforma hospedada em nuvem que permite a manipulação com Git de maneira remota e compartilhada.
@@ -54,9 +54,11 @@ git add .
 git commit -m "Salvando mudanças locais"
 git pull
 ```
-
 - Forçar o pull (sobrescrever mudanças locais): Se não precisa das alterações locais e deseja sobrescrevê-las com as mudanças remotas, pode-se forçar o pull com a flag --hard:  O comando git reset --hard HEAD irá descartar todas as alterações locais não comitadas.
 ```bash
 git reset --hard HEAD
 git pull
 ```
+- **rm arquivo.txt** remove um arquivo apenas no meu sistema de arquivos
+- **git rm --cached arquivo.txt** remove um arquivo apenas na representação do sistema de arquivos do git
+- **git rm arquivo.txt** remove um arquivo tanto no meu sistema de arquivos quanto na representação do sistema de arquivos do git
