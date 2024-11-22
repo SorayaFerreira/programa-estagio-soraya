@@ -3,6 +3,7 @@ import type { ContaRepository } from "./data"
 export interface Conta {
     codigo: number
     dono_cliente_codigo: Cliente['codigo']
+    tipo: 'credito' | 'debito'
 }
 
 export interface Cliente {

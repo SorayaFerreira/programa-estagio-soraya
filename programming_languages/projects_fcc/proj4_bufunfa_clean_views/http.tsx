@@ -13,7 +13,7 @@ const BaseLayout: FC = (props) => {
         <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Document</title>
+            <title>Bufunfa</title>
         </head>
         <body>
             {props.children}
@@ -54,7 +54,10 @@ const ContasView: FC<{ cliente: Cliente, contas: Array<Conta & { saldo: number }
 
                 {props.contas.map(conta => <article key={conta.codigo}>
                     <header>Conta #{conta.codigo}</header>
-                    <p>Saldo: {Intl.NumberFormat("pt-BR", { currency: "BRL", style: "currency" }).format(conta.saldo)}</p>
+                    <ul>
+                        <li>Tipo: {conta.tipo}</li>
+                        <li>Saldo: {Intl.NumberFormat("pt-BR", { currency: "BRL", style: "currency" }).format(conta.saldo)}</li>
+                    </ul>
                 </article>)}
             </section>
 
@@ -159,7 +162,7 @@ export const HttpApp = (deps: { app: App }) => {
 
 
             if (Number.isNaN(data.origem_conta_codigo) || Number.isNaN(data.destino_conta_codigo) || Number.isNaN(data.quantia)) {
-                return c.html(<BaseLayout><ErrorView error={new DadosInvalidosError()} /></BaseLayout>)
+                throw new DadosInvalidosError()
             }
 
             deps.app['transacoes.create'](data)
@@ -177,17 +180,17 @@ export const HttpApp = (deps: { app: App }) => {
             }
 
             if (typeof query.usuario !== "string" || typeof query.senha !== "string") {
-                return c.html(<BaseLayout><ErrorView error={new CredenciaisInvalidasError()} /></BaseLayout>)
+                throw new CredenciaisInvalidasError()
             }
 
             const cliente = deps.app["clientes.get"]({ usuario: query.usuario })
 
             if (!cliente) {
-                return c.html(<BaseLayout><ErrorView error={new CredenciaisInvalidasError()} /></BaseLayout>)
+                throw new CredenciaisInvalidasError()
             }
 
             if (cliente.senha !== query.senha) {
-                return c.html(<BaseLayout><ErrorView error={new CredenciaisInvalidasError()} /></BaseLayout>)
+                throw new CredenciaisInvalidasError()
             }
 
             await setSignedCookie(c, "usuario", cliente.usuario, "secret")
@@ -200,7 +203,9 @@ export const HttpApp = (deps: { app: App }) => {
             return c.redirect("/v2/auth/login")
         })
 
-    const app = new Hono().route("/v1", v1App).route("/v2", v2App)
+    const app = new Hono().route("/v1", v1App).route("/v2", v2App).onError((err, c) => {
+        return c.html(<BaseLayout><ErrorView error={err} /></BaseLayout>)
+    })
 
     return { fetch: app.fetch }
 }

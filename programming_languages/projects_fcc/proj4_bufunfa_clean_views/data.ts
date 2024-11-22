@@ -14,8 +14,8 @@ export interface ContaRepository {
 export const SqliteContaRepository = (deps: { db: Database }): ContaRepository => {
     const { db } = deps
 
-    const listContaStmt = db.prepare('SELECT codigo, dono_cliente_codigo FROM conta WHERE dono_cliente_codigo = :dono_cliente_codigo')
-    const listWithSaldoFromViewStmt = db.prepare('SELECT codigo, dono_cliente_codigo, saldo FROM conta_view WHERE dono_cliente_codigo = :dono_cliente_codigo')
+    const listContaStmt = db.prepare('SELECT codigo, dono_cliente_codigo, tipo FROM conta WHERE dono_cliente_codigo = :dono_cliente_codigo')
+    const listWithSaldoFromViewStmt = db.prepare('SELECT codigo, dono_cliente_codigo, tipo, saldo FROM conta_view WHERE dono_cliente_codigo = :dono_cliente_codigo')
 
     const getClienteStmt = db.prepare('SELECT codigo, nome, usuario, senha FROM cliente WHERE (:codigo IS NOT NULL AND codigo = :codigo) OR (:usuario IS NOT NULL AND usuario = :usuario)')
 
