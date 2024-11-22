@@ -58,7 +58,6 @@ BEGIN
     END;
 END;
 
-
 -------------- Seed -------------------
 
 INSERT INTO cliente (codigo, nome, usuario, senha) VALUES (1, 'João', 'joao', '123456'), (2, 'Maria', 'maria', '123456');
