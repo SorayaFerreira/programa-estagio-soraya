@@ -17,7 +17,7 @@ Há duas formas de atribuir tipos em TS:
 
 - Entretanto, nem sempre o TS faz inferência do tipo, atribuindo `any`, o que pode ser alterado no arquivo de configuração do TS (tsconfig.json).
 
-Para definir os tipos dos atributos de um objeto, é necessário criar uma `interface` antes, como demonstrado a seguir.
+Para definir os tipos dos atributos de um objeto, é necessário criar uma `interface` antes, como demonstrado a seguir. As interfaces podem ser extendidades com a palavra-chave `extends` e são utilizadas para objetos e assinaturas de funções.
 
 ```typescript
 
@@ -25,7 +25,7 @@ Para definir os tipos dos atributos de um objeto, é necessário criar uma `inte
         sabor: string;
         preço: number;
         id: number;
-    }
+    };
 
     const sorvete: Sorvete = {
         sabor: "Açaí",
@@ -106,7 +106,7 @@ fn({ k: 10 });
 
 
 
-## TypeScript Handbook
+## TypeScript Handbook 🖐️📙
 
 Geralmente, erros que surgem na programação em JavaScript puro estão relacionados a erros de tipo, quando um certo tipo de valor foi usado em um local que recebe outro tipo de valor. Nesse sentido, o intuito do TypeScript é fazer uma verificação estáticas dos tipos em programas JavaScript.
 
@@ -121,25 +121,35 @@ O TypeScript Handbook pretende ser uma documentação de fácil compreensão par
 Objetos em JS são uma forma de agrupar e passar dados. Seu tipo pode ser definido com `interface` ou `type` alias:
 
 ```typescript
-    // Agora é possível testar o código separadamente no Jupyter, de forma prática.
-    // Utilize o arquivo jupyter.ipynb
+// Agora é possível testar o código separadamente no Jupyter, de forma prática.
+// Utilize o arquivo jupyter.ipynb
 
-    type Person = {
-        name: string;
-        age: number;
-    };
+type Person = {
+    name: string;
+    age: number;
+};
 
-    function greet(person: Person) {
-        //return "Hello " + person.name;
-        return `Hello ${person.name}`;
-    }
+function greet(person: Person) {
+    //return "Hello " + person.name;
+    return `Hello ${person.name}`;
+}
 
-    const soraya: Person = {
-        name: "Soraya",
-        age: 19
-    }
-    console.log(greet(soraya));
+const soraya: Person = {
+    name: "Soraya",
+    age: 19
+}
+console.log(greet(soraya));
 ```
+
+Para indicar um atributo opcional, basta colocar um `?` na frente do nome da variável.
+```typescript
+type Person = {
+    name: string;
+    age: number;
+    address?: string | undefined;
+};
+```
+JavaScript também tem suporta a passagem de parâmetro padrão para a assinatura de uma função. A sintaxe é igual a do Python. 
 
 #### Type Manipulation
 #### Creating Types from Types
