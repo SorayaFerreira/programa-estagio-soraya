@@ -104,8 +104,6 @@ fn({ k: 10 });
 
 *Programação Funcional*: existem linguagens puramente funcionais, como Closure, OCamel Haskell e Lisp. 
 
-
-
 ## TypeScript Handbook 🖐️📙
 
 Geralmente, erros que surgem na programação em JavaScript puro estão relacionados a erros de tipo, quando um certo tipo de valor foi usado em um local que recebe outro tipo de valor. Nesse sentido, o intuito do TypeScript é fazer uma verificação estáticas dos tipos em programas JavaScript.
@@ -138,6 +136,7 @@ const soraya: Person = {
     name: "Soraya",
     age: 19
 }
+
 console.log(greet(soraya));
 ```
 
