@@ -3,6 +3,7 @@ import { App } from "./app.ts";
 import { SqliteContaRepository } from "./data.ts";
 import { HttpApp } from "./http.tsx";
 import { Database } from "@db/sqlite";
+import { CalculoSaldo } from "./core.ts";
 
 async function main() {
   const existsDatabase = await exists("./bufunfa.db")
@@ -16,7 +17,8 @@ async function main() {
   }
 
   const contaRepository = SqliteContaRepository({ db })
-  const app = App({ contaRepository })
+  const calculoSaldo = CalculoSaldo({contaRepository});
+  const app = App({ contaRepository, calculoSaldo })
   const httpApp = HttpApp({ app })
 
   const server = Deno.serve(httpApp.fetch)

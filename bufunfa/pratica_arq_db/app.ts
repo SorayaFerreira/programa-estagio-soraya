@@ -10,6 +10,7 @@ export const App = (deps: { contaRepository: ContaRepository, calculoSaldo: Calc
         "contas.list": (query: Parameters<ContaRepository['list']>[0] & { fromView?: boolean }) => {
             const { fromView = true, dono_cliente_codigo } = query
 
+            
             if (fromView) {
                 return contaRepository.listWithSaldo({ dono_cliente_codigo })
             }

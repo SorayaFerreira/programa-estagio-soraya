@@ -1,4 +1,4 @@
-import type { ContaRepository } from "./data"
+import type { ContaRepository } from "./data.ts"
 
 export interface Conta {
     codigo: number
