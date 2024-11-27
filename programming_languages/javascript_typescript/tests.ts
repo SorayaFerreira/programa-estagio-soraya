@@ -8,6 +8,7 @@ Exercícios BeeCrowd já resolvidos:
 >
 */
 
+
 function main(): void {
 
     const entryDayStart = prompt();
@@ -16,17 +17,19 @@ function main(): void {
     const entryEnd = prompt();
 
     if(entryDayStart && entryStart && entryDayEnd && entryEnd) {
-        let dayStart = Number((entryDayStart.split(" "))[1]);
 
-        let hhStart = Number((entryStart.split(" "))[0]);
-        let mmStart = Number((entryStart.split(" "))[2]);
-        let ssStart = Number((entryStart.split(" "))[4]);
+        let dayStart, hhStart, mmStart, ssStart, dayEnd, hhEnd, mmEnd, ssEnd;
 
-        let dayEnd = Number((entryDayEnd.split(" "))[1]);
-
-        let hhEnd = Number((entryEnd.split(" "))[0]);
-        let mmEnd = Number((entryEnd.split(" "))[2]);
-        let ssEnd = Number((entryEnd.split(" "))[4]);
+        [dayStart, hhStart, mmStart, ssStart, dayEnd, hhEnd, mmEnd, ssEnd] = [
+            Number((entryDayStart.split(" "))[1]),
+            Number((entryStart.split(" "))[0]),
+            Number((entryStart.split(" "))[2]),
+            Number((entryStart.split(" "))[4]),
+            Number((entryDayEnd.split(" "))[1]),
+            Number((entryEnd.split(" "))[0]),
+            Number((entryEnd.split(" "))[2]),
+            Number((entryEnd.split(" "))[4]),
+        ]
 
         let days: number = 0;
         let hours: number = 0;
