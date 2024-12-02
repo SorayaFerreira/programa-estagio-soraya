@@ -112,6 +112,9 @@ O TypeScript Handbook pretende ser uma documentação de fácil compreensão par
 
 #### The Basics
 #### Everyday Types
+
+[Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
+
 #### Narrowing
 #### More on Functions
 
@@ -153,6 +156,8 @@ JavaScript também tem suporta a passagem de parâmetro padrão para a assinatur
 #### Type Manipulation
 #### Creating Types from Types
 #### Generics
+[Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
 #### Keyof Type Operator
 #### Typeof Type Operator
 #### Indexed Access Types
