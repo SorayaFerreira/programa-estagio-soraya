@@ -2,8 +2,8 @@
     --white: #fff;
     --light-grey: #f5f6f7;
     --dark-grey: #0a0a23;
-    --yellow: #f13272;
-    --golden-yellow: #f13272;
+    --pink: #f13272;
+    --golden-pink: #f13272;
   }
   
   *,
@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   h1 {
@@ -34,8 +35,8 @@
     background-color: var(--white);
     width: 300px;
     height: 350px;
-    border: 5px solid var(--yellow);
-    border-radius: 8px;
+    border: 5px solid var(--pink);
+    border-radius: 25px;
     padding: 15px;
     position: relative;
     display: flex;
@@ -47,11 +48,12 @@
     cursor: pointer;
     width: 100px;
     margin: 10px;
-    color: var(--dark-grey);
-    background-color: var(--golden-yellow);
+    color: var(--white);
+    background-color: var(--golden-pink);
     background-image: linear-gradient(#f13291, #f13272);
-    border-color: var(--golden-yellow);
-    border-width: 3px;
+    border-color: var(--golden-pink);
+    border-width: 1px;
+    border-radius: 8px;
   }
   
   .btn:hover {
