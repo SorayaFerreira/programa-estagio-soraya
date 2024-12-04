@@ -14,6 +14,9 @@ In order to fix this, we need to create a function called removeSpecialChars tha
     return str.replace(/[^a-zA-Z0-9 ]/g, '');
   }
  */
+
+new EventSource('/esbuild').addEventListener('change', () => location.reload())
+
 const taskForm = document.getElementById("task-form");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const openTaskFormBtn = document.getElementById("open-task-form-btn");
