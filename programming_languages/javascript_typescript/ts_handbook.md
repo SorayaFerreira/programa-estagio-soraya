@@ -73,6 +73,7 @@ Outros tipos:
 - É possível criar novos tipos combinando os primitivos. Há duas formas, com `unions` e `generics`.
 - Há como escrever uma função que retorna determinados resultados de acordo com o tipo do parâmetro que foi passado.
 - Um tipo, em TS, é um conjunto de valores que compartilham algo em comum. 
+- `&` é um operador de interseção no TS que combina dois tipos,  com todas suas propriedades, em um só. 
 
 #### Compilação e Transpilação:
 
@@ -161,6 +162,21 @@ fn({ k: 10 });
 ------
 #### Creating Types from Types
 
+- **Tipos Utilitários**:
+   - **Omit**: `export type SqliteSession = Omit<Session, 'expires_at'> & { expires_at: string };` este é um tipo utilitário que cria um tipo baseado em `Session`, excluindo a propriedade (ou key) `expires_at`. Logo, se inicialmente o `Session` era assim: 
+    ```typescript
+    type Session = {
+        id: number;
+        user: string;
+        expires_at: Date;
+    };
+    ``` 
+    Então ele passará a ser assim:
+   
+    ```typescript
+    id: number;
+    user: string;
+    ```
 -----
 #### Generics
 [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) compõem uma estrutura que facilita a reusabilidade de código, por meio da abstração de tipos.
