@@ -52,9 +52,12 @@
       <div id="tasks-container"></div>
     </div>
   </main>
-  <script src="script.js"></script>
+    <!-- Nosso código JavaScript compilado --> 
+    <script type="module" src="main.js"></script>
+  <!-- Trecho de código da [documentação do esbuild](https://esbuild.github.io/api/#live-reload) que habilita o reload automático da página a partir de qualquer alteração no código --> 
+  <script>
+    new EventSource('/esbuild').addEventListener('change', () => location.reload())
+  </script>
 </body>
 
 </html>
-
-<script type="module" src="main.js"></script>
