@@ -29,7 +29,7 @@ Para escrita de documentação, é utilizada a linguagem de marcação [Markdown
 ### Gerência de Arquivos 📂📝
 - As orientações a seguir são apenas inaugurais, logo, é possível que sejam alteradas, conforme desenvolvimento do programa de estágio. No entanto, qualquer detalhe modificado deve ser informado neste documento.
     - Todos os arquivos são organizados dentro de pastas no repositório do GitHub, usufruindo do controle de versionamento (GIT). 
-    - Os nomes de diretórios e arquivos devem ser escritos em inglês, ou seguindo o nome próprio quando for o caso, com a nomenclatura Snake Case.
+    - Os nomes de diretórios e arquivos devem ser escritos em inglês, ou seguindo o nome próprio quando for o caso, com a nomenclatura Snake Case. Para arquivos que tratam de dois assuntos diferentes, é permitido utilizar o caracter `&`.
     - Deve haver, via de regra, apenas duas camadas de diretórios, podendo existir uma ou duas camadas a mais somente se for estritamente necessário.
 
     ```bash
