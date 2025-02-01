@@ -112,6 +112,25 @@ O TypeScript Handbook pretende ser uma documentação de fácil compreensão par
 
 #### The Basics
 #### Everyday Types
+
+- Event Listener: trata-se de uma função que aguarda a ocorrência de um evento para executar uma determinada função, por exemplo: 
+```javascript
+// seleciona um botão
+const button = document.querySelector('button');
+
+// Função a ser executada após um evento
+function handleClick() {
+  alert('Button was clicked!');
+}
+
+// Executa a função após "ouvir" que o botão foi clicado.
+button.addEventListener('click', handleClick);
+```
+- Para criar uma url: `new URL()` e passa a url como parâmetro.
+- `searchParams` é uma propriedade somente leitura da URL que retorna um objeto URLSearchParams, permitindo acesso aos argumentos GET contidos na URL. 
+- `request.url` contém parâmetros de pesquisa para páginas renderizadas.
+
+
 #### Narrowing
 #### More on Functions
 

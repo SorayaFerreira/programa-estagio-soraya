@@ -17,7 +17,7 @@ Os **containers** empacotam software de forma que seja  possível executá-lo na
 
 ## Docker 🐳🐋
 
-O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, os containers são ambientes de [runtime](../programming_languages/runtimes.md) com tudo que é preciso para rodar o código da aplicação de forma independente. Ele apresenta a **Engine**, entidade responsável por criar, executar e gerenciar os containers.
+O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, os containers são ambientes de [runtime](../programming_languages/backend_javascript.md) com tudo que é preciso para rodar o código da aplicação de forma independente. Ele apresenta a **Engine**, entidade responsável por criar, executar e gerenciar os containers.
 
 ![Logo Docker Compose](https://miro.medium.com/v2/resize:fit:1400/0*yKUZfT6P10SAIWNy.jpg)
 

@@ -15,15 +15,9 @@ Tópico exemplo
 [link2](link)
 
 ----
-Arquitetura em ilhas
-
-https://www.patterns.dev/vanilla/islands-architecture/
-
-----
 Levantamento de requisitos conforme o método ShapeUp: Prática efetiva da confecção e implementação de pitches, seguindo especificações da empresa, tendo as partes de problema, solução, escopo e riscos.
 
 ----
-
 Sistemas de autorização | Conhecimento de sistemas como o RBAC, ReBAC e ABAC e auxílio na implementação do ReBAC, de modo simples.
 Sistemas de autenticação | Auxílio na implementação do sistema de autenticação do Bufunfa, inspirado no Oauth 2.0, feito de maneira simplificada.
 

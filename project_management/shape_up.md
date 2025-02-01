@@ -55,3 +55,19 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Small batch**: é a entrega que ocorre no intervalo de uma a duas semanas entre os ciclos.
 - **Time horizon**: é o prazo final.
 - **Uphill**: fase anterior ao downhill, quando ainda há incógnitas não desvendadas.
+
+### Fazendo um Bom Pitch
+> A essência de um bom pitch.
+- Reconhece as limitações atuais, indicando o que seria possível em um cenário sem essas limitações;
+- Tem uma base teórica bem forte. Em outras palavras, um modelo mental bem definido (quais são os conceitos, padrões, abstrações, atores e coisas do problema/solução);
+- Propõe uma solução muito bem explicada, facilitando muito a compreensão e trabalho do responsável pela implementação.
+
+> Um bom pitch geralmente é relevante, simples e completo:
+- Relevante, porque ele deve surgir dentro de um contexto importante e/ou introduzir um contexto importante (porque esse problema é uma dor do cliente/da equipe de desenvolvimento)
+- Simples, pelo princípio da navalha de Ockham: geralmente, a solução mais simples é a mais provável;
+- Completo, porque uma solução precisa de fato atender o problema central e todos os demais que o pitch menciona.
+
+Definição de PITCH com outras palavras: 
+> "Um pitch é uma apresentação detalhada de uma parte do sistema. Você precisa explicar para o resto da equipe porque aquela parte do sistema é importante, como ela deve funcionar e interagir com as outras partes com as quais se relaciona. Às vezes, isso significa apresentar alguns relacionamentos do banco, atores e casos de uso, diagramas, etc."
+
+A Cento Software utiliza um campo a mais na definição de pitches, que o **escopo**. Ele serve tanto para indicar o que está incluso no pitch e o que ele delega para outros pitchs, quanto a quais outros pitches ele está ligado, garantindo assim a conexão entre as partes do que estamos fazendo.

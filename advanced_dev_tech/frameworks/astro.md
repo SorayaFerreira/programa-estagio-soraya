@@ -4,7 +4,7 @@ O Astro é um gerador de site estático.
 
 Ele renderiza o site para HTML e CSS, reduzindo a quantidade de javascript enviada para o client-side. Dá suporte para vários frameworks.
 
-Ele faz arquitetura de ilhas island architecture, o que também é chamado de hidratação parcial. Isso consiste em tratar componentes de uma página como ilhas de interatividade, que podem ser hidratadas de maneira independente.
+O Astro utiliza a arquitetura de ilhas island architecture, o que também é chamado de hidratação parcial. Isso consiste em tratar componentes de uma página como ilhas de interatividade, que podem ser hidratadas de maneira independente.
 
 - Em `public` ficam os assets que serão utilizados no projeto.
 - Existe um objeto global, que a plataforma oferece, chamado `Astro`, que dá acesso a atributos e métodos interessantes para a interação com requisições e a aplicação em si.

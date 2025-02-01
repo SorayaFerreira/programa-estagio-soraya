@@ -1,3 +1,15 @@
+---
+title: backend_javascript
+description: JavaScript no Backend
+pubDate: Feb 02 2025
+tags:
+  - runtimes
+  - Node.js
+  - Bun
+  - Deno
+  - npm
+  - pnpm
+---
 # Runtimes 🏃‍♀️🕐
 Um *Runtime* pode ter conceitos diferentes, de acordo com o contexto, todavia aqui, *runtime* é um ambiente de desenvolvimento, uma infraestrutura, abrangendo software e hardware, capaz de executar um código fonte em tempo real. O runtime carrega aplicações requisitadas para a execução do programa em uma plataforma, que possibilita isso de maneira independente do sistema operacional.
 
@@ -17,7 +29,7 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
 -  🧅 **Bun**: surgiu em 2021, sendo um runtime que foca na experiência do programador e na performance. O Bun se destaca por sua performance, armazenamento embutido com SQLite e interoperabilidade – permite comunicação entre diferentes sistemas. Sua aspecto negativo é que ainda não possuir opções de implantação.
 
 -----------------
-### Mais sobre o Deno ➕➕
+### Mais sobre o Deno ➕
 
 - Para criar timers para funções serem executadas em outro momento, com javascript. Neste exemplo, o console mostra a mensagem após 1000 milisegundos. `setTimeout(() => console.log("Hello, World!"), 1000);`. Também é possível criar intervalos para um função ser repetida a cada período de tempo: `setInterval(() => console.log("Hey!"), 1000);`.
 
@@ -35,4 +47,4 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
     Deno.serve(handler);
  ```
 
-- Como fazer uma requisição para um servidor HTTP: teste no terminal `deno run --allow-net https://docs.deno.com/examples/http-requests.ts`. Ou leia mais [aqui](https://docs.deno.com/examples/http-requests).
+- Para fazer uma requisição para um servidor HTTP: teste no terminal `deno run --allow-net https://docs.deno.com/examples/http-requests.ts`. Ou leia mais [aqui](https://docs.deno.com/examples/http-requests).
