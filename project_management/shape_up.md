@@ -1,4 +1,4 @@
-# Gestão de Projetos
+# Gestão de Projetos 🟪🟣
 O Shape Up é o framework utilizado para gerência desse projeto, visando organização e entrega de valor. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), todavia a seguir são descritos conceitos centrais que podem auxiliar a compreensão do método de maneira resumida.
 
 ### Sumário
@@ -8,7 +8,7 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Find the Elements**: explicar a ideia por meio de um desenho, de modo alto nível, com o fito de ser rápido, resolver o problema e possibilitar criatividade.
 - **Risks and Rabbit Holes**: trata-se de observar a solução, procurando entraves ou questões não resolvidas que podem induzir o time a erros. Uma vez encontrados, a solução deve ser alterada, ou certos detalhes devem ser melhor especificados.
 - **Write the Pitch**: é escrever um resumo do problema, restrições, solução, entraves e limitações. Tem três elementos principais: o problema, o appetite e a solução. Ele tem relação com um documento de requisitos.
-
+v
 #### Betting
 - **Bets, Not Backlogs**: backlogs desperdiçam tempo. Então, bets têm o propósito de ser mais assertivos e práticos. Os pitches são bets em potencial. 
 - **The Betting Table**: reunião que ocorre no cool-down, composta pelos principais stakeholders. O resultado da reunião é um planejamento do próximo ciclo, que pode ser baseado nas pitches e não precisa de validação de outrem.
@@ -43,7 +43,7 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Level of abstraction**: nível de abstração.
 - **Must-haves**: critérios de aceite, definição de pronto.
 - **Nice-to-haves**: são tarefas marcadas com um ‘~’ no início. Elas são deixadas para o final do ciclo e, se não forem concluídas com sucesso, são canceladas.
-- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto
+- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto.
 - **Production mode**: fase em que a arquitetura (de software) está definida e o Shape Up é aplicado.
 - **Rabbit hole**: é uma parte do projeto extremamente complexa, difícil, de escopo aberto.
 - **R&D mode**: fase de definição da arquitetura de software.
