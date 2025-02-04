@@ -29,7 +29,7 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
 -  🧅 **Bun**: surgiu em 2021, sendo um runtime que foca na experiência do programador e na performance. O Bun se destaca por sua performance, armazenamento embutido com SQLite e interoperabilidade – permite comunicação entre diferentes sistemas. Sua aspecto negativo é que ainda não possuir opções de implantação.
 
 -----------------
-### Mais sobre o Deno ➕
+## Mais sobre o Deno ➕
 
 - Para criar timers para funções serem executadas em outro momento, com javascript. Neste exemplo, o console mostra a mensagem após 1000 milisegundos. `setTimeout(() => console.log("Hello, World!"), 1000);`. Também é possível criar intervalos para um função ser repetida a cada período de tempo: `setInterval(() => console.log("Hey!"), 1000);`.
 
@@ -48,3 +48,20 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
  ```
 
 - Para fazer uma requisição para um servidor HTTP: teste no terminal `deno run --allow-net https://docs.deno.com/examples/http-requests.ts`. Ou leia mais [aqui](https://docs.deno.com/examples/http-requests).
+
+# Gerenciadores de Pacotes
+São ferramentas que automatizam a gerência, instalação e compartilhamento de pacotes, que são as dependências de um projeto. Usar um gerenciador de pacotes garante que não haja arquivos conflitantes e ausênica de dependências.
+
+## NPM (Node Package Manager)
+
+O NPM é o gerenciador de pacotes padrão da runtime [Node.js](#comparação-de-runtimes-para-js). Ele é simples de usar, tem uma comunidade grande e ativa, porém tem grandes problemáticas, algumas delas são:
+- Instalação sequencial de pacotes, o que aumenta o tempo de instalação;
+- `npm audit`. [Nesta página](https://overreacted.io/npm-audit-broken-by-design/) uma pessoa muito frustrada explica porque isso é um problema.
+- Erros graves que assustam, e que seriam possíveis apenas se um invasor tivesse total acesso a sua máquina.
+
+<div align="center"><img alt="Heaviest Objects in the Universe" src="https://cdn.prod.website-files.com/60c918a8dfeab0375d2ee879/65d5bbd63fda604a3973c982_ewSxB795GWGySjZL6CYznbCr8z3nhhlb_m-CjaTMqBTBSeTqTzj6LuJcoSMgMKhPwjRN2PWljZHZT8rY1XncuaawJASh24IVzokfEpEentRQFTMUCHXJCiMgUv0pKjF8KB6ZYc05GicLgv9JO6PH_Q.png" width="400px"></div>
+
+## PNPM (Performant Node Package Manager)
+Este é outro gerenciador de pacotes também do ambiente `Node.js`, todavia é uma alternativa mais eficiente. Seu diferencial é não baixar bibliotecas completas, mas somente as diferenças entre versões. No console, ele mostra quantos pacotes e quanto espaço de disco foram economizados. 
+
+Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.

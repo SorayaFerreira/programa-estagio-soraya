@@ -15,17 +15,11 @@ Tópico exemplo
 [link2](link)
 
 ----
-Levantamento de requisitos conforme o método ShapeUp: Prática efetiva da confecção e implementação de pitches, seguindo especificações da empresa, tendo as partes de problema, solução, escopo e riscos.
-
-----
 Sistemas de autorização | Conhecimento de sistemas como o RBAC, ReBAC e ABAC e auxílio na implementação do ReBAC, de modo simples.
 Sistemas de autenticação | Auxílio na implementação do sistema de autenticação do Bufunfa, inspirado no Oauth 2.0, feito de maneira simplificada.
 
 ----
 Algumas funções/métodos do JavaScript | Utilização de alguns métodos: .encode(), .decode(), atob(), btoa(), .stringfy(), .error(), .prepare(),
-
-----
-PNPM | Conhecimento desse gerenciador de pacotes, que é melhor do que o NPM.
 
 ----
 Funções assíncronas | Estudo e aplicação das estruturas async e await.
