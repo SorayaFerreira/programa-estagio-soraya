@@ -15,10 +15,6 @@ Tópico exemplo
 [link2](link)
 
 ----
-Sistemas de autorização | Conhecimento de sistemas como o RBAC, ReBAC e ABAC e auxílio na implementação do ReBAC, de modo simples.
-Sistemas de autenticação | Auxílio na implementação do sistema de autenticação do Bufunfa, inspirado no Oauth 2.0, feito de maneira simplificada.
-
-----
 Algumas funções/métodos do JavaScript | Utilização de alguns métodos: .encode(), .decode(), atob(), btoa(), .stringfy(), .error(), .prepare(),
 
 ----
