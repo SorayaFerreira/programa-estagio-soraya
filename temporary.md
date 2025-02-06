@@ -15,7 +15,7 @@ Tópico exemplo
 [link2](link)
 
 ----
-Algumas funções/métodos do JavaScript | Utilização de alguns métodos: .encode(), .decode(), atob(), btoa(), .stringfy(), .error(), .prepare(),
+
 
 ----
 Funções assíncronas | Estudo e aplicação das estruturas async e await.

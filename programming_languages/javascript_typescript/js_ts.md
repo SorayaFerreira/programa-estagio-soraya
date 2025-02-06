@@ -1,8 +1,24 @@
-# TypeScript 📘🔵
+# TypeScript e JavaScript 📘📕
 
-Inicialmente, a linguagem JavaScript foi criada para atender um demanda "pequena", isto é, para escrever poucas linhas de código no client-side, por isso ela é muito simples. No entanto, com o decorrer do tempo, sua popularidade e sua abrangência cresceram, e a linguagem passou a ser utilizada também no server-side, por exemplo. Com isso, houve a necessidade de aprimorar certos aspectos do JavaScript que poderiam causar bugs complexos, então surgiu o TypeScript.
+- DARPA: agencia de pesquisa tecnológica dos EUA criada durante a guerra fria.
+- ARPANET: rede que permitia comunicação entre os computadores. Cresceu muito e mudou de nome
+várias vezes. O último nome foi INTERNET.
+- Em 1993 surgiu o WWW no CERN.
+- O JavaScript foi criado pela empresa Netscape.
+- JS não tem nada a ver com JAVA. O nome ficou assim porque na época em que surgiu estava
+na moda falar de "java". Foi uma tática de marketing.
+- ECMA SCRIPT é a versão padronizada do javascript, que surgiu porque a Microsoft queria "plagiar" e 
+criar outra linguagem parecida.
+- \' para colocar aspas simples dentro da string.
+- Variáveis podem começar com "letras, $ ou _". Podem apresentar números, letras e acentos, exceto espaços."typeof var" para ver o tipo da variável. "null" é objeto para js.
+- Inicialmente, a linguagem JavaScript foi criada para atender um demanda "pequena", isto é, para escrever poucas linhas de código no client-side, por isso ela é muito simples. No entanto, com o decorrer do tempo, sua popularidade e sua abrangência cresceram, e a linguagem passou a ser utilizada também no server-side, por exemplo. Com isso, houve a necessidade de aprimorar certos aspectos do JavaScript que poderiam causar bugs complexos, então surgiu o _TypeScript_.
 
-## Introdução
+## JS: Pontos Importantes
+JavaScript também tem suporta a passagem de parâmetro padrão para a assinatura de uma função, a sintaxe é igual a do Python. 
+
+
+
+## Introdução a TS
 
 ![Logo TypeScript](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrOXd86iDXx-hL8ZoHFwV7SR5ihBzQcvOgg&s)
 
@@ -74,13 +90,9 @@ Outros tipos:
 |[T, T]|tuplas, que têm tamanho fixo, mas mutável|
 |(t: T) => U|funções. Ex.: `let fst: (a: any, b: any) => any = (a, b) => a;`|
 
-
 - É possível criar novos tipos combinando os primitivos. Há duas formas, com `unions` e `generics`.
-
 - Há como escrever uma função que retorna determinados resultados de acordo com o tipo do parâmetro que foi passado.
-
 - Um tipo, em TS, é um conjunto de valores que compartilham algo em comum. 
-
 - Há a possibilidade de declarar um tipo vazio. O atributo `{k: 10}` tem todas as propriedades de Empty { } por que Empty não tem propriedades!
 
 ```typescript
@@ -108,10 +120,9 @@ fn({ k: 10 });
 
 Geralmente, erros que surgem na programação em JavaScript puro estão relacionados a erros de tipo, quando um certo tipo de valor foi usado em um local que recebe outro tipo de valor. Nesse sentido, o intuito do TypeScript é fazer uma verificação estáticas dos tipos em programas JavaScript.
 
-O TypeScript Handbook pretende ser uma documentação de fácil compreensão para o dia a dia dos devs. Alguém que completa sua leitura deve ser capaz de ler e assimilar padrões e sintaxe do TypeScript, explicar os efeitos de diferentes opções de compiladores e prever o comportamento dos tipos.
+O [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) pretende ser uma documentação de fácil compreensão para o dia a dia dos devs. Alguém que completa sua leitura deve ser capaz de ler e assimilar padrões e sintaxe do TypeScript, explicar os efeitos de diferentes opções de compiladores e prever o comportamento dos tipos.
 
 #### The Basics
-#### Everyday Types
 
 - Event Listener: trata-se de uma função que aguarda a ocorrência de um evento para executar uma determinada função, por exemplo: 
 ```javascript
@@ -130,9 +141,12 @@ button.addEventListener('click', handleClick);
 - `searchParams` é uma propriedade somente leitura da URL que retorna um objeto URLSearchParams, permitindo acesso aos argumentos GET contidos na URL. 
 - `request.url` contém parâmetros de pesquisa para páginas renderizadas.
 
+----
 
-#### Narrowing
-#### More on Functions
+Algumas funções/métodos do JavaScript | Utilização de alguns métodos: .encode(), .decode(), atob(), btoa(), .stringfy(), .error(), .prepare()
+
+
+----
 
 #### Object Types
 Objetos em JS são uma forma de agrupar e passar dados. Seu tipo pode ser definido com `interface` ou `type` alias:
@@ -167,15 +181,5 @@ type Person = {
     address?: string | undefined;
 };
 ```
-JavaScript também tem suporta a passagem de parâmetro padrão para a assinatura de uma função. A sintaxe é igual a do Python. 
 
-#### Type Manipulation
-#### Creating Types from Types
-#### Generics
-#### Keyof Type Operator
-#### Typeof Type Operator
-#### Indexed Access Types
-#### Conditional Types
-#### Mapped Types
-#### Template Literal Types
-#### Classes Modules
+

@@ -61,7 +61,3 @@ Esse modelo de processo é conhecido também como "Ciclo de Vida Clássico". É 
 ### Modelo Incremental
 Já esta metodologia busca dividir o processo em ciclos, sendo que, em cada ciclo, existem as fases de Análise, Projeto, Implementação e Testes. A cada ciclo é entregue uma parte pronta, funcional do produto.
 
-### Tipos de Testes
-- Testes unitários: testa uma parte individual do sistema, como funções, procedimentos ou módulos.
-- Testes de integração: testa agrupamentos de módulos, componentes.
-- Testes funcionais: testa funcionalidades, recursos e usabilidade, conferindo os requisitos.
