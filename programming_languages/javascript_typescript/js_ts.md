@@ -16,6 +16,14 @@ criar outra linguagem parecida.
 ## JS: Pontos Importantes
 JavaScript também tem suporta a passagem de parâmetro padrão para a assinatura de uma função, a sintaxe é igual a do Python. 
 
+Funções e métodos:
+- .encode(), 
+- .decode(), 
+- atob(), 
+- btoa(), 
+- .stringfy(),
+- .error(), 
+- .prepare()
 
 
 ## Introdução a TS
@@ -141,14 +149,10 @@ button.addEventListener('click', handleClick);
 - `searchParams` é uma propriedade somente leitura da URL que retorna um objeto URLSearchParams, permitindo acesso aos argumentos GET contidos na URL. 
 - `request.url` contém parâmetros de pesquisa para páginas renderizadas.
 
-----
-
-Algumas funções/métodos do JavaScript | Utilização de alguns métodos: .encode(), .decode(), atob(), btoa(), .stringfy(), .error(), .prepare()
-
 
 ----
 
-#### Object Types
+## Object Types
 Objetos em JS são uma forma de agrupar e passar dados. Seu tipo pode ser definido com `interface` ou `type` alias:
 
 ```typescript

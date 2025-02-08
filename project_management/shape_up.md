@@ -27,7 +27,8 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Bet**: quando uma equipe decide conduzir um projeto sem interrupções durante um ciclo.
 - **Betting table**: parece a fase de planejamento da próxima sprint, do framework SCRUM.
 - **Big batch**: é o projeto em desenvolvimento.
-- **Breadboard**: conceito de IHC (Interação Humano-Computador) que define recursos e suas conexões, ainda sem estilizar.
+- **Breadboard**: conceito de IHC (Interação Humano-Computador) que define recursos e suas conexões, ainda sem estilizar. Abaixo, um exemplo.
+![Exemplo de breadboard](https://private-user-images.githubusercontent.com/7810622/395410116-bb3df5d1-1498-445b-af22-65dceb04b0b0.svg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg5MzI1NzMsIm5iZiI6MTczODkzMjI3MywicGF0aCI6Ii83ODEwNjIyLzM5NTQxMDExNi1iYjNkZjVkMS0xNDk4LTQ0NWItYWYyMi02NWRjZWIwNGIwYjAuc3ZnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMDdUMTI0NDMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODFhNzVkMjA3NzZkMDAwYjk0MDgyYmY1Y2JhOTQ2OTE1MTM2ZTFhNjkxYzYxZWE3NmEzMWQzYmZmMzZmMDU0NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ._wDMLXiVMMTEansfTKgvwfj5FbQI5_DXSr7rI9Enk0A)
 - **Circuit breaker**: é uma técnica para lidar com riscos. Ao invés de prolongar um projeto para mais de um ciclo, ele deve ser cancelado.
 - **Cleanup mode**: é um tempo reservado na fase final para resolver tudo que precisa de reparo antes de lançar o produto.
 - **Cool-down**: é um intervalo de duas semanas entre os ciclos para ser aproveitado conforme o necessário.
@@ -43,7 +44,7 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Level of abstraction**: nível de abstração.
 - **Must-haves**: critérios de aceite, definição de pronto.
 - **Nice-to-haves**: são tarefas marcadas com um ‘~’ no início. Elas são deixadas para o final do ciclo e, se não forem concluídas com sucesso, são canceladas.
-- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto
+- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto.
 - **Production mode**: fase em que a arquitetura (de software) está definida e o Shape Up é aplicado.
 - **Rabbit hole**: é uma parte do projeto extremamente complexa, difícil, de escopo aberto.
 - **R&D mode**: fase de definição da arquitetura de software.
