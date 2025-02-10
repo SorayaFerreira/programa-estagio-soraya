@@ -17,14 +17,11 @@ criar outra linguagem parecida.
 JavaScript também tem suporta a passagem de parâmetro padrão para a assinatura de uma função, a sintaxe é igual a do Python. 
 
 Funções e métodos:
-- .encode(), 
-- .decode(), 
-- atob(), 
-- btoa(), 
-- .stringfy(),
-- .error(), 
-- .prepare()
-
+- .encode(): método; recebe uma string; retorna um objeto `Uint8Array` com a string codificada.
+- .decode(): método; recebe um buffer (p. ex. Uint8Array); retorna uma string decodificada; tem um parâmetro opcional, [leia mais sobre aqui](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode#parameters).
+- atob(): método da interface [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) que recebe uma string codificada com [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64); 
+- [btoa()](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa): método, da interface Window também, que recebe uma string ASCII (sequência binária) e a codifica em Base64.
+- .stringify(): método estático que converte uma valor JavaScript para uma string JSON. [Veja mais aqui](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
 
 ## Introdução a TS
 
