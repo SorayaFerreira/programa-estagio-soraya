@@ -1,8 +1,8 @@
 # Modelo Mental 🧠🧮
 
-!["El Toro" de Picasso](https://ferd.ca/static/img/picasso-bulls.jpg)
+<div align="center"><img alt="'El 'Toro' de Picasso" src="https://ferd.ca/static/img/picasso-bulls.jpg" width="400px"></div>
 
->  [A complexidade precisa estar em algum lugar](https://ferd.ca/complexity-has-to-live-somewhere.html),  [mas não em _todo_ lugar](https://v5.chriskrycho.com/journal/essence-of-successful-abstractions/). 
+>  "[A complexidade precisa estar em algum lugar](https://ferd.ca/complexity-has-to-live-somewhere.html)",  "[mas não em _todo_ lugar](https://v5.chriskrycho.com/journal/essence-of-successful-abstractions/)". 
 
 > Apenas complexidade pode gerir complexidade.
 
