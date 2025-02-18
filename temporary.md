@@ -32,3 +32,5 @@ Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e 
 > E uma que eu usava mais no vestibular era pegar um folha de papel e tentar escrever, sem ajuda de material, tudo que eu lembrava do conteúdo. Essa é boa porque força vc a espremer a informação. Quando vc ve que não tem nada mais pra escrever, vc confere com o material.
 > Por fim, uma coisa que eu lembrei agora: complementação de conteúdo. Depois de eu ter terminado de ler os slides e estudar, eu gosto muito de ver uns conteúdos extras (livros, principalmente) pra eu me acostumar ainda mais com o conteúdo. Fiz isso em APSOO e Requisitos lendo o Engenharia de Software Moderna. Não precisa ESTUDAR a fundo, só ler normal mesmo. Vc vai vendo as informações e vai conectando com os slides e tudo fica muito mais natural. Essa é uma "técnica" que é boa se vc tiver tempo de sobra."
 
+----
+Ensaio - tipo textual: é um texto que defende uma ideia. Pode-se iniciar com um evento trivial e apartir disso discursar sobre assuntos mais profundos.

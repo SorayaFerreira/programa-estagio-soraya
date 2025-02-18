@@ -1,3 +1,83 @@
+# Git Flow 🔴🠒🟢
+
+Foi criado em 2010 pelo holandês Vincent Driessen. Trata-se de uma estratégia de workflow utilizada para organizar o versionamento de código no repositório, mantendo a segurança. Para compreendê-lo mais  facilmente, é possível visualizá-lo como uma árvore e seu ramos, isto é, um grafo.
+
+A branch master é a faz o intermédio entre o repositório e o servidor de produção. Como não é recomendado fazer commit de correção de bugs diretamente na master, são criadas algumas branches. Nessa perspectiva, o intuito do Git Flow é evitar conflitos quando há vários programadores trabalhando no mesmo projeto. Então, sempre que é necessário adicionar uma feature ou corrigir um bug, cria-se uma branch (ramificação).
+
+Depois que as alterações nas branches são totalment testadas, é feito merge com a master. O Git Flow prevê dois tipos de branches: a principal (master e develop) e as de suporte (feat, release e hotfix). A branch master fica para envio de todas as novas features. Então a develop é criada a partir da Master e ela precisa ter todas as features estáveis uma branch de release. Já as branches de features são criadas a partir da Develop.
+
+Sobre a nomenclartura, é importante anotar que quase todas as estratégias de branching usam uma padronização do tipo `feature/nome-da-feature`. A branch release vai acumulando as features até que se possa lançar uma nova versão para a master com merge. A partir disso, a master recebe uma nova tag de versão.
+
+Há ainda a branch hotfix, também feita a partir da master. O propósito dela é corrigir bugs. Após testado, o merge dela é feito diretamente na master, estreando também uma nova tag. Ao término de tal procedimento, a brach hotfix deve ser removida. Enquanto isso, a branch develop deve estar sempre atualizada com a master.
+
+Algumas críticas ao Git Flow mencionam complexidade e burocracia. Além disso, defendem que é insustentável, ineficaz, que o próprio criador não recomenda o Git Flow atualmente e que o git Flow gera merges automáticos com resolução de conflitos e commits inúteis.
+
+A seguir, uma ilustração que ajuda a compreender o Git Flow.
+
+```mermaid
+gitGraph TB:
+    commit
+    commit
+    branch develop
+    commit
+    branch feature
+    commit
+    commit
+    commit
+    checkout develop
+    merge feature
+    commit
+    branch release
+    commit
+    checkout main
+    commit
+    checkout release
+    merge main
+    checkout develop
+    merge main
+```
+
+-----
+
+# Padrões de Versionamento 🏗
+
+Os padrões de versionamentos visam gerenciar mudanças significativas nas aplicações, seguindo certa hierarquia.
+A seguir, são apresentados alguns padrões e comparações entre eles.
+
+
+## Semantic Versioning
+
+Esta é a padronização mais utilizada, visto que é de fato sucinta, clara e abrangente, sendo capaz de representar a maioria dos projetos, na minha opinião.
+
+Funciona da seguinte forma, segundo a própria especiaficação:
+
+
+"Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
+- versão Maior(MAJOR): quando fizer mudanças incompatíveis na API,
+- versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade, e
+- versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
+Rótulos adicionais para pré-lançamento(pre-release) e metadados de construção(build) estão disponíveis como extensão ao formato MAJOR.MINOR.PATCH."
+
+[TEXTO COMPLETO AQUI](https://semver.org/lang/pt-BR/)
+
+## CalVer 📆
+
+O CalVer baseia-se em datas para realizar o versionamento, prevendo versões com data específica (formato AAAA.MM.DD), versões mensais (formato AAAA.MM) e versões semanais (formato AAAA.SS). Tal padrão atende necessidades muito específicas em contextos que têm as datas como algo significativo.
+
+É comparado ao SemVer por prever números inteiros separados por ponto.
+
+## Sentimental Versioning
+Ao contrário do SemVer, este não tem especificação formal, apenas um guia com sugestões. Segundo ele, o padrão criado deve ser original, com números apreciáveis ao autor, e explicado se for algo belo, caso contrário, as novas versões são improvisadas conforme o humor momentâneo.
+
+## FloatVer 
+Este é um esquema de versionamento que utiliza números de ponto flutuante não negativos com tamanho IEEE754 32-bit. O formato é `breaking.nonbreaking`:
+- breaking: incrementa 1 quando a mudança torna a versão incompatível com as anteriores.
+- nonbreaking: incrementa 1 quando a mundança não afeta a compatibilidade com versões anteriores, isto é, não demanda mais RAM, cores do processador ou tempo de execução, nem altera a semântica da versão anterior.
+
+É um padrão menos específico que o SemVer e utiliza números float, ao invés de inteiros.
+
+-----
+
 # Anotações sobre Git e GitHub 😼🐙
 
 Git é uma técnica de versionamento de código criada por Linus torvalds. Ela permite que os desenvolvedores acompanhem as mudanças no código fonte ao longo do tempo, mantendo um histórico de todas as mudanças, versões criadas, ramificações, entre outros dados. É necessário, para utilizar localmente, instalar e configurar o Git Bach na máquina.

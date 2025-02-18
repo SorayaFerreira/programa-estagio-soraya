@@ -1,7 +1,18 @@
-# Linux 🐧💛
-
+---
+title: operating_systems
+description: Conteúdos sobre Sistemas Operacionais
+pubDate: Feb 02 2025
+tags:
+  - Linux
+  - Terminal
+  - Instalar
+  - Diretórios
+---
+# Sistemas Operacionais
 - [[Sistema Operacional]]: ativa todos os periféricos e cria o ambiente sobre o qual todos os outros  programas rodam.
 - O MS-DOS foi o primeiro sistema operacional da Microsoft. 
+
+# Linux 🐧💛
 - Na década de 60, um sistema operacional precisava ser extremamente eficiente, enxuto e otimizado, buscando o máximo desempenho com o mínimo de recursos. Por isso o Unix se desenvolveu de forma tão elegante, robusta e estável.
 - Linus Torvalds criou o Linux (além do GIT), sistema derivado do Unix, em 1991. Assim surgiu o Kernel Linux. A partir daí, começou a se formar a comunidade Linux, que tinha acesso ao sistema pela licença GPL.
 - A GPL tem 4 direitos básicos:
@@ -15,15 +26,15 @@ Mandriva), derivados do Debian (Ubuntu, Kubuntu, Linux Mint), e os derivados do 
 - É mais natural e simples usar a palavra Linux para se referir à plataforma como um todo do que a um kernel apenas.
 - Kernel: peça fundamental do sistema, responsável por prover a infraestrutura básica necessária para que os programas funcionem, além de ser o responsável por dar suporte aos mais diferentes periféricos: placas de rede, som e o que mais você tiver espetado no micro.
 
-#### **Como instalar programas no linux:**
-1. Usar o apt-get ou outro gerenciador para instalar pacotes próprios da distribuição em uso. Esta é a forma mais simples e menos passível de erros.
+## **Como instalar programas no linux:**
+1. Usar o `sudo apt-get install` ou outro gerenciador para instalar pacotes próprios da distribuição em uso. Esta é a forma mais simples e menos passível de erros.
 2. Programas com instaladores próprios, destinados a funcionar em várias distribuições.
 3. Instalar o programa a partir do código-fonte, o que pode ser necessário no caso de aplicativos pouco comuns, que não estejam disponíveis de outra forma, e também no caso de muitos drivers, onde é  necessário gerar um módulo personalizado para o kernel em uso.
 
 - Os módulos nada mais são do que os arquivos, que são armazenados dentro da pasta `/lib/modules/versão_do_kernel`. 
 - Três coisas para instalar: pacotes kernel-source e kernel-headers, e o compilador gcc.
   
-### **Diretórios** 🗂️📂
+## **Diretórios** 🗂️📂
 
 O diretório raiz tem as pastas do sistema e espera-se nossos arquivos pessoais sejam armazenados no diretório /home. 
 Os discos e as partições não aparecem necessariamente como unidades diferentes. 
@@ -47,7 +58,7 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - O `ls` serve para listar os arquivos de uma pasta.
 
 --------
-### Guia Rápido de Comandos no Terminal **(`Ctrl+Alt+T`)** 🖥️🐚
+## Guia Rápido de Comandos no Terminal **(`Ctrl+Alt+T`)** 🖥️🐚
 - `cd`:  permite navegar entre os diretórios. Quando você abre o terminal, você está  no diretório /home/gdh, e pode acessar todos os outros com `cd /diretorio`. Para voltar ao home digite apenas cd. 
 - `man ls` serve para saber sobre todas as possibilidades de um comando no terminal do linux.
 - `pwd`:  serve para confirmar em qual diretório você está.
@@ -59,6 +70,7 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - `cp -a` : para fazer o cp se comportar de maneira mais lógica.
 - `mv`:  para remover ou renomear arquivos. Para mover é a mesma coisa que o `cp` e para renomear é só digitar o nome atual e depois o novo.
 - `mkdir`:  é para criar diretórios.
+- `—`: para digitar um travessão, aperte `Ctrl+Shift+U` seguido de `2014`.
 - `rm`: serve para remover arquivos e diretórios.
 - `rm -f * .extensao`: serve para remover todos os arquivos com aquela determinada extensão.
 - `rmdir`:  só remove diretórios vazios. É semelhante ao “rm -rf”.

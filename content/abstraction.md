@@ -1,3 +1,13 @@
+---
+title: abstraction
+description: Conteúdo sobre abstração de conceitos ou objetos
+pubDate: Feb 02 2025
+tags:
+  - Modelo Mental
+  - Abstração
+  - Hipótese
+---
+
 # Modelo Mental 🧠🧮
 
 <div align="center"><img alt="'El 'Toro' de Picasso" src="https://ferd.ca/static/img/picasso-bulls.jpg" width="400px"></div>
