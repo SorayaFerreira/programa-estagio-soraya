@@ -34,3 +34,10 @@ Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e 
 
 ----
 Ensaio - tipo textual: é um texto que defende uma ideia. Pode-se iniciar com um evento trivial e apartir disso discursar sobre assuntos mais profundos.
+
+
+----
+BFF: Backend For Frontends -> https://samnewman.io/patterns/architectural/bff/
+
+----
+https://kysely.dev/  KYSELY: um query builder com type-safe SQL para TypeScript.
