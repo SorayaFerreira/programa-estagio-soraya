@@ -54,4 +54,29 @@ Então vamos ao meu modelo mental para o problema que está acontecendo:
 - `git rm arquivo.txt` remove um arquivo tanto no meu `sistema de arquivos` quanto na `representação do sistema de arquivos` do git
 
 
+Em um corpo, cada parte serve pra alguma coisa. Existe uma lógica natural por trás
+Nós temos duas pernas com pés e dedos porque essa é uma maneira eficiente de equilibrar todo o resto 
+E liberar os braços pra manipulação de objetos
+Ao mesmo tempo, lá na outra ponta, o peso da cabeça influencia na questão do equilibrio. Então ela não pode ser subdesenvolvida, pra não prejudicar as capacidades, mas também não pode ser superdesenvolvida, porque daí o individuo teria dificuldade pra ficar em pé
+Então todas as coisas estão conectadas, e mesmo que as responsabilidades sejam separadas entre si, as partes influenciam umas nas outras
+Agora deixando a analogia da anatomia de lado
+Outra coisa que eu quero que você visualize é a interface como uma representação da modelagem dos dados
+No seguinte sentido, por exemplo: um processo aquisitivo pode ser de diferentes modalidades, e possui lotes que por sua ver possuem itens
+
+Uma interface bem modelada vai representar esses detalhes de maneira semelhante a como eles foram modelados conceitualmente
+No nosso caso, a mudança da modalidade não muda o processo como um todo. Apenas aplica algumas pequenas variações na sua apresentação (assim como pessoas de etnias diferentes continuam sendo pessoas, mas com algumas características físicas e culturais diferentes)
+Já os lotes e os itens são coisas que o processo possui. Então elas são representadas como estando "dentro do processo"
+lotes dentro do processo, e itens dentro dos lotes
+
+Então existe uma justificativa conceitual para as escolhas visuais que a gente toma
+Por que é importante que você pense dessa maneira: porque dessa forma você se torna mais conciente na hora de pensar e participar da modelagem dos pitchs. Não que você não esteja apresentando um bom entendimento dos pitchs. Você está. Mas pra chegarmos no próximo nível, é importante que você consiga ver além dessa forma
+Daí você vai conseguir participar mais de igual pra igual, sugerindo mudanças na UX/UI talvez, inclusive
+
+Por isso que acredito que você dominar os detalhes da legislação do processo ou de cada cabelinho de requisito que ele possui não é a nossa maior necessidade, e por isso comentei que isso poderia ser usado como combustível.Se tivermos um modelo bem definido, voltando a pensar na analogia do corpo, cada detalhe vai ser atendido no seu momento devido, sem que isso prejudique a nossa compreensão do todo. 
+
+Por exemplo, até hoje o ser humano não entendeu muito bem como a própria cabeça funciona. Mas isso não o impede de criar abstrações do que é essa mente (vulgo psicologia) ou de realizar suas tarefas utilizando essa cabeça 
+Aqui vai ser a mesma coisa. A gente precisa ter um bom andamento da nossa modelagem mesmo sem entender completamente os detalhes de determinado requisito de antemão. Daí o Richard entra apoiando a gente com esse lado da coisa, enquanto a gente garante que o nosso modelo (tanto visual quanto conceitual) está suportando esses detalhes novos que vão surgindo
+
+
+
 

@@ -56,3 +56,24 @@ docs Commits, that affect documentation only
 build Commits, that affect build components like build tool, ci pipeline, dependencies, project version, ...
 ops Commits, that affect operational components like infrastructure, deployment, backup, recovery, ...
 chore Miscellaneous commits e.g. modifying .gitignore
+
+-------
+https://www.atlassian.com/git/tutorials/cherry-pick git cherry-pick
+
+
+------------
+
+- **O que é microdata? E para quê serve?** R.: É um conjunto de atributos que serve para especificar melhor o assunto dos conteúdos inseridos numa página com HTML.
+- 
+- **Como escrever microdata nos pitches? Passo a passo.** R.: 
+- 
+- **Atributos "itemtype" e "itemscope", "itemprop"? R**.: 
+	- O "itemscope" limita o "assunto", de um conjunto de tags (as aninhadas dentro do elemento que recebeu o itemscope). 
+	- Já o "itemtype" recebe uma URL (`https://schema.org/TipoDoConteudo`, ou `itemprop="url"`para sites de terceiros), indicando o tipo contido na tag raiz (com o itemscope). 
+	- O "itemprop" serve para definir propriedades do conteúdo (itemscope) que está incluso no conjunto de tags em questão, "Então aí ele tá mostrando que o tipo `BlogPosting` possui os atributos `headline`, `datePublished`, `url`, e `discussionUrl`. Tipo no nosso caso, onde o tipo `Processo` possui os atributos (derivados) `solicitacoes` e `propostas`. Tipo no nosso caso, onde o tipo `Processo` possui os atributos (derivados) `solicitacoes` e `propostas`".
+- 
+- **O que é design token-based UI architecture?** R.: dá pra usar para geração de código automático. São decisões de design representadas como dados, sendo blocos de fundação para o design de sistemas. _São variáveis JSON  ou YAML que vão guardar padrões de design para diferentes elementos_.
+
+-------
+
+
