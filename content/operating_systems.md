@@ -94,6 +94,7 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - `man` comando: dá uma manual. Explica como usar um determinado comando.
 - `reboot`: reinicia a máquina.
 - `cat local/arquivo`: mostra o conteúdo de um arquivo.
+- `sudo apt remove <nome do programa>` Para desinstalar programas.
 ------
 
 -  No linux, o root é o único que tem acesso a todos os arquivos e configurações do sistema.
