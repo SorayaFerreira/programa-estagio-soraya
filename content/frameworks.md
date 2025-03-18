@@ -1,8 +1,17 @@
-# Astro 💜🏝️
+---
+title: frameworks
+description: Conteúdo sobre vários frameworks
+pubDate: Mar 17 2025
+tags:
+  - Astro
+  - Island Architecture
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=800080&height=120&section=header"/>
 
+# Astro 💜🏝️
 O Astro é um gerador de site estático. Ele renderiza o site para HTML e CSS, reduzindo a quantidade de javascript enviada para o client-side. Dá suporte para vários frameworks.
 
-### Island Architecture
+## Island Architecture
 
 O Astro utiliza a arquitetura de ilhas (island architecture), o que também é chamado de hidratação parcial. 
 Cabe dizer que hidratação é o processo de injetar dados num objeto que foi instanciado sem nenhum dado, mas, no caso de páginas web, é a adição de comportamento JavaScript ao HTML.
@@ -12,7 +21,7 @@ Nesse sentido, a arquitetura em questão consiste em tratar componentes de uma p
 
 ![](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1633284886/patterns.dev/theislandsarch--avuxy9rrkk8.png)
 
-### Outras Aspectos do Astro
+## Outras Aspectos do Astro
 - Em `public` ficam os assets que serão utilizados no projeto.
 - Existe um objeto global, que a plataforma oferece, chamado `Astro`, que dá acesso a atributos e métodos interessantes para a interação com requisições e a aplicação em si.
 - É possível misturar componentes de diferentes frameworks de UI, como React, Vue e [Svelte](https://svelte.dev/docs/svelte/overview), por exemplo.
@@ -45,3 +54,5 @@ for (const [key, value] of searchParams.entries()) {
 }
 ```
 -  O método estático `Object.fromEntries()` transforma uma lista de pares key-value num objeto.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=800080&height=120&section=footer"/>

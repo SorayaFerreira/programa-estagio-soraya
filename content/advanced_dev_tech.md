@@ -1,3 +1,15 @@
+---
+title: advanced_dev_tech
+description: Conteúdo sobre Técnicas Avançadas de Desenvolvimento de Software
+pubDate: Mar 17 2025
+tags:
+  - Virtualização
+  - Containers
+  - Docker
+  - Variáveis de Ambiente
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=header"/>
+
 # Virtualização 🆚 Containers
 Ambos são tecnologias que auxiliam a configuração de servidores.
 
@@ -53,3 +65,5 @@ food:
 
 ### Variáveis de Ambiente
 São cadeias de caracteres (strings) que usualmente guardam dados de configuração de aplicações, sendo utilizadas pela própria aplicação durante o funcionamento. Elas podem ser aplicadas em containers do Docker, quando é preciso realizar uma configuração dinâmica, ou para registrar dados sensíveis, como senhas. Para tanto, arquivos com extensão `.env` são definidos para que o Docker leia com prioridade, contudo essas variáveis podem ser descritas em outros documentos como o dockerfile.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>

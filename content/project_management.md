@@ -1,3 +1,24 @@
+---
+title: project_management
+description: Conteúdos sobre Gerência de Projetos
+pubDate: Mar 18 2025
+tags:
+  - Metodologias de Desenvolvimento
+  - Test Driven Development
+  - TDD
+  - Scrum
+  - Cascata
+  - Modelo Incremental
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=header"/>
+
+# Sumário
+- [Metodologias de Desenvolvimento](#metodologias-de-desenvolvimento-)
+- [Test Driven Development (TDD)](#test-driven-development-tdd)
+- [Scrum](#scrum)
+- [Cascata](#cascata)
+- [Modelo Incremental](#modelo-incremental)
+
 # Metodologias de Desenvolvimento ⚙📈
 Métodologias de Desenvolvimento são técnicas utilizadas no processo de desenvolvimento de software. O "X Drive Development" refere-se à prioridade na construção do projeto:
 - **Feature Driven Development**: todas as features devem ser implementadas, mesmo que a data precise ser adiada.
@@ -61,3 +82,4 @@ Esse modelo de processo é conhecido também como "Ciclo de Vida Clássico". É 
 ### Modelo Incremental
 Já esta metodologia busca dividir o processo em ciclos, sendo que, em cada ciclo, existem as fases de Análise, Projeto, Implementação e Testes. A cada ciclo é entregue uma parte pronta, funcional do produto.
 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=footer"/>

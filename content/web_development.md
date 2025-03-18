@@ -9,11 +9,28 @@ tags:
   - Deno
   - npm
   - pnpm
+  - web enxuto
+  - html
+  - http
 ---
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=header"/>
 
-# Desenvolvimento para Web
+# Sumário
+- [Sistemas de Autenticação](#sistemas-de-autenticação)
+- [Sistemas de Autorização](#sistemas-de-autorização)
+- [Desenvolvimento Web Enxuto](#desenvolvimento-web-enxuto-)
+- [O Poder do HTML](#o-poder-do-html-)
+- [Single-page Applications - SPAs](#single-page-applications---spas)
+- [Multi-page Applications - MPAs](#multi-page-applications---mpas)
+- [Hypermedia-Drive Application - HDA](#hypermedia-drive-application---hda-️)
+- [Desenvolvimento Enxuto na Prática](#desenvolvimento-enxuto-na-prática-)
+- [Bibliotecas](#bibliotecas-)
+- [Protocolo HTTP](#protocolo-http-)
+- [fetch API](#fetch-api)
+- [Proxy](#proxy)
+- [Runtimes](#runtimes-️)
+- [Gerenciadores de Pacotes](#gerenciadores-de-pacotes)
 
 # Sistemas de Autenticação
 Autorização, às vezes identificada como `authz`, tem alta relação com a [Autorização](#sistemas-de-autorização), podendo ser confundida com ela. Entretanto, elas têm conceitos diferentes. Sumariamente, authz é responsável por _permissões_, enquanto que authn é responsável por _identidades_.
@@ -36,7 +53,6 @@ Os padrões de autorização mais conhecidos são RBAC, ReBAC e ABAC, a seguir, 
 <div align="center"><img alt="Imagem de vasos de planta organizados" src="https://media.graphassets.com/2Rg1tPAQQMucRgp17e9W"></div>
 
 - ABAC (Attribute Based Access Control): distribui permissões de acordo com avaliação de _atributos_ dos usuários, do ambiente e dos recursos. Isso possibilita maior dinâmica e flexibilidade. Desvantagens: difícil de implementar e manter, impacto no desempenho do sistema por conta da avaliação de políticas de atributos.
-
 
 
 # Desenvolvimento Web Enxuto 🌐🧽
@@ -238,7 +254,6 @@ O NPM é o gerenciador de pacotes padrão da runtime [Node.js](#comparação-de-
 Este é outro gerenciador de pacotes também do ambiente `Node.js`, todavia é uma alternativa mais eficiente. Seu diferencial é não baixar bibliotecas completas, mas somente as diferenças entre versões. No console, ele mostra quantos pacotes e quanto espaço de disco foram economizados. 
 
 Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
-
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer"/>
 

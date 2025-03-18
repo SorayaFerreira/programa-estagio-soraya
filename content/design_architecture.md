@@ -1,5 +1,14 @@
-# HOWL 🟣
+---
+title: design_architecture
+description: Conteúdo sobre Design e Arquitetura de Software
+pubDate: Mar 17 2025
+tags:
+  - HOWL
+  - Lean Web
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ee82ee&height=120&section=header"/>
 
+# HOWL 🟣
 ### HOW - Hypermedia On Whatever you'd Like
 
 - O HTMX é uma biblioteca, à parte da W3C, que tem buscado favorecer o uso de capacidades e linguagens nativas dos browsers e reduzir as camadas de abstração, melhorando as especificações do HTML, alinhando a WEB à hipermídia. A ideia é tornar o HTML uma forma mais poderosa de hipermídia. Além disso, o HTMX tenta combater o JS Pressure, isto é, uma pressão para usar JavaScript no backend, decorrente de seu uso pesado no frontend. Com isso, surge o desejo de permitir que todas as linguagens possam ser alternativas interessantes para o backend.
@@ -16,3 +25,5 @@
 - Usar scripts Code-On-Demand diretamente no HTML melhora a visibilidade, satisfazendo a o princípio de design de Locality of Behavior.
 
 - CSS Zen Garden(https://csszengarden.com/): É uma página que demonstra como, através de uma estrutura bem definida para o HTML do site, é possível dar **qualquer** estilo pra ele.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ee82ee&height=120&section=footer"/>

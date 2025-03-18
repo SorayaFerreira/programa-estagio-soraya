@@ -8,6 +8,13 @@ tags:
   - Instalar
   - Diretórios
 ---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ffff00&height=120&section=header"/>
+
+# Sumário
+- [Sistemas Operacionais](#sistemas-operacionais)
+- [Linux](#linux-)
+- [Guia Rápido de Comandos no Terminal](#guia-rápido-de-comandos-no-terminal-ctrlaltt-️)
+
 # Sistemas Operacionais
 - [[Sistema Operacional]]: ativa todos os periféricos e cria o ambiente sobre o qual todos os outros  programas rodam.
 - O MS-DOS foi o primeiro sistema operacional da Microsoft. 
@@ -106,3 +113,5 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - X: servidor gráfico que provê a infraestrutura, uma camada independente no sistema. Digite “X :2” no terminal e veja a base da interface gráfica. Depois digite “startx”.
 -  KDE e GNOME: são gerenciadores de janelas da categoria desktop environment.
 -  Se o sistema linux trava, aperte Ctrl+Alt+Esc, para ativar o xkill e encerrar o aplicativo defeituoso.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ffff00&height=120&section=footer"/>
