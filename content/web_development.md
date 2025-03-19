@@ -11,7 +11,6 @@ tags:
   - pnpm
   - web enxuto
   - html
-  - http
 ---
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=header"/>
@@ -26,9 +25,7 @@ tags:
 - [Hypermedia-Drive Application - HDA](#hypermedia-drive-application---hda-️)
 - [Desenvolvimento Enxuto na Prática](#desenvolvimento-enxuto-na-prática-)
 - [Bibliotecas](#bibliotecas-)
-- [Protocolo HTTP](#protocolo-http-)
 - [fetch API](#fetch-api)
-- [Proxy](#proxy)
 - [Runtimes](#runtimes-️)
 - [Gerenciadores de Pacotes](#gerenciadores-de-pacotes)
 
@@ -43,7 +40,6 @@ Autenticação, também chamada de `authn`, significa confirmar a identidade do 
 O Oauth 2.0 é um protocolo de autenticação amplamente utilizado. Basicamente, o usuário é direcionado para um serviço terceirizado para ser autenticado, e depois ele é redirecionado novamente para a aplicação. Então é disponibilizado um token para o usuário, o que permite a requisição de recursos em nome do usuário.
 
 # Sistemas de Autorização
-
 A Autorização determina o que um cliente autenticado pode acessar e executar. Um usuário de um banco online, por exemplo, após confirmar sua identidade, pode visualizar seu extrato, seu saldo entre outros dados, porém ele não tem permissão para visualizar os dados de outros usuários.
 
 Os padrões de autorização mais conhecidos são RBAC, ReBAC e ABAC, a seguir, uma breve explicação de cada:
@@ -56,11 +52,9 @@ Os padrões de autorização mais conhecidos são RBAC, ReBAC e ABAC, a seguir, 
 
 
 # Desenvolvimento Web Enxuto 🌐🧽
-
 O Desenvolvimento Web Enxuto é um movimento que preza pelo domínio de conhecimentos básicos para desenvolver interfaces de usuário de modo simples, porém robusto para a web. Em outras palavras, esse movimento busca priorizar HTML e CSS, em detrimento de bibliotecas e frameworks JavaScript, reduzindo a quantidade de dependências nos projetos.
 
 ## O Poder do HTML 👊🦸
-
 O HTML5 (HyperText Markup Language 5) é uma linguagem de marcação que permite a interação [_hipermídia_](https://htmx.org/essays/when-to-use-hypermedia/), isto é, a construção de páginas com hipertexto e multimídia. 
 
 Para esclarecer, hipertexto é a leitura não linear de arquivos de texto. Já multimídia é o conjunto de diferentes tipos de mídia disponíveis na web, como arquivos de áudio e de vídeo. Nesse sentido, a hipermídia obtém êxito no atendimento da maioria das necessidades dos sistemas para web, pois é descomplicada, otimizável e dá mais liberdade à escolha de tecnologias para o server-side.
@@ -82,7 +76,6 @@ No entanto, utilizar somente a hipermídia pode não ser uma boa ideia nos segui
 Nessa perspectiva, surge então o [HATEOAS](https://htmx.org/essays/hateoas/) (Hypermedia as the Engine of Application State), que é um tipo de arquitetura de API REST. Nela, clintes da API podem fazer seu consumo por meio de links (hipermídia), sem ter conhecimento prévio sobre ela, ou seja, sem saber qual é a URL. Além disso, ele dispensa a prática de implementar regras de negócio no client-side, todavia é melhor aplicável em operações de CRUD somente.
 
 ### Single-page Applications - SPAs
-
 ![Esquema de funcionamento de um SPA](image.png)
 
 Um SPA é um modelo de implementação que carrega apenas um documento web e que, quando precisa mostrar um conteúdo diferente, atualiza o body desse único documento via APIs JavaScript, como o [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). A vantagem disso é que usuários podem usar sites sem precisar carregar páginas vindas do servidor, o que gera performance e uma experiência mais dinâmica.
@@ -100,7 +93,6 @@ Vale citar aqui os principais frameworks que permitem a implementação de SPAs:
 - [Vite](https://vite.dev/guide/why.html): é uma ferramenta de build que busca agilizar a inicialização do servidor de desenvolvimento. Permite a separação de programas JS em módulos reutilizáveis, faz transpilação de TS para JS, é mais simples e rápido do que o [Webpack](https://webpack.js.org/), é independente de outros frameworks.
 
 ### Multi-page Applications - MPAs
-
 ![Esquema de funcionamento do MPA](image-2.png)
 
 MPA é um modelo de implementação de sistemas web que faz um carregamento completo da página a cada requisição.
@@ -123,7 +115,6 @@ Alguns frameworks que utilizam SSR para construção de MPAs são:
 - [Astro](https://astro.build/): trata-se de uma plataforma que permite a geração de sites estáticos. Ele renderiza o site para HTML e CSS, reduzindo a quantidade de javascript enviada para o client-side (SSR). Além disso, tem a arquitetura de ilhas (island architecture), o que também é chamado de hidratação parcial. Isso consiste em tratar componentes de uma página como ilhas de interatividade, que podem ser hidratadas de maneira independente.
 
 ### Hypermedia-Drive Application - HDA ♻️
-
 A arquitetura HDA é uma combinação entre MPA e SPA. Isso é possível graças a uma extenção da infraestrutura HTML da web. Ademais, implementa o HATEOAS. Tem duas características principais:
 - Utilização de HTML declarativo na interatividade humano-computador, ao invés de código imperativo.
 - Interage com o servidor, em termos de hipermídia, ao invés de utilizar um formato não hipermídia como o JSON.
@@ -131,7 +122,6 @@ A arquitetura HDA é uma combinação entre MPA e SPA. Isso é possível graças
 [Neste link](https://hypermedia.systems/extending-html-as-hypermedia/) pode-se compreender como é a extensão da infraestrutura HTML na prática.
 
 ### Desenvolvimento Enxuto na Prática 📝
-
 > "Choose the least powerful language suitable for a given purpose". 
 
 Essa frase resume o princípio de que, ao longo da construção de sites, se uma linguagem ou tecnologia mais simples – como HTML ou CSS – resolve o problema, não devemos tentar resolvê-lo com algo mais complexo e pesado – como JavaScript.
@@ -148,31 +138,11 @@ Nesse âmbito, é importante iniciar tratando o HTML com seriedade. Isso porque 
 
 
 ### Bibliotecas 🔍🪜
-
 Para começar a praticar o desenvolvimento web enxuto, sugere-se o conhecimento das bibliotecas listadas a seguir:
   - [HTMX](https://htmx.org/): dá acesso a vários atributos, que são incluídos no HTML, permitindo a construção de interfaces poderosas e simples com hipertexto. [_AQUI_](https://htmx.org/examples/) há links para demonstrações de coom aplicar o htmx em vários problemas muito comuns.
   - [Alpine.js](https://alpinejs.dev/): refere-se a um framework JavaScript mais leve, para criação de componentes interativos, que também pode ser utilizado diretamente dos arquivos de marcação. Ele busca oferecer flexibilidade, simplicidade e componentes dinâmicos.
   - [Stencil](https://stenciljs.com/): biblioteca para desenvolvimento de componentes reutilizáveis e escaláveis. Suas de maior destaque são: componentes compatíveis com qualquer browser; bom desempenho; compatibilidade com vários frameworks; geração automática de documentação; suporte a TypeScript.
   - [Lit](https://lit.dev/): oferece web components – assim como o Stencil, porém mais minimalista –, atualização automática dos componentes quando os atributos mudam; templates declarativos; interoperabilidade; estilos separados em escopos; entre outros.
-
-
-# Protocolo HTTP 📄🛜
-
-**API**: Application Programming Interface. Têm fácil integração com os sistemas; seguem padrões de desenvolvimento; elas se comunicam com xml, ou json, ou html, devido à simplicidade desses tipos de dados; requests e responses são feitas em HTTP 📄 tipos de requisições HTTP: get, post, delete, put, patch; uma API RESTful é algo ideal;
-
-**ENDPOINT**:  é uma URL da API, que acessamos para obter uma resposta; ponto final, é o que fica na ponta da rede (roteadores, switch, celulares, tablets etc); Endpoint é um termo que se refere a cada rota de uma API. Através dele é possível solicitar criação, exclusão, atualização e recuperação de qualquer dado.
-
-**BODY**: é o corpo da requisição que é enviado para o endpoint. Ele armazena os dados compilados  para criação ou atualização de algum serviço, usualmente no formato JSON ou XML.
-
-**PARAMS**: são utilizados nas consultas ou atualizações de serviços. Eles podem ser parâmetros enviados na própria URL, após o sinal `?` (query params), posicionados na rota como em `/projects/:project_id` (route params), ou enviados no body da requisição. Existe uma tecnologia experimental com desejo de padronizar os parâmetros, veja [ URL Pattern API](https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API).
-
-**REST**: é um conceito de arquitetura ligado à API e ao protocolo HTTP. Esse padrão tem 6 partes que precisam ser implementadas para tornar a API em RESTful uniformidade, desacoplação, stateless, cache, arquitetura de camadas, code on demand.
-
-O Postman, o Bruno e o [Ensomnia](https://insomnia.rest/) são programas que utilizamos para testar APIs suas ou de terceiros. Você insere um endpoint, para testar o backend e depois integra com o frontend. Ele serve para você não precisar do frontend para testar o backend.
-
-**LOCALHOST**: é um nome que identifica um dispositivo numa rede (hostname), e refere-se ao endereço IP padrão da rede do computador local (`127.0.0.1`), isto é, o próprio computador em que um programa é executado. Dessa maneira, o computador funciona como um servidor virtual. Cada endereço de IP está conectado a uma placa de rede, mas o localhost é como se fosse uma placa de rede virtual. O `0.0.0.0` significa `qualquer placa de rede`.
-
-**PROMISE**: trata-se de um proxy para um valor não necessariamente conhecido quando uma promise é criada. Permite que métodos assíncronos retornem
 
 ### fetch API
 - Oferece uma interface para busca de recursos em qualquer URL de API.
@@ -180,24 +150,6 @@ O Postman, o Bruno e o [Ensomnia](https://insomnia.rest/) são programas que uti
 - Recebe como argumento o caminho para o recurso que se deseja buscar (`resource`) e um argumento opcional com configurações da solicitação.
 - É uma função assíncrona, ou seja, retorna uma `resolve` quando a `response` está pronta.
 - Serve como alternativa ao `XMLHttpRequest`.
-
-### Proxy
-
-![O que é um proxy](https://testrigor.com/wp-content/uploads/2023/11/How-to-Find-Proxy-Settings.jpeg)
-
-### Como funciona:
-
-- **Sockets**: soquetes são como tomadas. Diferentes portas são diferentes padrões de tomadas. Soquetes é uma forma de comunicação entre processos.
-- **Bind**: é uma ligação -- a ligação de um endereço IP com outro número de 16 bits, que é a porta.
-- **Porta**: é um número que identifica um processo que identifica um processo que o sistema operacional mantém na tabela dele. É um identificador do programa rodando ligado ao endereço IP do computador. É só um número
-- **Listen**: é um estado em que o programa fica bloqueado esperando o sistema enviar algo.
- 
-O browser é um exemplo de programa que pede uma conexão. Ele não precisa fazer bind porque ele não precisa que ninguém se conecte nele.
-Um servidor faz bind e listen numa porta e fica esperando (escutando). Um cliente (navegador) enviar pacotes para o IP do servidor e pede para se conectar com um programa que está escutando.
-
-Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As portas de número até 1023 são reservadas e precisam de permissão de administrador `sudo` para serem utilizadas.
-
-
 
 # Runtimes 🏃‍♀️🕐
 Um *Runtime* pode ter conceitos diferentes, de acordo com o contexto, todavia aqui, *runtime* é um ambiente de desenvolvimento, uma infraestrutura, abrangendo software e hardware, capaz de executar um código fonte em tempo real. O runtime carrega aplicações requisitadas para a execução do programa em uma plataforma, que possibilita isso de maneira independente do sistema operacional.
@@ -209,7 +161,6 @@ Há alguns tipos de runtime, como o JRE (Java Runtime Environment), para aplica�
 A maioria das linguagens de programação precisa de um ambiente runtime, entratanto existem runtimes de alto nível e de baixo nível. Linguagens com C e C++ não demandam um runtime de alto nível para serem executadas, pois o arquivo binário gerado pelo compilador pode ser executado diretamente pelo sistema operacional. 
 
 ## Comparação de Runtimes para JS
-
 ![Logos de Node.js, Deno e bun](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e2a5e901c5d64b37819067def874747c~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
 
 Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles executam código JS fora do navegador, utilizado principalmente quando aplicado no server-side:
@@ -219,7 +170,6 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
 
 -----------------
 ## Mais sobre o Deno ➕
-
 - Para criar timers para funções serem executadas em outro momento, com javascript. Neste exemplo, o console mostra a mensagem após 1000 milisegundos. `setTimeout(() => console.log("Hello, World!"), 1000);`. Também é possível criar intervalos para um função ser repetida a cada período de tempo: `setInterval(() => console.log("Hey!"), 1000);`.
 
 - Existe a possibilidade de mostrar cores! Neste exemplo, a mensagem aparece vermelha: `console.log("%cHello World", "color: red");`. Para mudar a cor do background no terminal: `console.log("%cHello World", "background-color: blue");`.
@@ -242,7 +192,6 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
 São ferramentas que automatizam a gerência, instalação e compartilhamento de pacotes, que são as dependências de um projeto. Usar um gerenciador de pacotes garante que não haja arquivos conflitantes e ausênica de dependências.
 
 ## NPM (Node Package Manager)
-
 O NPM é o gerenciador de pacotes padrão da runtime [Node.js](#comparação-de-runtimes-para-js). Ele é simples de usar, tem uma comunidade grande e ativa, porém tem grandes problemáticas, algumas delas são:
 - Instalação sequencial de pacotes, o que aumenta o tempo de instalação;
 - `npm audit`. [Nesta página](https://overreacted.io/npm-audit-broken-by-design/) uma pessoa muito frustrada explica porque isso é um problema.

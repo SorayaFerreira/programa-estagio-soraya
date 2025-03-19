@@ -57,11 +57,11 @@ build Commits, that affect build components like build tool, ci pipeline, depend
 ops Commits, that affect operational components like infrastructure, deployment, backup, recovery, ...
 chore Miscellaneous commits e.g. modifying .gitignore
 
--------
+---
 https://www.atlassian.com/git/tutorials/cherry-pick git cherry-pick
 
 
-------------
+---
 
 - **O que é microdata? E para quê serve?** R.: É um conjunto de atributos que serve para especificar melhor o assunto dos conteúdos inseridos numa página com HTML.
 
