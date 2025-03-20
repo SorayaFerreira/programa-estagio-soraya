@@ -19,6 +19,15 @@ tags:
 - [[Sistema Operacional]]: ativa todos os periféricos e cria o ambiente sobre o qual todos os outros  programas rodam.
 - O MS-DOS foi o primeiro sistema operacional da Microsoft. 
 
+# Princípios Filosóficos do Unix
+- Do one thing and do it well;
+- Everything is a file;
+- Small is beautiful;
+- Connect programs together;
+- Build portable software;
+- Choose portability over efficiency;
+- Store data in text files;
+
 # Linux 🐧💛
 - Na década de 60, um sistema operacional precisava ser extremamente eficiente, enxuto e otimizado, buscando o máximo desempenho com o mínimo de recursos. Por isso o Unix se desenvolveu de forma tão elegante, robusta e estável.
 - Linus Torvalds criou o Linux (além do GIT), sistema derivado do Unix, em 1991. Assim surgiu o Kernel Linux. A partir daí, começou a se formar a comunidade Linux, que tinha acesso ao sistema pela licença GPL.

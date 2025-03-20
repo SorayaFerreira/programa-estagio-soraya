@@ -12,7 +12,10 @@ tags:
 - [Proxy](#proxy)
 - [Protocolo HTTP](#protocolo-http-)
 
-# Redes de Computadores
+
+# Estude o algoritmo do **Dijkstra** ❗️❗️❗️❗️❗️
+
+# Redes de Computadores 🌐
 - Rede é um conjunto de coisas interconectadas.
 - Toda máquina conectada à rede é um **host**. Também é qualquer coisa que usa o TCP/IP.
 - LAN (Local Area Network): sua casa, uma faculdade, uma pequena empresa.
@@ -26,12 +29,15 @@ tags:
 - o SEI e o SisCad são os serviços mais indispensáveis da UFMS.
 - Há dois tipos de redes: **peer-to-peer (P2P)** e **cliente-servidor**.
 - **Hub**: cada pacote enviado para uma porta é copiado para todas as outras. Ele é dispositivo mais estúpido da Rede de Computadores.
+- Não pode misturar cabos elétricos com cabos de rede comuns por causa do campo elétromagnético.
+- **Backbone**: é uma conexão física entre todos os hosts (segmentos e servidores) na rede.
 
 - Topologias:
     - **Barramento**: é a topologia mais básica. Ninguém usa mais.
     - **Estrela**: é usada até hoje. Coloca um switch e liga todo mundo nele.
     - **Anel**: tem o formato de um ciclo. Esse aqui ninguém usa mais. 
     - **Malha**: cada host fica ligado em todas as máquinas. `[n*(n-1)]/2` para saber o número de cabos pra cada máquina.
+    - **Ponto-a-ponto/Ponto-a-Multiponto**: a conexão é direta, um dispositivo ligado diretamente a outro 
 
 ### Proxy
 ![O que é um proxy](https://testrigor.com/wp-content/uploads/2023/11/How-to-Find-Proxy-Settings.jpeg)
@@ -67,6 +73,29 @@ O browser é um exemplo de programa que pede uma conexão. Ele não precisa faze
 Um servidor faz bind e listen numa porta e fica esperando (escutando). Um cliente (navegador) enviar pacotes para o IP do servidor e pede para se conectar com um programa que está escutando.
 
 Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As portas de número até 1023 são reservadas e precisam de permissão de administrador `sudo` para serem utilizadas.
+
+# Protocolos de Rede
+- `~$ telnet smtp.google.com 25`
+- Função de hash. Dependendo da entrada, a resposta é sempre de um tamanho específico. Exemplo `X % 10` é um exemplo de função de hash.
+- Você precisa conhecer pelo menos um algoritmo de busca em rede. 
+- Estude o algoritmo do **Dijkstra**.
+- A gente envia número com little-engine para a rede, mas antes disso o sistema precisa converter para big-engine.
+- Three-Way Handshake: SYN > SYN/ACK > ACK
+
+## OSI - Open System Interconnection
+Foi criado em 1970
+Camada:
+- Física: representado por algo que possa expressar 0s e 1s.
+- Enlace:
+- Rede: parte mais difícil. Tem **roteamento e **
+- Transporte: tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). Entrega de informações de forma confiável ou não.
+- Sessão:
+- Apresentação: é onde acontece a codificação 
+- Aplicação: acesso de fato aos dados pelo usuário. Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP),
+
+
+## TCP/IP
+
 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
