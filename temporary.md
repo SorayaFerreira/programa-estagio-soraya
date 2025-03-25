@@ -62,7 +62,6 @@ https://www.atlassian.com/git/tutorials/cherry-pick git cherry-pick
 
 
 ---
-
 - **O que é microdata? E para quê serve?** R.: É um conjunto de atributos que serve para especificar melhor o assunto dos conteúdos inseridos numa página com HTML.
 
 - **Como escrever microdata nos pitches? Passo a passo.** R.: 
@@ -105,3 +104,19 @@ Atomos são os blocos fundamentais de composição de toda matéria. Cada átomo
 - Aesthetic and Minimalist Design: a interface não deve conter informação pouco necessária.
 - Help users recognize, diagnose, and recover from errors: ajudar o usuário a compreender erros e sugerir soluções.
 - Help and Documentation: pode ser necessário fornecer documentações para ajudar os usuários a entender como completar suas tarefas. Ex.: nosso [Portal de Ajuda](https://ajuda.portaldecomprasbrasil.com.br/).
+
+---
+#### CI/CD
+CD, ou continuous deploy, são as atividades que realizamos pra garantir a disponibilização continua do que a gente desenvolve (e testa/aprova)
+Tem várias formas de fazer isso
+Ansible e GitHub Actions são alguns dos nomes que são legais de você pesquisar sobre algum dia
+Mas pra cá continuei na filosofia de seguir a linha mais simples
+Tem um recurso do próprio Git, e que é implementado (e melhorado) pelas plataformas que utilizam ele, chamado Webhooks
+Basicamente, você pode chamar um endpoint sempre que determinada operação acontece
+Esse “chamado” vem com uma assinatura pra garantir que não é ninguém aleatório tentando utilizar
+O GitHub suporta enviar praticamente tudo que acontece no repo. Desde os mais importantes, como push/merge em determinada branch, como até operações nas issues
+Eu configurei um webhook no servidor onde está o deploy do compras pra escutar por essa chamada, fazer o git pull das alterações mais recentes e reiniciar o docker
+Ele tá olhando pra branch dev por ora, mas depois que tivermos uma branch main mais consolidada, podemos trocar pra ela
+É importante que quando chegarmos nesse ponto, a gente tenha mais mecanismos pra previnir deploys errados
+Que é onde entramos no tal do CI, ou continuous integration. Que é garantir que nossas alterações se “integram” adequadamente ao restante do código
+Lint, testes, verificação do padrão de commits 
