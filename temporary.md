@@ -120,3 +120,9 @@ Ele tá olhando pra branch dev por ora, mas depois que tivermos uma branch main 
 É importante que quando chegarmos nesse ponto, a gente tenha mais mecanismos pra previnir deploys errados
 Que é onde entramos no tal do CI, ou continuous integration. Que é garantir que nossas alterações se “integram” adequadamente ao restante do código
 Lint, testes, verificação do padrão de commits 
+
+
+----
+9. Rastreabilidade
+Definição: Os requisitos devem ser identificáveis e rastreáveis para garantir consistência e manutenção futura.
+Perguntas de apoio: Se um requisito for alterado, é possível saber o impacto nas demais partes do sistema? Existe uma numeração ou código único para cada requisito?
