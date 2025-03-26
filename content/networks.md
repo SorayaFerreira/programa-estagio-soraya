@@ -39,7 +39,7 @@ tags:
     - **Malha**: cada host fica ligado em todas as máquinas. `[n*(n-1)]/2` para saber o número de cabos pra cada máquina.
     - **Ponto-a-ponto/Ponto-a-Multiponto**: a conexão é direta, um dispositivo ligado diretamente a outro 
 
-### Proxy
+## Proxy
 ![O que é um proxy](https://testrigor.com/wp-content/uploads/2023/11/How-to-Find-Proxy-Settings.jpeg)
 - Usado para averiguar e controlar as coisas que as pessoas podem acessar na rede.
 
