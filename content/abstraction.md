@@ -6,8 +6,14 @@ tags:
   - Modelo Mental
   - Abstração
   - Hipótese
+  - Método de Estudo
 ---
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=f2c438&height=120&section=header"/>
+
+# Sumário
+- [Modelo Mental](#modelo-mental-)
+- [Abstração](#abstração)
+
 
 # Modelo Mental 🧠🧮
 
@@ -35,21 +41,19 @@ Então vamos ao meu modelo mental para o problema que está acontecendo:
 
 > Descrição do problema > hipótese de qual pode ser a causa desse problema > solução.
 
-##### Abstração
+# Abstração
 
-- Existe um `sistema de arquivos` na minha máquina local -- meus arquivos e pastas. 
-- Existe uma `representação de um sistema de arquivos` da cópia local do meu repositório -- onde o Git, de alguma forma mágica (e que não convém pra gente no momento), armazena o histórico de alterações da parte do meu `sistema de arquivos` que está sendo controlada pelo git.
+- Existe um `sistema de arquivos` na minha máquina local — meus arquivos e pastas. 
+- Existe uma `representação de um sistema de arquivos` da cópia local do meu repositório — onde o Git, de alguma forma mágica (e que não convém pra gente no momento), armazena o histórico de alterações da parte do meu `sistema de arquivos` que está sendo controlada pelo git.
 - Não está havendo uma `sincronização` entre ambos. Estou removendo um arquivo/pasta no meu `sistema de arquivos`, mas essa alteração não está refletindo na `representação de um sistema de arquivos` do Git.
 
-##### Hipótese
-
+### Hipótese
 > Agora, vou criar uma descrição do que eu acredito que está acontecendo, com base nos conceitos que eu modelei na minha abstração. Se algo ficar faltando, é sinal de que falta modelar mais algum conceito, ou propor uma nova modelagem que faça mais sentido.
 
 - Quando removo um arquivo no GitHub, de alguma forma ele sincroniza as alterações realizadas no `sistema de arquivos` e na `representação do sistema de arquivos` do git
 - Preciso encontrar uma forma de `sincronizar` meu `sistema de arquivos` e a `representação do sistema de arquivos` do git
 
-##### Solução 
-
+### Solução 
 - `rm arquivo.txt` remove um arquivo apenas no meu `sistema de arquivos`
 - `git rm --cached arquivo.txt` remove um arquivo apenas na `representação do sistema de arquivos` do git
 - `git rm arquivo.txt` remove um arquivo tanto no meu `sistema de arquivos` quanto na `representação do sistema de arquivos` do git
@@ -76,6 +80,15 @@ Daí você vai conseguir participar mais de igual pra igual, sugerindo mudanças
 Por isso que acredito que você dominar os detalhes da legislação do processo ou de cada cabelinho de requisito que ele possui não é a nossa maior necessidade, e por isso comentei que isso poderia ser usado como combustível.Se tivermos um modelo bem definido, voltando a pensar na analogia do corpo, cada detalhe vai ser atendido no seu momento devido, sem que isso prejudique a nossa compreensão do todo. 
 
 Por exemplo, até hoje o ser humano não entendeu muito bem como a própria cabeça funciona. Mas isso não o impede de criar abstrações do que é essa mente (vulgo psicologia) ou de realizar suas tarefas utilizando essa cabeça 
-Aqui vai ser a mesma coisa. A gente precisa ter um bom andamento da nossa modelagem mesmo sem entender completamente os detalhes de determinado requisito de antemão. Daí o Richard entra apoiando a gente com esse lado da coisa, enquanto a gente garante que o nosso modelo (tanto visual quanto conceitual) está suportando esses detalhes novos que vão surgindo
+Aqui vai ser a mesma coisa. A gente precisa ter um bom andamento da nossa modelagem mesmo sem entender completamente os detalhes de determinado requisito de antemão. Daí o Richard entra apoiando a gente com esse lado da coisa, enquanto a gente garante que o nosso modelo (tanto visual quanto conceitual) está suportando esses detalhes novos que vão surgindo.
+
+## Método de estudo do Fernandin 
+"Pra essas matérias muito teóricas tem algumas coisas que eu gosto de fazer.
+I. mprimir os slides e estudar fazendo anotações em cima deles: eu gosto de fazer isso porque eu não perco tempo escrevendo coisas e fica um estudo mais interativo.
+Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e ER, a ideia é todo mundo levar umas perguntas e ai cada vai respondendo. Acho uma maneira muito boa de revisar conteúdo, porque mtas vezes vc vai explicar as coisas e esse é o melhor jeito de internalizar informação.
+
+E uma que eu usava mais no vestibular era pegar um folha de papel e tentar escrever, sem ajuda de material, tudo que eu lembrava do conteúdo. Essa é boa porque força vc a espremer a informação. Quando vc ve que não tem nada mais pra escrever, vc confere com o material.
+
+Por fim, uma coisa que eu lembrei agora: complementação de conteúdo. Depois de eu ter terminado de ler os slides e estudar, eu gosto muito de ver uns conteúdos extras (livros, principalmente) pra eu me acostumar ainda mais com o conteúdo. Fiz isso em APSOO e Requisitos lendo o Engenharia de Software Moderna. Não precisa ESTUDAR a fundo, só ler normal mesmo. Vc vai vendo as informações e vai conectando com os slides e tudo fica muito mais natural. Essa é uma "técnica" que é boa se vc tiver tempo de sobra."
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=f2c438&height=120&section=footer"/>
