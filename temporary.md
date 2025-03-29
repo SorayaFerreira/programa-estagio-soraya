@@ -108,7 +108,6 @@ Ele tá olhando pra branch dev por ora, mas depois que tivermos uma branch main 
 Que é onde entramos no tal do CI, ou continuous integration. Que é garantir que nossas alterações se “integram” adequadamente ao restante do código
 Lint, testes, verificação do padrão de commits 
 
-
 ----
 9. Rastreabilidade
 Definição: Os requisitos devem ser identificáveis e rastreáveis para garantir consistência e manutenção futura.
@@ -139,3 +138,8 @@ Pra dar play de novo, você precisa setar tempoFim = tempoFim + (tempoFim - temp
 Sobre a parte do usuário cair, isso é um problema que não envolve apenas o timer, envolve todo o restante da comunicação com o usuário. 
 Nós podemos ter um endpoint WebSockets ou SSE que, enquanto o usuário autenticado como o Participante X esteja conectado a esse endpoint, ele é dado como vivo
 Pra esse tipo de coisa é melhor usar WebSockets, porque o usuário pode retornar periodicamente uma mensagem de "tô vivo", pra que você garanta que a conexão tá de pé e a aplicação dele tá funcional
+
+
+
+
+https://youtu.be/0t4_MfHgb_A?si=6G9HRXyqJyNvxYj7 

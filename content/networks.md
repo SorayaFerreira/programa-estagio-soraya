@@ -31,6 +31,7 @@ tags:
 - **Hub**: cada pacote enviado para uma porta é copiado para todas as outras. Ele é dispositivo mais estúpido da Rede de Computadores.
 - Não pode misturar cabos elétricos com cabos de rede comuns por causa do campo elétromagnético.
 - **Backbone**: é uma conexão física entre todos os hosts (segmentos e servidores) na rede.
+- ESR: é uma escola de redes de computadores. Eles têm um modelo de prática de rede.
 
 - Topologias:
     - **Barramento**: é a topologia mais básica. Ninguém usa mais.
@@ -83,19 +84,30 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 - Three-Way Handshake: SYN > SYN/ACK > ACK
 
 ## OSI - Open System Interconnection
-Foi criado em 1970
+- Cada camada não tem conhecimento da camada anterior.
+- Foi criado em 1970
+
 Camada:
 - Física: representado por algo que possa expressar 0s e 1s.
-- Enlace:
-- Rede: parte mais difícil. Tem **roteamento e **
-- Transporte: tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). Entrega de informações de forma confiável ou não.
-- Sessão:
-- Apresentação: é onde acontece a codificação 
-- Aplicação: acesso de fato aos dados pelo usuário. Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP),
-
+- Enlace: de dados se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. Ela gerencia quadros de dados, que são sinais digitais encapsulados em pacotes de dados. O controle de fluxo e o controle de erros de dados geralmente são os principais focos da camada de enlace de dados.
+- Rede: parte mais difícil. A camada de rede se preocupa com conceitos como roteamento, encaminhamento e endereçamento em uma rede dispersa ou em várias redes conectadas de nós ou de máquinas. A camada de rede também pode gerenciar o controle de fluxo.
+- Transporte: tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). Entrega de informações de forma confiável ou não. O foco principal da camada de transporte é garantir que os pacotes de dados cheguem na ordem correta, sem perdas nem erros, ou que possam ser recuperados sem complicações, se necessário. O controle de fluxo, em conjunto com o controle de erros, é frequentemente um foco na camada de transporte. Nessa camada, os protocolos comumente usados ​​incluem o Transmission Control Protocol (TCP), um protocolo baseado em conexão quase sem perdas, e o User Datagram Protocol (UDP), um protocolo sem conexão com perdas.
+- Sessão: A camada de sessão é responsável pela coordenação de rede entre duas aplicações separadas em uma sessão. Uma sessão gerencia o início e o término de uma conexão individual de aplicações e conflitos de sincronização. 
+- Apresentação: é onde acontece a codificação. Se preocupa principalmente com a sintaxe dos próprios dados para as aplicações enviarem e consumirem.
+- Aplicação: acesso de fato aos dados pelo usuário. Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP). A camada de aplicação se preocupa com o tipo específico da aplicação em si e seus métodos de comunicação padronizados. Por exemplo, navegadores podem se comunicar usando HyperText Transfer Protocol Secure (HTTPS), e clientes de e-mail e HTTP podem se comunicar usando POP3 (Post Office Protocol versão 3) e SMTP (Simple Mail Transfer Protocol).
 
 ## TCP/IP
 
 
+---
+QUESTÃO 1
+- ticket: aplicação
+- bagagem: sessão/apresentação
+- portão: transporte - determina a porta de origem e destino da comunicação
+- decolagem: rede -  determina os endereços IPs de onde saiu e para onde vai.
+- rota: enlace e fisíca
+
+QUESTÃO 2
+Saiu do source > foi encapsulado > foi convertido para uma sequência de 0s e 1s > foi passar pelo switch > o MAC address de destino é o roteador > o switch vai encontrar o MAC e copiar todos os bits pra essa porta específica > MACs iguais só dá conflito se estiverem numa mesma rede local > 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>

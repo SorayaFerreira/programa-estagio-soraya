@@ -35,14 +35,15 @@ Com base nisso, segue dois sites para auxílio na criação de modelos mentais p
 - [Refactoring.Guru](https://refactoring.guru/pt-br) com foco em padrões de código.
 - [Patterns for API Design](https://microservice-api-patterns.org/) com destaque para padrões arquiteturais.
 
+- Ensaio (tipo textual): é um texto que defende uma ideia. Pode-se iniciar com um evento trivial e apartir disso discursar sobre assuntos mais profundos.
+
 ### Exemplo de Modelo Mental by Lucas
 
 Então vamos ao meu modelo mental para o problema que está acontecendo:
 
 > Descrição do problema > hipótese de qual pode ser a causa desse problema > solução.
 
-# Abstração
-
+# Abstração 🏖️🍃
 - Existe um `sistema de arquivos` na minha máquina local — meus arquivos e pastas. 
 - Existe uma `representação de um sistema de arquivos` da cópia local do meu repositório — onde o Git, de alguma forma mágica (e que não convém pra gente no momento), armazena o histórico de alterações da parte do meu `sistema de arquivos` que está sendo controlada pelo git.
 - Não está havendo uma `sincronização` entre ambos. Estou removendo um arquivo/pasta no meu `sistema de arquivos`, mas essa alteração não está refletindo na `representação de um sistema de arquivos` do Git.
@@ -82,7 +83,7 @@ Por isso que acredito que você dominar os detalhes da legislação do processo 
 Por exemplo, até hoje o ser humano não entendeu muito bem como a própria cabeça funciona. Mas isso não o impede de criar abstrações do que é essa mente (vulgo psicologia) ou de realizar suas tarefas utilizando essa cabeça 
 Aqui vai ser a mesma coisa. A gente precisa ter um bom andamento da nossa modelagem mesmo sem entender completamente os detalhes de determinado requisito de antemão. Daí o Richard entra apoiando a gente com esse lado da coisa, enquanto a gente garante que o nosso modelo (tanto visual quanto conceitual) está suportando esses detalhes novos que vão surgindo.
 
-## Método de estudo do Fernandin 
+## Método de estudo do Fernandin 🧝‍♂️📚️
 "Pra essas matérias muito teóricas tem algumas coisas que eu gosto de fazer.
 I. mprimir os slides e estudar fazendo anotações em cima deles: eu gosto de fazer isso porque eu não perco tempo escrevendo coisas e fica um estudo mais interativo.
 Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e ER, a ideia é todo mundo levar umas perguntas e ai cada vai respondendo. Acho uma maneira muito boa de revisar conteúdo, porque mtas vezes vc vai explicar as coisas e esse é o melhor jeito de internalizar informação.
