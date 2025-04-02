@@ -13,6 +13,7 @@ tags:
 # Sumário
 - [Modelo Mental](#modelo-mental-)
 - [Abstração](#abstração)
+- [Método de Estudo do Fernandin](#método-de-estudo-do-fernandin-️️)
 
 
 # Modelo Mental 🧠🧮
