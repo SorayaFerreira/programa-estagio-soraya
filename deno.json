@@ -1,0 +1,6 @@
+{
+    "tasks": {
+      "install": "deno run -A --unstable-fs --unstable-net"
+    }
+  }
+  

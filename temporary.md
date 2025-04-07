@@ -48,38 +48,11 @@ chore Miscellaneous commits e.g. modifying .gitignore
 ---
 https://www.atlassian.com/git/tutorials/cherry-pick git cherry-pick
 
-
----
-- **O que é microdata? E para quê serve?** R.: É um conjunto de atributos que serve para especificar melhor o assunto dos conteúdos inseridos numa página com HTML.
-
-- **Como escrever microdata nos pitches? Passo a passo.** R.: 
-
-- **Atributos "itemtype" e "itemscope", "itemprop"? R**.: 
-	- O "itemscope" limita o "assunto", de um conjunto de tags (as aninhadas dentro do elemento que recebeu o itemscope). 
-	- Já o "itemtype" recebe uma URL (`https://schema.org/TipoDoConteudo`, ou `itemprop="url"`para sites de terceiros), indicando o tipo contido na tag raiz (com o itemscope). 
-	- O "itemprop" serve para definir propriedades do conteúdo (itemscope) que está incluso no conjunto de tags em questão, "Então aí ele tá mostrando que o tipo `BlogPosting` possui os atributos `headline`, `datePublished`, `url`, e `discussionUrl`. Tipo no nosso caso, onde o tipo `Processo` possui os atributos (derivados) `solicitacoes` e `propostas`. Tipo no nosso caso, onde o tipo `Processo` possui os atributos (derivados) `solicitacoes` e `propostas`".
- 
-- **O que é design token-based UI architecture?** R.: dá pra usar para geração de código automático. São decisões de design representadas como dados, sendo blocos de fundação para o design de sistemas. _São variáveis JSON  ou YAML que vão guardar padrões de design para diferentes elementos_.
-
 -------
 ### Astro Actions
 Mais simples do que endpoints normais: https://docs.astro.build/en/guides/actions/
 
 As actions vêm com validação e chamadas type-safe com forms.
-
-----
-### Atomic Design
-Atomos combinados juntos formam molécular. Moléculas combinadas podem se combinar e formar organismos complexos.
-Atomos são os blocos fundamentais de composição de toda matéria. Cada átomo tem suas propriedades, suas partes, e se ele for despedaçado, ele perde sua essência principal.
-- Atoms: labels, inputs, buttons etc
-- Molecules: form label, search input etc. 
-- Organism: diferentes tipos de moléculas unidas, ou uma mesma molécula repetida várias vezes dentro de um conjunto.
-- Templates: objetos de nível de página que colocam componentes em um layout e articulam a estrutura de conteúdo subjacente do design.
-![templates](https://atomicdesign.bradfrost.com/images/content/template.png)
-
-- Pages: instâncias de modelos que mostram a aparência de uma interface de usuário com conteúdo representativo real.
-
-
 
 ---
 #### CI/CD

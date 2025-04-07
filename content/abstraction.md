@@ -84,7 +84,7 @@ Por isso que acredito que você dominar os detalhes da legislação do processo 
 Por exemplo, até hoje o ser humano não entendeu muito bem como a própria cabeça funciona. Mas isso não o impede de criar abstrações do que é essa mente (vulgo psicologia) ou de realizar suas tarefas utilizando essa cabeça 
 Aqui vai ser a mesma coisa. A gente precisa ter um bom andamento da nossa modelagem mesmo sem entender completamente os detalhes de determinado requisito de antemão. Daí o Richard entra apoiando a gente com esse lado da coisa, enquanto a gente garante que o nosso modelo (tanto visual quanto conceitual) está suportando esses detalhes novos que vão surgindo.
 
-## Método de estudo do Fernandin 🧝‍♂️📚️
+# Método de estudo do Fernandin 🧝‍♂️📚️
 "Pra essas matérias muito teóricas tem algumas coisas que eu gosto de fazer.
 I. mprimir os slides e estudar fazendo anotações em cima deles: eu gosto de fazer isso porque eu não perco tempo escrevendo coisas e fica um estudo mais interativo.
 Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e ER, a ideia é todo mundo levar umas perguntas e ai cada vai respondendo. Acho uma maneira muito boa de revisar conteúdo, porque mtas vezes vc vai explicar as coisas e esse é o melhor jeito de internalizar informação.
@@ -92,5 +92,8 @@ Fazer call de perguntas com os amigos: comecei a fazer isso na prova de APSOO e 
 E uma que eu usava mais no vestibular era pegar um folha de papel e tentar escrever, sem ajuda de material, tudo que eu lembrava do conteúdo. Essa é boa porque força vc a espremer a informação. Quando vc ve que não tem nada mais pra escrever, vc confere com o material.
 
 Por fim, uma coisa que eu lembrei agora: complementação de conteúdo. Depois de eu ter terminado de ler os slides e estudar, eu gosto muito de ver uns conteúdos extras (livros, principalmente) pra eu me acostumar ainda mais com o conteúdo. Fiz isso em APSOO e Requisitos lendo o Engenharia de Software Moderna. Não precisa ESTUDAR a fundo, só ler normal mesmo. Vc vai vendo as informações e vai conectando com os slides e tudo fica muito mais natural. Essa é uma "técnica" que é boa se vc tiver tempo de sobra."
+
+# Engenharia de Software Baseada em Valor
+
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=f2c438&height=120&section=footer"/>
