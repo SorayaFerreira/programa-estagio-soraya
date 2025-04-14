@@ -1,3 +1,12 @@
+---
+title: bufunfa
+description: Conteúdo e Prática de Aprendizado com o sistema Bufunfa
+pubDate: Mar 17 2025
+tags:
+  - Pitch
+  - Shape-up
+---
+
 ## Problema
 
 - O conceito mais básico de um banco é de uma conta. Ela é a base para todos as demais: transações, empréstimos, crédito, etc.

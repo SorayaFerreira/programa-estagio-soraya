@@ -1,7 +1,18 @@
-# Gestão de Projetos
+---
+title: shape_up
+description: Conteúdos sobre o método Shape-up para gerência de um projeto de software
+pubDate: Mar 18 2025
+tags:
+  - Gestão de Projetos
+  - Shape up
+  - Pitch
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=c8a2c8&height=120&section=header"/>
+
+# Gestão de Projetos 🟪🟣
 O Shape Up é o framework utilizado para gerência desse projeto, visando organização e entrega de valor. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), todavia a seguir são descritos conceitos centrais que podem auxiliar a compreensão do método de maneira resumida.
 
-### Sumário
+### Sumário do Livro
 #### Shaping
 - **Principles of Shaping**: protótipos fiéis são concretos demais e limitam a criatividade; palavras são abstratas demais; é preciso ser crítico sobre o problema e sua solução. 
 - **Set Boundaries**: é o primeiro passo para iniciar o shaping. É decidido quanto tempo destinar à ideia original e como definir o problema.
@@ -27,7 +38,8 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Bet**: quando uma equipe decide conduzir um projeto sem interrupções durante um ciclo.
 - **Betting table**: parece a fase de planejamento da próxima sprint, do framework SCRUM.
 - **Big batch**: é o projeto em desenvolvimento.
-- **Breadboard**: conceito de IHC (Interação Humano-Computador) que define recursos e suas conexões, ainda sem estilizar.
+- **Breadboard**: conceito de IHC (Interação Humano-Computador) que define recursos e suas conexões, ainda sem estilizar. Abaixo, um exemplo.
+![Exemplo de breadboard](https://private-user-images.githubusercontent.com/7810622/395410116-bb3df5d1-1498-445b-af22-65dceb04b0b0.svg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg5MzI1NzMsIm5iZiI6MTczODkzMjI3MywicGF0aCI6Ii83ODEwNjIyLzM5NTQxMDExNi1iYjNkZjVkMS0xNDk4LTQ0NWItYWYyMi02NWRjZWIwNGIwYjAuc3ZnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMDdUMTI0NDMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODFhNzVkMjA3NzZkMDAwYjk0MDgyYmY1Y2JhOTQ2OTE1MTM2ZTFhNjkxYzYxZWE3NmEzMWQzYmZmMzZmMDU0NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ._wDMLXiVMMTEansfTKgvwfj5FbQI5_DXSr7rI9Enk0A)
 - **Circuit breaker**: é uma técnica para lidar com riscos. Ao invés de prolongar um projeto para mais de um ciclo, ele deve ser cancelado.
 - **Cleanup mode**: é um tempo reservado na fase final para resolver tudo que precisa de reparo antes de lançar o produto.
 - **Cool-down**: é um intervalo de duas semanas entre os ciclos para ser aproveitado conforme o necessário.
@@ -43,7 +55,7 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Level of abstraction**: nível de abstração.
 - **Must-haves**: critérios de aceite, definição de pronto.
 - **Nice-to-haves**: são tarefas marcadas com um ‘~’ no início. Elas são deixadas para o final do ciclo e, se não forem concluídas com sucesso, são canceladas.
-- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto
+- **Pitch**: é um documento que fica no betting table que apresenta a modelagem de uma ideia de projeto.
 - **Production mode**: fase em que a arquitetura (de software) está definida e o Shape Up é aplicado.
 - **Rabbit hole**: é uma parte do projeto extremamente complexa, difícil, de escopo aberto.
 - **R&D mode**: fase de definição da arquitetura de software.
@@ -55,3 +67,21 @@ O Shape Up é o framework utilizado para gerência desse projeto, visando organi
 - **Small batch**: é a entrega que ocorre no intervalo de uma a duas semanas entre os ciclos.
 - **Time horizon**: é o prazo final.
 - **Uphill**: fase anterior ao downhill, quando ainda há incógnitas não desvendadas.
+
+### Fazendo um Bom Pitch
+> A essência de um bom pitch.
+- Reconhece as limitações atuais, indicando o que seria possível em um cenário sem essas limitações;
+- Tem uma base teórica bem forte. Em outras palavras, um modelo mental bem definido (quais são os conceitos, padrões, abstrações, atores e coisas do problema/solução);
+- Propõe uma solução muito bem explicada, facilitando muito a compreensão e trabalho do responsável pela implementação.
+
+> Um bom pitch geralmente é relevante, simples e completo:
+- Relevante, porque ele deve surgir dentro de um contexto importante e/ou introduzir um contexto importante (porque esse problema é uma dor do cliente/da equipe de desenvolvimento)
+- Simples, pelo princípio da navalha de Ockham: geralmente, a solução mais simples é a mais provável;
+- Completo, porque uma solução precisa de fato atender o problema central e todos os demais que o pitch menciona.
+
+Definição de PITCH com outras palavras: 
+> "Um pitch é uma apresentação detalhada de uma parte do sistema. Você precisa explicar para o resto da equipe porque aquela parte do sistema é importante, como ela deve funcionar e interagir com as outras partes com as quais se relaciona. Às vezes, isso significa apresentar alguns relacionamentos do banco, atores e casos de uso, diagramas, etc."
+
+A Cento Software utiliza um campo a mais na definição de pitches, que o **escopo**. Ele serve tanto para indicar o que está incluso no pitch e o que ele delega para outros pitchs, quanto a quais outros pitches ele está ligado, garantindo assim a conexão entre as partes do que estamos fazendo.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=c8a2c8&height=120&section=footer"/>

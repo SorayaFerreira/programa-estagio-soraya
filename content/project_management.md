@@ -1,8 +1,37 @@
+---
+title: project_management
+description: Conteúdos sobre Gerência de Projetos
+pubDate: Mar 18 2025
+tags:
+  - Metodologias de Desenvolvimento
+  - Test Driven Development
+  - TDD
+  - Scrum
+  - Cascata
+  - Modelo Incremental
+  - Processo
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=header"/>
+
+# Sumário
+- [Metodologias de Desenvolvimento](#metodologias-de-desenvolvimento-)
+- [Processos](#processos)
+- [Test Driven Development (TDD)](#test-driven-development-tdd)
+- [Scrum](#scrum)
+- [Cascata](#cascata)
+- [Modelo Incremental](#modelo-incremental)
+
 # Metodologias de Desenvolvimento ⚙📈
 Métodologias de Desenvolvimento são técnicas utilizadas no processo de desenvolvimento de software. O "X Drive Development" refere-se à prioridade na construção do projeto:
 - **Feature Driven Development**: todas as features devem ser implementadas, mesmo que a data precise ser adiada.
 - **Cost Driven Development**: ao final do orçamento deve haver um produto útil, mesmo que o dinheiro tenha já acabado.
 - **Date Driven Development**: prioriza a data de entrega em detrimento de implementar todas as features e passar em todos os testes.
+
+# Processos
+
+> [Engenharia Moderna](https://engsoftmoderna.info/cap2.html#import%C3%A2ncia-de-processos).
+
+Um processo de desenvolvimento de software define um conjunto de passos, tarefas, eventos e práticas que devem ser seguidos por desenvolvedores de software, na produção de um sistema. Sem um processo — mesmo que simplificado e leve, como os processos ágeis que estudaremos neste capítulo — existe o risco de que os times de desenvolvimento passem a trabalhar de forma descoordenada, gerando produtos sem valor para o negócio da empresa. Por fim, processos são importantes não apenas para a empresa, mas também para os desenvolvedores, pois permitem que eles tomem consciência das tarefas e resultados que se esperam deles. Sem um processo, os desenvolvedores podem se sentir perdidos, trabalhando de forma errática e sem alinhamento com os demais membros do time.
 
 ## Test Driven Development (TDD)
 Este é um método de desenvolvimento de software que, como sugere o próprio nome, prioriza a fase de testes do software, valorizando a qualidade do software e os testes. Tal metodologia pode ser resumida em uma imagem, um ciclo chamado Red-Green-REfactor. A seguir, a descrição do passo a passo.
@@ -61,7 +90,4 @@ Esse modelo de processo é conhecido também como "Ciclo de Vida Clássico". É 
 ### Modelo Incremental
 Já esta metodologia busca dividir o processo em ciclos, sendo que, em cada ciclo, existem as fases de Análise, Projeto, Implementação e Testes. A cada ciclo é entregue uma parte pronta, funcional do produto.
 
-### Tipos de Testes
-- Testes unitários: testa uma parte individual do sistema, como funções, procedimentos ou módulos.
-- Testes de integração: testa agrupamentos de módulos, componentes.
-- Testes funcionais: testa funcionalidades, recursos e usabilidade, conferindo os requisitos.
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=footer"/>

@@ -1,3 +1,15 @@
+---
+title: advanced_dev_tech
+description: Conteúdo sobre Técnicas Avançadas de Desenvolvimento de Software
+pubDate: Mar 17 2025
+tags:
+  - Virtualização
+  - Containers
+  - Docker
+  - Variáveis de Ambiente
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=header"/>
+
 # Virtualização 🆚 Containers
 Ambos são tecnologias que auxiliam a configuração de servidores.
 
@@ -17,7 +29,7 @@ Os **containers** empacotam software de forma que seja  possível executá-lo na
 
 ## Docker 🐳🐋
 
-O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, os containers são ambientes de [runtime](../programming_languages/runtimes.md) com tudo que é preciso para rodar o código da aplicação de forma independente. Ele apresenta a **Engine**, entidade responsável por criar, executar e gerenciar os containers.
+O Docker é uma plataforma que viabiliza a virtualização em containers. Nele, os containers são ambientes de [runtime](../programming_languages/backend_javascript.md) com tudo que é preciso para rodar o código da aplicação de forma independente. Ele apresenta a **Engine**, entidade responsável por criar, executar e gerenciar os containers.
 
 ![Logo Docker Compose](https://miro.medium.com/v2/resize:fit:1400/0*yKUZfT6P10SAIWNy.jpg)
 
@@ -53,3 +65,5 @@ food:
 
 ### Variáveis de Ambiente
 São cadeias de caracteres (strings) que usualmente guardam dados de configuração de aplicações, sendo utilizadas pela própria aplicação durante o funcionamento. Elas podem ser aplicadas em containers do Docker, quando é preciso realizar uma configuração dinâmica, ou para registrar dados sensíveis, como senhas. Para tanto, arquivos com extensão `.env` são definidos para que o Docker leia com prioridade, contudo essas variáveis podem ser descritas em outros documentos como o dockerfile.
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>

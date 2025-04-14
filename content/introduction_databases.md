@@ -1,3 +1,23 @@
+---
+title: introduction_databases
+description: Introdução a Banco de Dados
+pubDate: Mar 17 2025
+tags:
+  - Banco de Dados
+  - Databases
+  - ACID
+  - PostgreSQL
+  - SQLite
+  - MongoDB
+  - Firestone(Firebase)
+  - Supabase
+  - Redis
+  - DER
+  - Mermaid
+  - SQL
+---
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=8a0303&height=120&section=header"/>
+
 # Introdução a Bancos de Dados 🪑🎲
 
 Bancos de dados compõem um conjunto de dados relacionados organizados em um sistema computacional e administrados por um Sistema de Gerenciamento de Banco de Dados (SGBD). Eles são utilizados para armazenar dados ou informações para serem consultados ou alterados posteriormente.
@@ -14,8 +34,6 @@ Uma `transação` é um conceito fundamental, definido como uma unidade de execu
 - **Consistência**: garante que, após a transação, o banco de dados mudará de um estado válido para outro estado também válido, consistente. Isso ocorre a partir da definição de restrições, cascades, triggers, dentre outras regras.
 - **Isolamento**: certifica que múltiplas transações poderão ocorrer simultaneamente, seguindo os outros três princípios ACID, sem que uma transação interfira na execução de outra.
 - **Durabilidade**: é confirmar que, uma vez que a transação foi solicitada, mas não pode ser completada, todas as atualizações de outras transações não são perdidas.
-
-
 
 ---
 ### Exemplos de SGBDs
@@ -37,7 +55,7 @@ Mecanismo de Banco de Dados autocontido, integrado, completo, de domínio públi
 O Mongo é um SGBD de código aberto orientado a documentos, armazenando objetos altamente tipados, logo, serve para bancos de dados não relacionais. Foi inicialmente desenvolvido pela empresa `10gen` em 2007, mas somente a partir de 2009 focou em mantê-lo. Ele é recomendado quando usuários que precisam consultar dados de tipos variádos, os dados são não estruturados, há mais flexibilidade, precisa-se de melhor desempenho e disponibilidade como prioridade. 
 
 
-#### Firestone(Firebase) e Supabase 🗃🔥
+## Firestone(Firebase) e Supabase 🗃🔥
 
 O Firestone o sistema que funciona por trás do framework Firebase da Google. Trata-se de um banco de dados NoSQL em nuvem, recomendado quando exige-se alta flexibilidade dos dados e integração com os serviços da Google. 
 
@@ -158,3 +176,5 @@ FROM exemplo_tabela
 WHERE idade > 25;
 
 ```
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=8a0303&height=120&section=footer"/>
