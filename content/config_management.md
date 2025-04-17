@@ -7,11 +7,11 @@ tags:
   - Semantic Versioning
   - Git
   - GitHub
+  - Conventional Commits
 ---
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=8a0303&height=120&section=header"/>
 
 # Git Flow 🔴🠒🟢
-
 Foi criado em 2010 pelo holandês Vincent Driessen. Trata-se de uma estratégia de workflow utilizada para organizar o versionamento de código no repositório, mantendo a segurança. Para compreendê-lo mais  facilmente, é possível visualizá-lo como uma árvore e seu ramos, isto é, um grafo.
 
 A branch master é a faz o intermédio entre o repositório e o servidor de produção. Como não é recomendado fazer commit de correção de bugs diretamente na master, são criadas algumas branches. Nessa perspectiva, o intuito do Git Flow é evitar conflitos quando há vários programadores trabalhando no mesmo projeto. Então, sempre que é necessário adicionar uma feature ou corrigir um bug, cria-se uma branch (ramificação).
@@ -49,31 +49,23 @@ gitGraph TB:
     merge main
 ```
 
------
-
 # Padrões de Versionamento 🏗
-
 Os padrões de versionamentos visam gerenciar mudanças significativas nas aplicações, seguindo certa hierarquia.
 A seguir, são apresentados alguns padrões e comparações entre eles.
 
-
 ## Semantic Versioning
-
 Esta é a padronização mais utilizada, visto que é de fato sucinta, clara e abrangente, sendo capaz de representar a maioria dos projetos, na minha opinião.
 
 Funciona da seguinte forma, segundo a própria especiaficação:
-
-
-"Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
-- versão Maior(MAJOR): quando fizer mudanças incompatíveis na API,
-- versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade, e
-- versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
+>" Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
+> - versão Maior(MAJOR): quando fizer mudanças incompatíveis na API,
+> - versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade, e
+> - versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
 Rótulos adicionais para pré-lançamento(pre-release) e metadados de construção(build) estão disponíveis como extensão ao formato MAJOR.MINOR.PATCH."
 
 [TEXTO COMPLETO AQUI](https://semver.org/lang/pt-BR/)
 
 ## CalVer 📆
-
 O CalVer baseia-se em datas para realizar o versionamento, prevendo versões com data específica (formato AAAA.MM.DD), versões mensais (formato AAAA.MM) e versões semanais (formato AAAA.SS). Tal padrão atende necessidades muito específicas em contextos que têm as datas como algo significativo.
 
 É comparado ao SemVer por prever números inteiros separados por ponto.
@@ -88,10 +80,20 @@ Este é um esquema de versionamento que utiliza números de ponto flutuante não
 
 É um padrão menos específico que o SemVer e utiliza números float, ao invés de inteiros.
 
------
+# Conventional Commits
+Alguns tipos de commits:
+- feat: that add or remove a new feature to the API or UI
+- fix: that fix a API or UI bug of a preceded feat commit
+- ref: that rewrite/restructure your code, however do not change any API or UI behaviour
+- perf: are special refactor commits, that improve performance
+- style: that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
+- test: that add missing tests or correcting existing tests
+- docs: that affect documentation only
+- build: that affect build components like build tool, ci pipeline, dependencies, project version, ...
+- ops: that affect operational components like infrastructure, deployment, backup, recovery, ...
+- chore: commits e.g. modifying .gitignore
 
 # Anotações sobre Git e GitHub 😼🐙
-
 Git é uma técnica de versionamento de código criada por Linus torvalds. Ela permite que os desenvolvedores acompanhem as mudanças no código fonte ao longo do tempo, mantendo um histórico de todas as mudanças, versões criadas, ramificações, entre outros dados. É necessário, para utilizar localmente, instalar e configurar o Git Bach na máquina.
 Já o Github é uma plataforma hospedada em nuvem que permite a manipulação com Git de maneira remota e compartilhada.
 
@@ -158,7 +160,7 @@ git pull
 - **Resolvendo conflitos**: 
 > Eu gravei um vídeozinho resolvendo um conflito no git manualmente.
 
-> ![vídeo](./Solve_Conlict_GIT.mp4)
+> ![vídeo](../media/Solve_Conlict_GIT.mp4)
 
 > Mas o processo é basicamente rodar `git pull origin [branch de origem da PR]` na branch que você tá tentando realizar a PR com conflito.
 > Nesse caso eu estava na `feat/centobank-transacao`, então foi `git pull origin dev`. Por que a dev é a "branch de origem" da minha branch. 1. Daí quando você faz isso o git exibe no terminal o processo de tentar realizar o merge automático das alterações. Mas em alguns casos ele não vai conseguir, e vai reclamar com "CONFLICT". Então você vai passando por cada um desses arquivos, onde você vai encontrar trechos de código marcados com [1] a versão que você estava trabalhando (current) e [2] a versão que está vindo da atualização que você está tentando fazer (incoming). O seu papel é decidir qual das duas vai manter. No VSCode tem uma extensão muito boa pra dar uma força nessas coisas, que é o [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) mas é legal que você saiba fazer manualmente também. Finalizado tudo, é só dar o `git add` de sempre e um `git commit` sem `-m` mesmo, que o próprio git já vai preencher a mensagem com a mensagem padrão de merge ("Merge branch 'dev' github.com:cento-software/bufunfa into ..."). Daí quando você faz isso o git exibe no terminal o processo de tentar realizar o merge automático das alterações. Mas em alguns casos ele não vai conseguir, e vai reclamar com "CONFLICT". A chave é acompanhar cada um dos CONFLICTs direitinho pra não deixar nada passar. O ideal é sempre testar depois de um merge desse pra garantir que você não deixou nenhum conflito pra resolver. Quando você já sabe o que precisa manter e o que não, fica bem mais fácil. Nesse caso aí, eu sabia que a maioria das novidades era por causa do merge da parte de authn na dev. Então foi só aceitar as alterações nos repositories e nas páginas/endpoints de autenticação e reorganizar os scripts do banco.

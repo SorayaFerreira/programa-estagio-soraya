@@ -49,10 +49,37 @@ Mandriva), derivados do Debian (Ubuntu, Kubuntu, Linux Mint), e os derivados do 
 
 - Os módulos nada mais são do que os arquivos, que são armazenados dentro da pasta `/lib/modules/versão_do_kernel`. 
 - Três coisas para instalar: pacotes kernel-source e kernel-headers, e o compilador gcc.
+
+- **Wayland**: é um Protocolo de Servidor de Exibição.
+
+# Debian
+├── 🎯 Objetivo
+│   └── Ser o "Sistema Operacional Universal"
+├── 📜 Princípios
+│   ├── Debian Free Software Guidelines (DFSG)
+│   └── Contrato Social do Debian
+│       ├── 100% Software Livre (por padrão)
+│       ├── Transparência total
+│       ├── Colaboração com a comunidade livre
+│       └── Separação clara entre software livre e não-livre
+├── 👥 Comunidade
+│   ├── Projeto voluntário e democrático
+│   ├── Eleição anual de líder (DPL)
+│   └── Decisões por consenso e votação
+├── ⚙️ Desenvolvimento
+│   ├── Aberto e transparente
+│   ├── Código-fonte sempre disponível
+│   └── Qualidade e estabilidade priorizadas
+└── 💡 Filosofia Prática
+    ├── Liberdade de escolha
+    ├── Estabilidade acima da vanguarda
+    ├── Extensa documentação
+    └── Base para outras distros (Ubuntu, Kali, etc.)
+
   
 ## **Diretórios** 🗂️📂
 
-O diretório raiz tem as pastas do sistema e espera-se nossos arquivos pessoais sejam armazenados no diretório /home. 
+O diretório raiz tem as pastas do sistema e espera-se que nossos arquivos pessoais sejam armazenados no diretório /home. 
 Os discos e as partições não aparecem necessariamente como unidades diferentes. 
 Tudo faz parte de um diretório raiz chamado “/”.
 
