@@ -124,4 +124,11 @@ Camada:
 - Conversor de mídia: é um dispositivo que converte um tipo de sinal em outro. P. ex.: o access point, que converte as ondas eletromagnéticas em sinais elétricos. 
 - Tem um negócio chamado **Powerline**, que se conecta na tomada. É uma boa alternativa para repetidores, já que repetidores são uma bosta.
 
+
+# Firewall
+- Mecanismo da rede
+- Firewall stateless: tem que existem uma regra do firewall falando 
+- Firewall statefull: é mais esperto, porque ele faz uso da comunicação TCP. 
+- DHCP: 
+
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
