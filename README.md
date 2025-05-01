@@ -10,7 +10,7 @@ Assim como num jardim sistematicamente ordenado – com canteiros definidos, pos
 
 <div align="center"><img alt="Imagem de vasos de planta organizados" src="https://images.pexels.com/photos/15239212/pexels-photo-15239212/free-photo-of-potted-cacti-and-succulents-on-display.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px"></div>
 
-Recomendamos a utilização da extensão [Foam](https://foambubble.github.io/foam/) para melhor aproveitamento do repositório. Um recurso que ela oferece é a visualização gráfica do conteúdo.
+Recomendamos a utilização da extensão [Foam](https://foambubble.github.io/foam/) para melhor aproveitamento do repositório. Um recurso que ela oferece é a visualização gráfica do conteúdo, como pode ser visto a seguir.
 
 ![texto](./media/foam_graph.gif)
 

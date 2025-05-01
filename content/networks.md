@@ -11,6 +11,10 @@ tags:
 - [Redes de Computadores](#redes-de-computadores)
 - [Proxy](#proxy)
 - [Protocolo HTTP](#protocolo-http-)
+- [Protocolos de Rede](#protocolos-de-rede-)
+- [Cabos](#cabos---comunicação-física)
+- [Firewall](#firewall)
+- [Algoritmos de Roteamento](#algoritmos-de-roteamento)
 
 # Redes de Computadores 🌐🪄
 - Rede é um conjunto de coisas interconectadas.
@@ -113,7 +117,7 @@ Camada:
 ## MONOMODO E MULTIMODO SÃO OS MAIS USADOS!!!!!!!!1111
 
 
-## Cabos - Comunicação Física
+# Cabos - Comunicação Física
 - Cabo coaxial: é o mais antigão. Um usa PVC, outro usa cerâmica, ou pode ser de teflon também. Ele tem uma blindagem que evita interferência eletromagnética.
 - Par trançado: muito utilizado em empresa. É o mais barato.
 - Fibra ótica: aquele que usa uma fibra transparente que se aproveita do fenômeno da refração da luz. Não sofre de interferência.
@@ -124,11 +128,26 @@ Camada:
 - Conversor de mídia: é um dispositivo que converte um tipo de sinal em outro. P. ex.: o access point, que converte as ondas eletromagnéticas em sinais elétricos. 
 - Tem um negócio chamado **Powerline**, que se conecta na tomada. É uma boa alternativa para repetidores, já que repetidores são uma bosta.
 
-
 # Firewall
-- Mecanismo da rede
+- Mecanismo da rede que faz com que todo tráfegode saída ou de entrada é feito através de uma ponte elevadiça (o firewall). 
+- Ele atua como um filtro de pacotes, inspecionado todo pacote que entra e sai das LANs, de acordo com algum critério formulado formulado pelo adm.
+- O firewalls são vulneráveis também porque eles violam a separação de camadas, dos protocolos de rede. Eles agem na camada de rede, porém precisam analisar as camadas de transporte e de aplicação.
+- A fraqueza do firewall é que os administradores da rede desejam segurança, mas não podem cortar a comunicação com o mundo exterior.
+- A DMZ (Zona Desmilitarizada) é uma parte da rede da empresa que se encontra fora da segurança. Então, os computadores acessam a internet por aí, mas os firewalls impedem a entrada de qualquer coisa estranha pela porta 80.
 - Firewall stateless: tem que existem uma regra do firewall falando 
 - Firewall statefull: é mais esperto, porque ele faz uso da comunicação TCP. 
-- DHCP: 
+- DHCP (Dynamic Host Configuration Protocol): o protocolo de configuração dinâmica de host serve para configurar os hosts com suas informações básicas, atendendo ao ARP e outros protocolos da internet.  
+
+# Algoritmos de Roteamento
+
+
+
+## Algoritmo Heap
+- É um protocolo baseado em inundação.
+- É preciso dizer exatamente como a rede está sendo inundada.
+- Tem umas tabelas pra preencher.
+- Cada um dos roteadores tem uma tabela local.
+- Tem alguma coisa que é a gente que define a ordem, e que precisa ser explicitado no exercício, para que a resposta final seja avaliada.
+- 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
