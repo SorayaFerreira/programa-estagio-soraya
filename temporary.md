@@ -89,3 +89,5 @@ Pra esse tipo de coisa é melhor usar WebSockets, porque o usuário pode retorna
 
 
 https://youtu.be/0t4_MfHgb_A?si=6G9HRXyqJyNvxYj7 
+
+

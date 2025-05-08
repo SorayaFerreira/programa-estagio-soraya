@@ -1,14 +1,15 @@
 ---
-title: networks
-description: Conteúdo sobre Redes de Computadores
-pubDate: Mar 17 2025
+title: articles
+description: Conteúdo sobre Artigos
+pubDate: May 02 2025
 tags:
-  - Redes Computadores
+  - Artigos
+  - Value Based
 ---
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=aa2299&height=120&section=header"/>
 
 # Sumário
-- [Software Engineering: A Case Study](#redes-de-computadores)
+- [Software Engineering: A Case Study](#software-engineering-a-case-study)
 
 # Software Engineering: A Case Study
 

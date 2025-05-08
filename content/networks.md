@@ -16,7 +16,53 @@ tags:
 - [Firewall](#firewall)
 - [Algoritmos de Roteamento](#algoritmos-de-roteamento)
 
-# Redes de Computadores 🌐🪄
+# Conteúdo da P1
+**1. Fundamentos da Internet**  
+- O que é a Internet? 
+- Periferia e núcleo da rede 
+- Atraso, perda e vazão em redes  
+- **Propósito e propriedades de roteamento e comutação** 
+- **Domínio de colisão e broadcast** 
+
+**2. Modelos de Camadas**  
+- Camadas de protocolo (OSI vs. TCP/IP) 
+- **Camadas do modelo OSI** (física, enlace, rede, transporte, sessão, apresentação, aplicação) 
+- **Quadros (camada 2), pacotes (camada 3)**
+
+**3. Dispositivos de Rede**  
+- **Switch** (camada 2), **switch multicamadas** (camada 3), **roteador** (camada 3), **hub** (camada 1) 
+- **Gerenciados vs. não gerenciados** 
+
+**4. Camada de Aplicação**  
+- Princípios de aplicações de rede   
+- HTTP e Web  
+- E-mail (SMTP, POP3, IMAP) 
+- DNS e seus componentes  
+- **DNS dinâmico** 
+- Aplicações P2P 
+
+**5. Camada de Transporte**  
+- TCP e UDP 
+- Multiplexação/demultiplexação 
+- Transferência confiável de dados   
+
+**6. Gerenciamento e Segurança**  
+- Redes sob ameaça 
+- **Filtro de tráfego e diagnósticos**  
+- **Funcionamento e propriedades do DHCP**  
+
+**7. Tópicos Adicionais**  
+- História da Internet 
+
+**Sugestão de Ordem de Estudo**  
+1. Comece com **modelos OSI/TCP/IP** e **dispositivos de rede** (roteador vs. switch).  
+2. Entenda **DNS** (incluindo dinâmico) e **DHCP** (são cobrados juntos em provas).  
+3. Revise **TCP/UDP** e **controle de congestionamento**.  
+4. Pratique cálculos de **atraso e vazão**.  
+5. Explore **domínios de colisão/broadcast** (relacionado a switches/redes locais). 
+----
+
+# Anotações Introdutórias 🌐🪄
 - Rede é um conjunto de coisas interconectadas.
 - Toda máquina conectada à rede é um **host**. Também é qualquer coisa que usa o TCP/IP.
 - LAN (Local Area Network): sua casa, uma faculdade, uma pequena empresa.
@@ -42,6 +88,8 @@ tags:
     - **Anel**: tem o formato de um ciclo. Esse aqui ninguém usa mais. 
     - **Malha**: cada host fica ligado em todas as máquinas. `[n*(n-1)]/2` para saber o número de cabos pra cada máquina.
     - **Ponto-a-ponto/Ponto-a-Multiponto**: a conexão é direta, um dispositivo ligado diretamente a outro 
+
+-**DNS**: é um sistema distribuído e hierarquico. Há dois tipos de domínio: os de primeiro nível e de segundo nível. Os de 1o nível são os dos países, os ccTLDs. Os de 2o nível são os autoritativos, p. ex., `.com`, `.org`, `.bio`, `.edu`.
 
 ## Proxy
 ![O que é um proxy](https://testrigor.com/wp-content/uploads/2023/11/How-to-Find-Proxy-Settings.jpeg)
@@ -85,25 +133,61 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 - Estude o algoritmo do **Dijkstra**.
 - A gente envia número com little-engine para a rede, mas antes disso o sistema precisa converter para big-engine.
 - Three-Way Handshake: SYN > SYN/ACK > ACK
+- **Protocolo** é um conjunto de regras para computadores e outros dispositivos conversarem entre si.
+
 
 ## OSI - Open System Interconnection 🪄🛜
 - Cada camada não tem conhecimento da camada anterior.
 - Foi criado em 1970
 
-Camada:
-- **Física**: representado por algo que possa expressar 0s e 1s.
+![sequência do transporte de pacotes pelas camadas TCP](../media/image.png)
 
-- **Enlace**: de dados se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. Ela gerencia quadros de dados, que são sinais digitais encapsulados em pacotes de dados. O controle de fluxo e o controle de erros de dados geralmente são os principais focos da camada de enlace de dados. Faz a transmissão dos quadros de dados; converte bytes em quadros; usa endereço **MAC**.
+- Listagem das camadas, a seguir:
 
-- **Rede**: parte mais difícil. A camada de rede se preocupa com conceitos como roteamento, encaminhamento e endereçamento em uma rede dispersa ou em várias redes conectadas de nós ou de máquinas. A camada de rede também pode gerenciar o controle de fluxo. Faz o roteamento dos dados na rede; é tipo um GPS. Determina o endereço lógico (IP) de cada equipamento e o melhor caminho para chegar ao destinho. Usa algoritmos de roteamento.
+### Física
+representado por algo que possa expressar 0s e 1s.
 
-- **Transporte**: tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). Entrega de informações de forma confiável ou não. O foco principal da camada de transporte é garantir que os pacotes de dados cheguem na ordem correta, sem perdas nem erros, ou que possam ser recuperados sem complicações, se necessário. O controle de fluxo, em conjunto com o controle de erros, é frequentemente um foco na camada de transporte. Nessa camada, os protocolos comumente usados ​​incluem o Transmission Control Protocol (TCP), um protocolo baseado em conexão quase sem perdas, e o User Datagram Protocol (UDP), um protocolo sem conexão com perdas. Percorre o caminho determinado pela camada de rede.
+### Enlace de dados
+- se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. 
+- Ela gerencia quadros de dados, que são sinais digitais encapsulados em pacotes de dados. 
+- O controle de fluxo e o controle de erros de dados geralmente são os principais focos da camada de enlace de dados.
+- Faz a transmissão dos quadros de dados; converte bytes em quadros; usa endereço **MAC**.
+- Transporta dados entre dois dispositivos de rede.
 
-- **Sessão**: A camada de sessão é responsável pela coordenação de rede entre duas aplicações separadas em uma sessão. Uma sessão gerencia o início e o término de uma conexão individual de aplicações e conflitos de sincronização. Estabele, gerencia e encerra sessões de interação. Garante o controle de diálogo e comunicação.
+### Rede
+- parte mais difícil. 
+- A camada de rede se preocupa com conceitos como roteamento, encaminhamento e endereçamento em uma rede dispersa ou em várias redes conectadas de nós ou de máquinas. 
+- A camada de rede também pode gerenciar o controle de fluxo. Faz o roteamento dos dados na rede; é tipo um GPS. 
+- Determina o endereço lógico (IP) de cada equipamento e o melhor caminho para chegar ao destinho. 
+- Usa algoritmos de roteamento.
+- transporta os pacotes de um host para o outro
 
-- **Apresentação**: é onde acontece a codificação. Se preocupa principalmente com a sintaxe dos próprios dados para as aplicações enviarem e consumirem. Lida com a representações dos dados, sendo responsável por sintaxe e semântica das informações. Isso pode incluir a compressão ou a criptografia de dados.
+### Transporte
+- tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). 
+- Entrega de informações de forma confiável ou não. 
+- O foco principal da camada de transporte é garantir que os pacotes de dados cheguem na ordem correta, sem perdas nem erros, ou que possam ser recuperados sem complicações, se necessário. 
+- O controle de fluxo, em conjunto com o controle de erros, é frequentemente um foco na camada de transporte. 
+- Nessa camada, os protocolos comumente usados ​​incluem o Transmission Control Protocol (TCP), um protocolo baseado em conexão quase sem perdas, e o User Datagram Protocol (UDP), um protocolo sem conexão com perdas. Percorre o caminho determinado pela camada de rede.
+- transporta mensagens da camada de aplicação de um processo para o outro.
+- Pega uma mensagem da camada de aplicação e inclui algumas informações adicionais dentro dessa mensagem para criar uma nova unidade de protocolo.
 
-- **Aplicação**: acesso de fato aos dados pelo usuário. Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP). A camada de aplicação se preocupa com o tipo específico da aplicação em si e seus métodos de comunicação padronizados. Por exemplo, navegadores podem se comunicar usando HyperText Transfer Protocol Secure (HTTPS), e clientes de e-mail e HTTP podem se comunicar usando POP3 (Post Office Protocol versão 3) e SMTP (Simple Mail Transfer Protocol).
+### Sessão
+- A camada de sessão é responsável pela coordenação de rede entre duas aplicações separadas em uma sessão. 
+- Uma sessão gerencia o início e o término de uma conexão individual de aplicações e conflitos de sincronização. 
+- Estabele, gerencia e encerra sessões de interação. 
+- Garante o controle de diálogo e comunicação.
+
+### Apresentação
+- é onde acontece a codificação.
+- Se preocupa principalmente com a sintaxe dos próprios dados para as aplicações enviarem e consumirem. 
+- Lida com a representações dos dados, sendo responsável por sintaxe e semântica das informações. 
+- Isso pode incluir a compressão ou a criptografia de dados.
+
+### Aplicação
+- acesso de fato aos dados pelo usuário. 
+- Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP). 
+- Oferece suporte a **HTTP, IMAP, SMTP E DNS**. São serviços que controlam o envio e o recebimento de mensagens.
+- A camada de aplicação se preocupa com o tipo específico da aplicação em si e seus métodos de comunicação padronizados. Por exemplo, navegadores podem se comunicar usando HyperText Transfer Protocol Secure (HTTPS), e clientes de e-mail e HTTP podem se comunicar usando POP3 (Post Office Protocol versão 3) e SMTP (Simple Mail Transfer Protocol).
 
 ## TCP/IP 📡
 - **Aplicação:**
@@ -113,7 +197,6 @@ Camada:
 - **Física:**
 
 
-## Padrões 568A e 568B CAI NA PROVA!!!!!!!!!!!!1
 ## MONOMODO E MULTIMODO SÃO OS MAIS USADOS!!!!!!!!1111
 
 
@@ -134,13 +217,12 @@ Camada:
 - O firewalls são vulneráveis também porque eles violam a separação de camadas, dos protocolos de rede. Eles agem na camada de rede, porém precisam analisar as camadas de transporte e de aplicação.
 - A fraqueza do firewall é que os administradores da rede desejam segurança, mas não podem cortar a comunicação com o mundo exterior.
 - A DMZ (Zona Desmilitarizada) é uma parte da rede da empresa que se encontra fora da segurança. Então, os computadores acessam a internet por aí, mas os firewalls impedem a entrada de qualquer coisa estranha pela porta 80.
-- Firewall stateless: tem que existem uma regra do firewall falando 
+- Firewall stateless: tem que existem uma regra do firewall falando.  
 - Firewall statefull: é mais esperto, porque ele faz uso da comunicação TCP. 
 - DHCP (Dynamic Host Configuration Protocol): o protocolo de configuração dinâmica de host serve para configurar os hosts com suas informações básicas, atendendo ao ARP e outros protocolos da internet.  
 
 # Algoritmos de Roteamento
-
-
+O conjunto de decisões que determinam por onde o pacote trafega é o que constitui o roteamento, que envolve a aprendizagem de caminhos, recebimento de pacotes e encaminhamento de pacotes.
 
 ## Algoritmo Heap
 - É um protocolo baseado em inundação.
@@ -148,6 +230,85 @@ Camada:
 - Tem umas tabelas pra preencher.
 - Cada um dos roteadores tem uma tabela local.
 - Tem alguma coisa que é a gente que define a ordem, e que precisa ser explicitado no exercício, para que a resposta final seja avaliada.
-- 
+- Tem 3 fases:
+  - Criação de Tabelas de Roteamento;
+  - Troca de mensagens;
+  - Atualização
+
+
+---
+
+### **Strategy Overview:**
+- **Daily breakdown**: 20 minutes theory + 10 minutes practice.  
+- **Tools/resources**: Free and quick (listed below).  
+- **Goal**: Cover core concepts + troubleshooting in 15 days.  
+
+---
+
+### **Daily Plan (30 mins/day)**  
+
+#### **Days 1–5: Core Concepts**  
+**Focus**: OSI Model, Protocols, IP Addressing, Subnetting.  
+- **Day 1**: OSI Model (7 layers) + TCP vs. UDP.  
+  - Watch [this 10-min video](https://www.youtube.com/watch?v=vv4y_uOneC0).  
+  - Practice: Draw the OSI model and map HTTP, FTP, DNS to layers.  
+- **Day 2**: IP Addressing (IPv4, IPv6) + Subnetting basics.  
+  - Use [this subnetting cheat sheet](https://www.aelius.com/njh/subnet_sheet.html).  
+  - Practice: Calculate subnets for `192.168.1.0/24` (divide into 4 subnets).  
+- **Day 3**: DHCP, DNS, ARP.  
+  - Read [Cloudflare’s DNS guide](https://www.cloudflare.com/learning/dns/).  
+  - Practice: Run `nslookup google.com` and `arp -a` in your terminal.  
+- **Day 4**: Routing + Switching (Routers vs. Switches).  
+  - Watch [this 5-min explainer](https://www.youtube.com/watch?v=Ofjsh_E4HFY).  
+  - Practice: Trace routes with `tracert` (Windows) or `traceroute` (Linux/Mac).  
+- **Day 5**: Firewalls + NAT.  
+  - Read [this NAT guide](https://www.geeksforgeeks.org/network-address-translation-nat/).  
+  - Practice: Check your router’s NAT settings (e.g., `192.168.1.1` in a browser).  
+
+---
+
+#### **Days 6–10: Protocols & Tools**  
+**Focus**: HTTP/HTTPS, SSH, Wireshark, Packet Analysis.  
+- **Day 6**: HTTP/HTTPS + SSL/TLS.  
+  - Use [SSL Labs](https://www.ssllabs.com/ssltest/) to test a website.  
+- **Day 7**: SSH + Telnet.  
+  - Practice: Connect to a local VM or Raspberry Pi via `ssh user@ip`.  
+- **Day 8**: Wireshark Basics.  
+  - Install Wireshark, capture packets for 5 mins ([tutorial](https://www.youtube.com/watch?v=TkCSr30UojM)).  
+- **Day 9**: Analyze a DHCP request in Wireshark.  
+  - Filter for `dhcp` in Wireshark.  
+- **Day 10**: ICMP (Ping) + Traceroute.  
+  - Practice: Run `ping 8.8.8.8` and analyze latency.  
+
+---
+
+#### **Days 11–15: Troubleshooting & Security**  
+**Focus**: Network Security, VPNs, Common Issues.  
+- **Day 11**: VPNs + Proxy Basics.  
+  - Read [this VPN guide](https://nordvpn.com/blog/what-is-a-vpn/).  
+- **Day 12**: Common Errors (e.g., DNS failure, DHCP issues).  
+  - Practice: Simulate a DNS issue (change DNS to `8.8.8.8` manually).  
+- **Day 13**: Wi-Fi Security (WPA2, WPA3).  
+  - Check your Wi-Fi encryption in router settings.  
+- **Day 14**: Review Weak Areas.  
+  - Revisit subnetting or protocols you struggled with.  
+- **Day 15**: Mock Test.  
+  - Take [this 10-question quiz](https://www.proprofs.com/quiz-school/story.php?title=network-fundamentals).  
+
+---
+
+### **Key Resources:**  
+1. **Videos**: [Practical Networking (YouTube)](https://www.youtube.com/c/PracticalNetworking).  
+2. **Subnetting**: [SubnettingPractice.com](https://www.subnettingpractice.com/).  
+3. **Labs**: [Cisco’s Packet Tracer](https://www.netacad.com/courses/packet-tracer) (free for basics).  
+
+---
+
+### **Pro Tips:**  
+- **Active Recall**: After each session, write 3 bullet points summarizing what you learned.  
+- **Hands-On**: Always end with a CLI command or tool (e.g., `ping`, Wireshark).  
+- **Mnemonics**: For OSI layers: *"Faltei Em Redes Também Sem Apresentar Atestado"* (Physical (1) → Application (7)).  
+
+This plan avoids passive learning—every minute is spent *doing* or *testing* concepts. Good luck! 🚀
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
