@@ -4,12 +4,15 @@ description: Conteúdos sobre Verificação, Validação e Teste de Software
 pubDate: Mar 18 2025
 tags:
   - Testes
+  - Playwright
+  - VVT
 ---
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=header"/>
 
 # Sumário
 - [Tipos de Testes](#tipos-de-testes)
 - [Verificação X Validação](#verificação--validação)
+- [Playwright](#playwright)
 
 ### Tipos de Testes
 - Testes unitários: testa uma parte individual do sistema, como funções, procedimentos ou módulos.
@@ -21,5 +24,11 @@ A diferença entre Verificação e Validação é a ordem das duas últimas pala
 > — Verificação: "Are we building the product right?"
 > — Validação: "Are we building the right product?"
 
+# Playwright
+- Serve para testes de automação, sobretudo em browsers e mobile.
+- Tem suporte para várias linguagens de programação.
+- A documentação é organizada e intuitiva: https://playwright.dev/docs/intro
+- Pode ser usado para web scraping.
+- É preciso ter um projeto com node.js (npm init) antes de tentar instalar o playwright.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer"/>

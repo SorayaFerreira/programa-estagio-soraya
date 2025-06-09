@@ -16,51 +16,6 @@ tags:
 - [Firewall](#firewall)
 - [Algoritmos de Roteamento](#algoritmos-de-roteamento)
 
-# Conteúdo da P1
-**1. Fundamentos da Internet**  
-- O que é a Internet? 
-- Periferia e núcleo da rede 
-- Atraso, perda e vazão em redes  
-- **Propósito e propriedades de roteamento e comutação** 
-- **Domínio de colisão e broadcast** 
-
-**2. Modelos de Camadas**  
-- Camadas de protocolo (OSI vs. TCP/IP) 
-- **Camadas do modelo OSI** (física, enlace, rede, transporte, sessão, apresentação, aplicação) 
-- **Quadros (camada 2), pacotes (camada 3)**
-
-**3. Dispositivos de Rede**  
-- **Switch** (camada 2), **switch multicamadas** (camada 3), **roteador** (camada 3), **hub** (camada 1) 
-- **Gerenciados vs. não gerenciados** 
-
-**4. Camada de Aplicação**  
-- Princípios de aplicações de rede   
-- HTTP e Web  
-- E-mail (SMTP, POP3, IMAP) 
-- DNS e seus componentes  
-- **DNS dinâmico** 
-- Aplicações P2P 
-
-**5. Camada de Transporte**  
-- TCP e UDP 
-- Multiplexação/demultiplexação 
-- Transferência confiável de dados   
-
-**6. Gerenciamento e Segurança**  
-- Redes sob ameaça 
-- **Filtro de tráfego e diagnósticos**  
-- **Funcionamento e propriedades do DHCP**  
-
-**7. Tópicos Adicionais**  
-- História da Internet 
-
-**Sugestão de Ordem de Estudo**  
-1. Comece com **modelos OSI/TCP/IP** e **dispositivos de rede** (roteador vs. switch).  
-2. Entenda **DNS** (incluindo dinâmico) e **DHCP** (são cobrados juntos em provas).  
-3. Revise **TCP/UDP** e **controle de congestionamento**.  
-4. Pratique cálculos de **atraso e vazão**.  
-5. Explore **domínios de colisão/broadcast** (relacionado a switches/redes locais). 
-----
 
 # Anotações Introdutórias 🌐🪄
 - Rede é um conjunto de coisas interconectadas.
@@ -81,19 +36,26 @@ tags:
 - ESR: é uma escola de redes de computadores. Eles têm um modelo de prática de rede.
 - **Encapsulamento:** é a comunicação entre as camadas adjacentes do protocolo OSI.
 - **Repetidores** são uma porcaria.
-
 - Topologias:
     - **Barramento**: é a topologia mais básica. Ninguém usa mais.
     - **Estrela**: é usada até hoje. Coloca um switch e liga todo mundo nele.
     - **Anel**: tem o formato de um ciclo. Esse aqui ninguém usa mais. 
     - **Malha**: cada host fica ligado em todas as máquinas. `[n*(n-1)]/2` para saber o número de cabos pra cada máquina.
     - **Ponto-a-ponto/Ponto-a-Multiponto**: a conexão é direta, um dispositivo ligado diretamente a outro 
-
 -**DNS**: é um sistema distribuído e hierarquico. Há dois tipos de domínio: os de primeiro nível e de segundo nível. Os de 1o nível são os dos países, os ccTLDs. Os de 2o nível são os autoritativos, p. ex., `.com`, `.org`, `.bio`, `.edu`.
 
 ## Proxy
 ![O que é um proxy](https://testrigor.com/wp-content/uploads/2023/11/How-to-Find-Proxy-Settings.jpeg)
 - Usado para averiguar e controlar as coisas que as pessoas podem acessar na rede.
+- armazena em disco as coisas mais acessadas pelo conjunto de usuários.
+- acelera acesso a serviços de rede utilizando o processamento local.
+- 
+
+## Criptografia
+Há duas formas de criptografia:
+  - Simétrica: a chave do wi-fi é simétrica, porque todo mundo acessa a mesma.
+  - Assimétrica: sei lá.
+
 
 # Protocolo HTTP 📄🛜
 - A porta dele é a 80.
@@ -115,7 +77,7 @@ O Postman, o Bruno e o [Ensomnia](https://insomnia.rest/) são programas que uti
 
 **PROMISE**: trata-se de um proxy para um valor não necessariamente conhecido quando uma promise é criada. Permite que métodos assíncronos retornem resultado constantemente.
 
-### Como funciona:
+## Como funciona:
 - **Sockets**: soquetes são como tomadas. Diferentes portas são diferentes padrões de tomadas. Soquetes é uma forma de comunicação entre processos.
 - **Bind**: é uma ligação -- a ligação de um endereço IP com outro número de 16 bits, que é a porta.
 - **Porta**: é um número que identifica um processo que identifica um processo que o sistema operacional mantém na tabela dele. É um identificador do programa rodando ligado ao endereço IP do computador. É só um número
@@ -135,6 +97,8 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 - Three-Way Handshake: SYN > SYN/ACK > ACK
 - **Protocolo** é um conjunto de regras para computadores e outros dispositivos conversarem entre si.
 
+- **MAC**: ele é um número de 48 bits, 08-00-20-0A-8C-6C
+
 
 ## OSI - Open System Interconnection 🪄🛜
 - Cada camada não tem conhecimento da camada anterior.
@@ -144,8 +108,12 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 
 - Listagem das camadas, a seguir:
 
+![alt text](./../media/osi_model.png)
+![Camadas da rede](./../media/encapsulated_layers.png)
+
+
 ### Física
-representado por algo que possa expressar 0s e 1s.
+- representado por algo que possa expressar 0s e 1s.
 
 ### Enlace de dados
 - se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. 
@@ -190,15 +158,10 @@ representado por algo que possa expressar 0s e 1s.
 - A camada de aplicação se preocupa com o tipo específico da aplicação em si e seus métodos de comunicação padronizados. Por exemplo, navegadores podem se comunicar usando HyperText Transfer Protocol Secure (HTTPS), e clientes de e-mail e HTTP podem se comunicar usando POP3 (Post Office Protocol versão 3) e SMTP (Simple Mail Transfer Protocol).
 
 ## TCP/IP 📡
-- **Aplicação:**
-- **Transporte:**
-- **Rede:**
-- **Interface de rede/Enlace:**
-- **Física:**
-
-
-## MONOMODO E MULTIMODO SÃO OS MAIS USADOS!!!!!!!!1111
-
+- **Aplicação:** apresentação, aplicação e sessão.
+- **Transporte:** transporte.
+- **Internet:** rede.
+- **Acesso a dados:** enlace e física.
 
 # Cabos - Comunicação Física
 - Cabo coaxial: é o mais antigão. Um usa PVC, outro usa cerâmica, ou pode ser de teflon também. Ele tem uma blindagem que evita interferência eletromagnética.
@@ -224,7 +187,7 @@ representado por algo que possa expressar 0s e 1s.
 # Algoritmos de Roteamento
 O conjunto de decisões que determinam por onde o pacote trafega é o que constitui o roteamento, que envolve a aprendizagem de caminhos, recebimento de pacotes e encaminhamento de pacotes.
 
-## Algoritmo Heap
+## Algoritmo RIP
 - É um protocolo baseado em inundação.
 - É preciso dizer exatamente como a rede está sendo inundada.
 - Tem umas tabelas pra preencher.
@@ -234,81 +197,5 @@ O conjunto de decisões que determinam por onde o pacote trafega é o que consti
   - Criação de Tabelas de Roteamento;
   - Troca de mensagens;
   - Atualização
-
-
----
-
-### **Strategy Overview:**
-- **Daily breakdown**: 20 minutes theory + 10 minutes practice.  
-- **Tools/resources**: Free and quick (listed below).  
-- **Goal**: Cover core concepts + troubleshooting in 15 days.  
-
----
-
-### **Daily Plan (30 mins/day)**  
-
-#### **Days 1–5: Core Concepts**  
-**Focus**: OSI Model, Protocols, IP Addressing, Subnetting.  
-- **Day 1**: OSI Model (7 layers) + TCP vs. UDP.  
-  - Watch [this 10-min video](https://www.youtube.com/watch?v=vv4y_uOneC0).  
-  - Practice: Draw the OSI model and map HTTP, FTP, DNS to layers.  
-- **Day 2**: IP Addressing (IPv4, IPv6) + Subnetting basics.  
-  - Use [this subnetting cheat sheet](https://www.aelius.com/njh/subnet_sheet.html).  
-  - Practice: Calculate subnets for `192.168.1.0/24` (divide into 4 subnets).  
-- **Day 3**: DHCP, DNS, ARP.  
-  - Read [Cloudflare’s DNS guide](https://www.cloudflare.com/learning/dns/).  
-  - Practice: Run `nslookup google.com` and `arp -a` in your terminal.  
-- **Day 4**: Routing + Switching (Routers vs. Switches).  
-  - Watch [this 5-min explainer](https://www.youtube.com/watch?v=Ofjsh_E4HFY).  
-  - Practice: Trace routes with `tracert` (Windows) or `traceroute` (Linux/Mac).  
-- **Day 5**: Firewalls + NAT.  
-  - Read [this NAT guide](https://www.geeksforgeeks.org/network-address-translation-nat/).  
-  - Practice: Check your router’s NAT settings (e.g., `192.168.1.1` in a browser).  
-
----
-
-#### **Days 6–10: Protocols & Tools**  
-**Focus**: HTTP/HTTPS, SSH, Wireshark, Packet Analysis.  
-- **Day 6**: HTTP/HTTPS + SSL/TLS.  
-  - Use [SSL Labs](https://www.ssllabs.com/ssltest/) to test a website.  
-- **Day 7**: SSH + Telnet.  
-  - Practice: Connect to a local VM or Raspberry Pi via `ssh user@ip`.  
-- **Day 8**: Wireshark Basics.  
-  - Install Wireshark, capture packets for 5 mins ([tutorial](https://www.youtube.com/watch?v=TkCSr30UojM)).  
-- **Day 9**: Analyze a DHCP request in Wireshark.  
-  - Filter for `dhcp` in Wireshark.  
-- **Day 10**: ICMP (Ping) + Traceroute.  
-  - Practice: Run `ping 8.8.8.8` and analyze latency.  
-
----
-
-#### **Days 11–15: Troubleshooting & Security**  
-**Focus**: Network Security, VPNs, Common Issues.  
-- **Day 11**: VPNs + Proxy Basics.  
-  - Read [this VPN guide](https://nordvpn.com/blog/what-is-a-vpn/).  
-- **Day 12**: Common Errors (e.g., DNS failure, DHCP issues).  
-  - Practice: Simulate a DNS issue (change DNS to `8.8.8.8` manually).  
-- **Day 13**: Wi-Fi Security (WPA2, WPA3).  
-  - Check your Wi-Fi encryption in router settings.  
-- **Day 14**: Review Weak Areas.  
-  - Revisit subnetting or protocols you struggled with.  
-- **Day 15**: Mock Test.  
-  - Take [this 10-question quiz](https://www.proprofs.com/quiz-school/story.php?title=network-fundamentals).  
-
----
-
-### **Key Resources:**  
-1. **Videos**: [Practical Networking (YouTube)](https://www.youtube.com/c/PracticalNetworking).  
-2. **Subnetting**: [SubnettingPractice.com](https://www.subnettingpractice.com/).  
-3. **Labs**: [Cisco’s Packet Tracer](https://www.netacad.com/courses/packet-tracer) (free for basics).  
-
----
-
-### **Pro Tips:**  
-- **Active Recall**: After each session, write 3 bullet points summarizing what you learned.  
-- **Hands-On**: Always end with a CLI command or tool (e.g., `ping`, Wireshark).  
-- **Mnemonics**: For OSI layers: *"Faltei Em Redes Também Sem Apresentar Atestado"* (Physical (1) → Application (7)).  
-
-This plan avoids passive learning—every minute is spent *doing* or *testing* concepts. Good luck! 🚀
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
