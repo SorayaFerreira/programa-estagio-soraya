@@ -91,6 +91,37 @@ A seguir, apresento os tipos de teste mencionados nas fontes, com uma explicaç�
 
 Importante mencionar que nenhuma técnica de teste isolada pode encontrar todos os *bugs* (paradoxo do pesticida) e que o teste exaustivo é impossível. Portanto, é crucial saber o que testar, priorizar e combinar diferentes técnicas de forma eficaz e sistemática para maximizar a detecção de defeitos e otimizar o custo do processo. O contexto do software (aplicativo móvel, web, sistema crítico) também desempenha um papel fundamental na definição dos casos de teste.
 
+# Erro 🆚 Falha 🆚 Defeito
+
+Os termos "falha", "defeito" e "erro" muitas vezes são usados de forma intercambiável, mas possuem nuances importantes no contexto de testes de software.
+
+Aqui está um resumo das diferenças e relações, com base nas informações fornecidas:
+
+> Defeito (Bug/Falha/Erro):
+    *   As ferramentas de gestão de projetos frequentemente agrupam "Defeitos, Erros e Falhas" sob o termo "Defeitos" ou "Bugs".
+    *   Um defeito é definido como um problema no código ou no design do software que impede seu funcionamento correto.
+    *   Ele ocorre quando o software não atende aos requisitos especificados ou gera um comportamento incorreto devido a falhas na implementação.
+    *   Defeitos são encontrados através da execução de testes, durante o uso do sistema em produção ou até por acidente.
+    *   Após a revelação da presença de um erro, o defeito é o que precisa ser encontrado e corrigido.
+
+> Falha:
+    *   A "falha" é mencionada como um dos termos sinônimos para "defeito" ou "bug".
+    *   O objetivo do teste é "revelar a presença de FALHAS" no programa ou sistema.
+    *   É importante notar que "não há garantia que todo incidente seja uma falha, pois ainda precisa ser analisado". Isso sugere que uma falha é a manifestação observável de um problema (defeito) durante a execução.
+    *   As fontes também mencionam "falhas na implementação" como causa de um defeito.
+
+> Erro:
+    *   Assim como "falha", "erro" é listado como um sinônimo para "defeito" ou "bug".
+    *   No contexto de depuração, a presença do erro é o que é revelado pelo teste, e é a partir dessa revelação que o defeito deve ser encontrado e corrigido. Isso sugere que o "erro" pode ser a condição que se manifesta e indica a existência de um defeito subjacente.
+    *   Um exemplo prático é o do foguete Ariane 5, que foi destruído devido a um "erro de navegação" causado por um "equívoco", indicando o erro como a causa do desvio de comportamento.
+
+Há uma distinção clara entre Discrepância e Defeito:
+
+*   Discrepância: Refere-se a qualquer desvio entre o comportamento esperado e o comportamento real de um sistema, mas não necessariamente indica um erro no software. Pode ser resultado de uma interpretação ambígua dos requisitos, uma mudança nas expectativas do usuário ou até uma característica do ambiente de execução. Por exemplo, o sistema exibe uma mensagem de alerta ao excluir um item, mas o cliente esperava uma solicitação de confirmação.
+*   Defeito: É um problema no código ou no design do software que impede seu funcionamento correto. Um defeito ocorre quando o software não atende aos requisitos especificados ou gera um comportamento incorreto devido a falhas na implementação. Um exemplo é quando o sistema permite excluir um item, mas não remove corretamente os registros associados, causando inconsistências nos dados.
+
+Ou seja, um erro humano leva a um defeito no código/design, que por sua vez pode causar uma falha no comportamento do sistema.
+
 # Verificação ❎ Validação
 A diferença entre Verificação e Validação é a ordem das duas últimas palavras nas frases a seguir:
 > — Verificação: "Are we building the product right?"
