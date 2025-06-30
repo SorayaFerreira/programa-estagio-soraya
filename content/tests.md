@@ -134,4 +134,29 @@ A diferença entre Verificação e Validação é a ordem das duas últimas pala
 - Pode ser usado para web scraping.
 - É preciso ter um projeto com node.js (npm init) antes de tentar instalar o playwright.
 
+# try...catch
+
+```javascript
+try {
+    nonExistentFunction();
+
+} catch (error) {
+    console.error(error);
+} finally {
+    // padrões executados independente de ter entrado no try ou no catch.
+}
+```
+
+- O `catch` informa o quê fazer se for lançada uma exceção durante a execução do try.
+- É possível aninhar blocos try-catch.
+
+```javascript
+try {
+  throw new TypeError("oops");
+} catch ({ name, message }) {
+  console.log(name); // "TypeError"
+  console.log(message); // "oops"
+}
+```
+
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer"/>
