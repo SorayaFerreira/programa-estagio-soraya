@@ -204,6 +204,32 @@ Este é outro gerenciador de pacotes também do ambiente `Node.js`, todavia é u
 
 Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
 
+# Getting Real
+## Introdução
+- Getting Real é sobre ser sucinto e ágil;
+- O objetivo é atacar os problema reais, e não aquilo que você acha que é o problema.
+- Para superar seus adversários, faça menos do que eles — menos features, opções, pessoas, reuniões, abstrações  e promises.
+
+## The Starting Line
+- Aprender a lidar com recursos limitados desde o início vai ensinar a 
+- É melhor fazer uma entrega excelente com um pouco menor do que o previsto do que lançar um negócio medíocre, bugado, porque você tentou muito alcançar um prazo, um orçamento e um escopo maravilhosos.
+- 
+
+## Stay Lean
+## Priorities
+## Feature Selection
+## Process
+## The Organization
+## Staffing
+## Interface Design
+## Code
+## Words
+## Pricing and Signup
+## Promotion
+## Support
+## Post-Launch
+## Conclusion
+
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer"/>
 
 

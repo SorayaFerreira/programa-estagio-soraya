@@ -77,7 +77,6 @@ O Postman, o Bruno e o [Ensomnia](https://insomnia.rest/) são programas que uti
 
 **PROMISE**: trata-se de um proxy para um valor não necessariamente conhecido quando uma promise é criada. Permite que métodos assíncronos retornem resultado constantemente.
 
-## Como funciona:
 - **Sockets**: soquetes são como tomadas. Diferentes portas são diferentes padrões de tomadas. Soquetes é uma forma de comunicação entre processos.
 - **Bind**: é uma ligação -- a ligação de um endereço IP com outro número de 16 bits, que é a porta.
 - **Porta**: é um número que identifica um processo que identifica um processo que o sistema operacional mantém na tabela dele. É um identificador do programa rodando ligado ao endereço IP do computador. É só um número
@@ -112,17 +111,17 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 ![Camadas da rede](./../media/encapsulated_layers.png)
 
 
-### Física
+# Física
 - representado por algo que possa expressar 0s e 1s.
 
-### Enlace de dados
+# Enlace de dados
 - se refere às tecnologias usadas para conectar duas máquinas em uma rede onde a camada física já existe. 
 - Ela gerencia quadros de dados, que são sinais digitais encapsulados em pacotes de dados. 
 - O controle de fluxo e o controle de erros de dados geralmente são os principais focos da camada de enlace de dados.
 - Faz a transmissão dos quadros de dados; converte bytes em quadros; usa endereço **MAC**.
 - Transporta dados entre dois dispositivos de rede.
 
-### Rede
+# Rede
 - parte mais difícil. 
 - A camada de rede se preocupa com conceitos como roteamento, encaminhamento e endereçamento em uma rede dispersa ou em várias redes conectadas de nós ou de máquinas. 
 - A camada de rede também pode gerenciar o controle de fluxo. Faz o roteamento dos dados na rede; é tipo um GPS. 
@@ -130,7 +129,7 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 - Usa algoritmos de roteamento.
 - transporta os pacotes de um host para o outro
 
-### Transporte
+# Transporte
 - tem os protocolos TCP (garante a eficácia da comunicação) e UDP (é menos confiável). 
 - Entrega de informações de forma confiável ou não. 
 - O foco principal da camada de transporte é garantir que os pacotes de dados cheguem na ordem correta, sem perdas nem erros, ou que possam ser recuperados sem complicações, se necessário. 
@@ -139,25 +138,25 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 - transporta mensagens da camada de aplicação de um processo para o outro.
 - Pega uma mensagem da camada de aplicação e inclui algumas informações adicionais dentro dessa mensagem para criar uma nova unidade de protocolo.
 
-### Sessão
+# Sessão
 - A camada de sessão é responsável pela coordenação de rede entre duas aplicações separadas em uma sessão. 
 - Uma sessão gerencia o início e o término de uma conexão individual de aplicações e conflitos de sincronização. 
 - Estabele, gerencia e encerra sessões de interação. 
 - Garante o controle de diálogo e comunicação.
 
-### Apresentação
+# Apresentação
 - é onde acontece a codificação.
 - Se preocupa principalmente com a sintaxe dos próprios dados para as aplicações enviarem e consumirem. 
 - Lida com a representações dos dados, sendo responsável por sintaxe e semântica das informações. 
 - Isso pode incluir a compressão ou a criptografia de dados.
 
-### Aplicação
+# Aplicação
 - acesso de fato aos dados pelo usuário. 
 - Interface, browser. É onde ficam os programas tradicionais, FTP (usado apenas para transferência de dados), TFTP (maneira Trivial de TFTP). 
 - Oferece suporte a **HTTP, IMAP, SMTP E DNS**. São serviços que controlam o envio e o recebimento de mensagens.
 - A camada de aplicação se preocupa com o tipo específico da aplicação em si e seus métodos de comunicação padronizados. Por exemplo, navegadores podem se comunicar usando HyperText Transfer Protocol Secure (HTTPS), e clientes de e-mail e HTTP podem se comunicar usando POP3 (Post Office Protocol versão 3) e SMTP (Simple Mail Transfer Protocol).
 
-## TCP/IP 📡
+# TCP/IP 📡
 - **Aplicação:** apresentação, aplicação e sessão.
 - **Transporte:** transporte.
 - **Internet:** rede.
@@ -187,7 +186,7 @@ Para programas web, geralmente utilizamos porta que vão de 1024 até 49152. As 
 # Algoritmos de Roteamento
 O conjunto de decisões que determinam por onde o pacote trafega é o que constitui o roteamento, que envolve a aprendizagem de caminhos, recebimento de pacotes e encaminhamento de pacotes.
 
-## Algoritmo RIP
+# Algoritmo RIP
 - É um protocolo baseado em inundação.
 - É preciso dizer exatamente como a rede está sendo inundada.
 - Tem umas tabelas pra preencher.
@@ -197,5 +196,110 @@ O conjunto de decisões que determinam por onde o pacote trafega é o que consti
   - Criação de Tabelas de Roteamento;
   - Troca de mensagens;
   - Atualização
+
+# Prova P2
+- Serviços da Camada de Enlace
+- Detecção e Correção de Erros
+- Técnicas de detecção e correção
+- Protocolos de Acesso Múltiplo
+- Canais de difusão (**broadcast**)
+- Multiplexação por Divisão de Tempo
+- Multiplexação por Divisão de Frequência
+- Acesso Aleatório: ALOHA, CSMA, CSMA/CD
+- Revezamento: Polling e Passagem de Permissão (Token Passing)
+- DOCSIS
+- **MAC, MAC x IP, ARP (mecanismos para traduzir IP para MAC)**
+- Ethernet
+- Switches: filtragem e repasse, autoaprendizagem
+- VLANs
+- Wifi: faixas de frequência, taxas de dados, Arqutetura BSS e AP, Associação
+- Protocolo MAC (CSMA/CA)
+- Mecanismos RTS/CTS
+- **Mobilidade na mesma sub-rede IP**
+- TCP
+- Redes de Distribuição de Conteúdo (CDNs)
+- VoIP
+- RTP
+- SIP
+- Firewalls: ACLs, decisões baseadas em cabeçalhos
+- Stateful Filters
+# Prova P2
+- Serviços da Camada de Enlace
+- Detecção e Correção de Erros
+- Técnicas de detecção e correção
+- Protocolos de Acesso Múltiplo
+- Canais de difusão (**broadcast**)
+- Multiplexação por Divisão de Tempo
+- Multiplexação por Divisão de Frequência
+- Acesso Aleatório: ALOHA, CSMA, CSMA/CD
+- Revezamento: Polling e Passagem de Permissão (Token Passing)
+- DOCSIS
+- **MAC, MAC x IP, ARP (mecanismos para traduzir IP para MAC)**
+- Ethernet
+- Switches: filtragem e repasse, autoaprendizagem
+- VLANs
+- Wifi: faixas de frequência, taxas de dados, Arqutetura BSS e AP, Associação
+- Protocolo MAC (CSMA/CA)
+- Mecanismos RTS/CTS
+- **Mobilidade na mesma sub-rede IP**
+- TCP
+- Redes de Distribuição de Conteúdo (CDNs)
+- VoIP
+- RTP
+- SIP
+- Firewalls: ACLs, decisões baseadas em cabeçalhos
+- Stateful Filters
+
+## Algoritmo OSPF - Open Shortest Path First
+- É usado para encontrar dinamicamente todas as redes e garantir que os roteadores tenham a mesma tabela de roteamento.
+
+## Enderaçamento IP e Sub-Redes (IPv4 e IPv6)
+- Dado um endereço IP com uma máscara, seguindo a notação CIDR (p. ex. /28) ou decimal (p. ex. 255.255.255.240)
+- O endereço de **broadcast** é o último endereço da faixa, enquanto que o **endereço da rede** é o primeiro endereço da faixa.
+- O intervalo de Hosts Válidos são o primeiro e o último IP que podem ser atribuídos a dispositivos da rede.
+- Também é possível calcular o número de dispositivos possíveis dentro de uma sub-rede, usando a fórmula **_(2^n - 2)_**, onde _n_ é o número de bits do host.
+- É possível saber, ainda, o número de sub-redes que uma máscara pode comportar a partir de uma rede maior.
+- Outra coisa é poder saber também a qual sub-rede um host pertence.
+- Preciso saber os intervalos padrão e as máscaras padrão também, tem os endereços **A, B e C**, além das subredes sem classe. 
+	- Classe A: 1.0.0.0 a 126.255.255.255   /8
+	- Classe B: 128.0.0.0 a 191.255.255.255  /16
+	- Classe C: 192.168.0.0 a 223.255.255.255  /24
+
+- **APIPA** intervalo 169.254.0.0/16 é usado quando um host não consegue obter um IP de um servidor DHCP.
+- 127.0.0.1 (IPv4) e ::1 (IPv6), usados para testar a pilha TCP/IP local.
+- Broadcast de camada 2: **FF:FF:FF:FF:FF:FF**, endereço MAC.
+- Broadcast de camada 3: Endereço com todos os bits de host em 1 (ex: 192.168.1.255 para a rede 192.168.1.0/24).
+- Loopback: 127.0.0.1 (IPv4) e ::1 (IPv6), usados para testar a pilha TCP/IP local.
+
+- IPv6 tem **128 bits** no formato hexadecimal.
+- Usa-se `::` como abreviação para sequência de zeros.
+- Tipos de endereço: unicast (um-pra-um), multicast (um-pra-muitos), anycast (um-para-o-mais-próximo)
+- Troubleshooting: identificar problemas de configuração, como máscara de sub-rede errada ou um gateway padrão que não pertence à mesma subrede.
+- O IP tem 32 bits.
+- A **máscara da rede** é a regrinha rede, que é aquilo que determina quantos dígitos estou usando para representar a rede e quantos dígitos estou usando para representar os hosts. Com isso posso descobrir o intervalos de redes IP que compoem uma rede.
+- Para saber o número de intervalos para subredes, dado a máscara da rede. Basta eu ver o número de bits utilizados para hosts, e então começo a somar para ver os intervalos. Se forem usados 32 bits para hosts, então o primeiro intervalo é 0 -> 31. Daí eu vou somando e a sequência fica a seguinte: 0 -> 31, 32 -> 63, 64 -> 95 e assim vai. Tu vai somando o início do intervalo com 32, que é o número de hosts. E daí você faz isso até chegar na soma anterior ao 255, porque o 255 será o final do intervalos do ultimo intervalo de subrede possível.
+- Para encontrar o intervalo de um IP, você pega o último octeto e olha em qual intervalo ele pode estar.
+
+## Protocolos de Roteamento (IGP e EGP)
+- **Vetor de Distância (Distance-Vector)**: roteadores informam aos vizinhos sobre as redes que conhecem. É propenso a loops. RIPv1, RIPv2, IGRP
+- **Estado de Enlace**: roteadores conhecem a topologia completa da rede e calculam o melhor caminho independetemente. Ex.: **OSPF** - Protocolo padrão da indústria, escalável, usa o conceito de áreas.
+- **Híbrido/Vetor de Distância Avançado**: combina as características dos dois. Ex.: EIGRP
+- **Protocolo de Gateway Exterior (EGP)**: exemplo: o BGP é o protocolo que move a internet.
+
+## Comutação (Switching) e a Camada de Enlace (Camada 2)
+
+
+
+1. Entenda as Diferenças: Foque nas diferenças conceituais:
+- Hub vs. Switch vs. Roteador (domínios de colisão e broadcast).
+- RIP vs. OSPF vs. BGP (vetor de distância vs. estado de enlace, IGP vs. EGP).
+- TCP vs. UDP (confiável vs. rápido).
+
+2. Revise os Conceitos: Passe rapidamente pelos conceitos de VLAN, STP, APIPA e endereços privados.
+
+| Protocolo | Porta | TCP ou UDP? | Função |
+| --------- | ----- | ----------- | ------ | 
+
+
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff4000&height=120&section=footer"/>
