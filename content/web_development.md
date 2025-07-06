@@ -204,19 +204,39 @@ Este é outro gerenciador de pacotes também do ambiente `Node.js`, todavia é u
 
 Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
 
+---
+
 # Getting Real
 ## Introdução
 - Getting Real é sobre ser sucinto e ágil;
 - O objetivo é atacar os problema reais, e não aquilo que você acha que é o problema.
 - Para superar seus adversários, faça menos do que eles — menos features, opções, pessoas, reuniões, abstrações  e promises.
 
-## The Starting Line
+## The Starting Line - Até o 36 HOJE
 - Aprender a lidar com recursos limitados desde o início vai ensinar a 
 - É melhor fazer uma entrega excelente com um pouco menor do que o previsto do que lançar um negócio medíocre, bugado, porque você tentou muito alcançar um prazo, um orçamento e um escopo maravilhosos.
-- 
+- Uma forma de conseguir entregar dentro do prazo e do orçamento é mantendo eles muito fixos, sem jamais dilatá-los ou reduzí-los.
+- É quase impossível realizar uma entrega atendendo o prazo, o orçamento e o escopo definidos inicialmente.
+- É melhor definir expectativas do que tempo, orçamento e escopo.
+- Para saber o quê seu app deve ser é uma boa descobrir primeiro _o quê ele **não** deve ser_.
+- A Basecamp decide que a gerência de projetos não é sobre gráficos, quadros ou estatísticas, mas sobre ***comunicação***.
 
 ## Stay Lean
+- No mundo da tecnologia, as mudanças devem ser algo fácil e barato de se fazer. Se não for assim, você perde terreno para quem conseguir antes.
+- Coisas que deixam o projeto mais massivo e inflexível: contratos muito longos; trabalho excessivo; decisões permanentes; reuniões demais; processo rígidos demais; inventário, bloqueios de hardware, software e tecnologia; formatos de dados proprietários; o passado governando o futuro.
+- Coisas que reduzem o peso: pensamento just-in-time; membros multi-tasking no time; abraçar as restrições, ao invés de carregá-las; menos software, menos código; times pequenos; menos features; simplicidade; produtos open-source; dados de formato aberto; uma cultura aberta que dê abertura para reconhecimentos de erros.
+- Ser uma empresa pequena pode, na verdade, ser uma enorme vantagem frente à conconrrẽncia.
+- Organizações menores são mais próximas do cliente, por default.
+- Escreva um mantra para seu produto, isto é, uma frase de 4 ou 5 palavras dizendo por que ele existe.
+- Sucesso e satisfação estão nos detalhes.
+- Você não deve se importar com os detalhes logo de início. Isso é algo que se aprende com a prática do desenho. Se você já começa o desenho tentando atender os detalhes, pode ter certeza que o desenho vai ficar ruim.
+- Uma equipe de 3 pessoas é ideal para fazer a versão 1.0 de um produto. Uma delas é dev, a outra é designer, e a outra fica oscilando entre os dois.
+
 ## Priorities
+- Muitas pessoas perdem tempo tentando resolver problemas que elas ainda não possuem. 
+
+CAPÍTULO 18
+
 ## Feature Selection
 ## Process
 ## The Organization
