@@ -168,7 +168,6 @@ Para códigos em JavaScript, podemos citar como exeplos três runtimes. Eles exe
 - 🐱‍🐉 [**Deno**](https://deno.com/): surgiu com o fito de resolver algumas questões identificadas no Node.js. Oferece suporte para carregamento de dependências via URLs e TypeScript integrado. Entre os três, possui maior segurança e vquantidade de ferramentas. No entanto, não disponibiliza armazenamento integrado. Nessa linha, é importante mencionar que ele é ótimo para o contexto do estágio porque sua configuração para uso é rápida e fácil, o que é ideal para um desenvolvedor iniciante.
 -  🧅 **Bun**: surgiu em 2021, sendo um runtime que foca na experiência do programador e na performance. O Bun se destaca por sua performance, armazenamento embutido com SQLite e interoperabilidade – permite comunicação entre diferentes sistemas. Sua aspecto negativo é que ainda não possuir opções de implantação.
 
------------------
 ## Mais sobre o Deno ➕
 - Para criar timers para funções serem executadas em outro momento, com javascript. Neste exemplo, o console mostra a mensagem após 1000 milisegundos. `setTimeout(() => console.log("Hello, World!"), 1000);`. Também é possível criar intervalos para um função ser repetida a cada período de tempo: `setInterval(() => console.log("Hey!"), 1000);`.
 
@@ -206,13 +205,15 @@ Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
 
 ---
 
-# Getting Real
+# Getting Real ⬛️🔳
+The smarter, faster, easier way to build a successful web application.
+
 ## Introdução
 - Getting Real é sobre ser sucinto e ágil;
 - O objetivo é atacar os problema reais, e não aquilo que você acha que é o problema.
 - Para superar seus adversários, faça menos do que eles — menos features, opções, pessoas, reuniões, abstrações  e promises.
 
-## The Starting Line - Até o 36 HOJE
+## The Starting Line
 - Aprender a lidar com recursos limitados desde o início vai ensinar a 
 - É melhor fazer uma entrega excelente com um pouco menor do que o previsto do que lançar um negócio medíocre, bugado, porque você tentou muito alcançar um prazo, um orçamento e um escopo maravilhosos.
 - Uma forma de conseguir entregar dentro do prazo e do orçamento é mantendo eles muito fixos, sem jamais dilatá-los ou reduzí-los.
@@ -270,18 +271,128 @@ Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
 - Isso aqui é legar para usar na aplicação do chat.
 > “Why don’t you allow bold or italic or colored formatting in the chats?” Answer: It just doesn’t matter. If you need to emphasize something use the trusty caps lock key or toss a few *’s around the word or phrase. Those solutions don’t require additional software, tech support, processing power, or have a learning curve. Besides, heavy formatting in a simple text-based chat just doesn’t matter.
 
-
 ## Process
+- Passo a passo para usar o Get Real:
+1. Brainstorm;
+2. Paper sketches;
+3. Create HTML screens;
+4. Code it.
+
+- _Getting Real is all about being able to change on the fly._
+- Ficar dando opções de customização pro usuário tem custo alto. Cada nova opção tem um custo e um prazo extra demandado.
+- Decisões são temporárias.
+- O melhor teste que existe é o teste de usuário, porque se tem uma coisa que as pessoas gostam de fazer de graça é criticar.
+- Após decidir se realmente vale a pena execute, e execute rápido. Imperfeito, mas rápido. Então, publique e veja o que as pessoas dizem.
+- Se você estiver enfrentando uma issue que parece muito grande, muito difícil, quebre-a. E continue quebrando ela em pedaços menores. 
+- So, give a programmer three weeks to complete a large task, and she’ll spend two and a half procrastinating, and then one programming. Pegar uma tarefa menor para fazer, com um prazo também menor, é muito mais gerenciável e fazível.
+- Quando algum infeliz vier te abordar com uma pergunta difícil, mas querendo uma resposta definida, tipo de prazo, custo etc
+ 
+> To make a business, you need to multiply the two.
+> Explanation:
+- Awful idea = -1
+- Weak idea = 1
+- So-so idea = 5
+- Good idea = 10
+- Great idea = 15
+- Brilliant idea = 20
+
+- No execution = $1
+- Weak execution = $1000
+- So-so execution = $10,000
+- Good execution = $100,000
+- Great execution = $1,000,000
+- Brilliant execution = $10,000,000
+
 ## The Organization
+- As pessoas geralmente preferem trabalhar bem cedo de manhã, ou bem tarde de noite. 
+- Para terminar as coisas, você precisa de um longo tempo sem ser interrompido.
+- Evite reuniões a todo custo. Geralmente, elas surgem quando um conceito não está claro o suficiente, então, tente explicá-lo de forma mais simples por texto mesmo.
+- Quando fazer uma reunião? R.: Only book a meeting when you have an important business issue to discuss and you want or need input, approval, or agreement. 
+- Você não precisa de tantos funcionários quanto você pensa.
+- Lei de Brooks': Adding people to a late software project makes it later.
+
 ## Staffing
+- É melhor ter poucos devs, mas devs muuuito bons, do que ter um monte de devs medianos.
+- Características a serem analisadas ao buscar alguém para contratar: 
+    - Obs.: antes de mais nada, o livro manda buscarmos pessoas através do ecossistema open source.
+    - Qualidade do trabalho;
+    - Perspectiva cultural;
+    - Nível de paixão;
+    - Percentual de conclusão das coisas;
+    - Match social;
+
+- Eles contratam apenas pessoas que eles conhecem através do open source.
+- Não é legal contratar pessoas com habilidades específicas demais demais.
+- Para times pequenos, precisamos de pessoas _capazes de usar chapéus diferentes_.
+- Entusiasmo é um atributo que você simplesmente não consegue fingir.
+
+> Clear writing leads to clear thinking. You don’t know what you know until you try to express it. Good writing is partly a matter of character. Instead of doing what’s easy for you, do what’s easy for your reader.
+
+- Abaixo, uma coisa que eu discordo muito, mas o pessoal da Basecamp acredita:
+> What you want the most from a new hire is passion for what he does, and there’s no better way of showing it than a trace of commitment in open source projects.
+
 ## Interface Design
+- Não é uma boa ideia começar um projeto só com um programa em mente. É começar com um protótipo, um desenho, porque é flexível e mais "concreto", de certa forma.
+- Nesse desenho inicial, você deve ignorar algumas coisas que não estão no epicentro, p. ex.: abas, navegação, rodapé, cores, barra lateral, logo, etc. Você deve começar desenhando aquilo que é mais importante para a aplicação. 
+- Para cada tela, você deve considerar três estados possíveis: 
+    - Regular: a tela que as pessoas veem quando tudo está funcionando bem e seu app está alimentado com os dados. É nesta tela que você vai gastar mais tempo planejando.
+    - Blank: a tela que as pessoas ao usar o app pela primeira vez, antes dos dados serem inseridos; É a primeira impressão do seu app.
+    - Error: a tela que as pessoas veem quando algo dá errado.
+- Design defensivo: sue app pode funcionar muito bem em 90% das vezes, mas se seu usuário for abandonado quando mais precisar, ele jamais vai esquecer.
+
 ## Code
+- Sempre busque manter seu código o mais simples possível.
+- A complexidade do código aumenta exponencialmente conforme você aumenta a quantidade de código.
+> Less software means less features, less code, less waste.
+- Escolha ferramentas que mantenham a equipe animada e motivada. Um programador feliz é um programador produtivo.
+- Se programador fosse pago pra apagar código, ao invés de escrever mais, o mundo seria melhor.
+
 ## Words
+- Especificações funcionais são fantasia.
+- As pessoas concordam e assinam um monte de parágrafos, mas cada uma está imaginando algo diferente na cabeça.
+- Especificações Funcionais (escritas) te obrigam a tomar várias decisões importantes quando se sabe o mínimo sobre a aplicação. 
+- Especificações não lidam com a realidade de que, quando você começa a construir, tudo muda.
+- O que você pode fazer no lugar é o seguinte: começa a escrever uma história sobre o quê o app deve fazer. Se isso te tomar mais de um dia e mais de uma página, então está complexo demais; simplifique. Em seguida, comece a desenhar uma interface. Crie uma interface que todos possam clicar, usar e sentir realmente antes de começar a pensar em código de backend. 
+- Esqueça de documentos de requisitos grandes e fechados. Eles te forçam a fazer decisões muito importantes cedo demais.
+- É a pior maneira de escrever software, porque, por definição, significa que o software foi escrito para corresponder à teoria, não à realidade.
+- A menos que um documento realmente vá se transformar em algo real, não o produza.
+- Se precisar explicar algo, tente mockar ao invés de escrever, porque um protótipo está muito mais suscetível a se tornar algo real do que um parágrafo.
+- Se ainda assim você acha que uma feature está precisando de palavras para ser explicada, escreva uma pequena história sobre. Não coloque detalhes técnicos, apenas conte a história rapidamente como se você estivesse numa conversa normal.
+- Coloque texto real ao invés do lorem ipsum para realizar testes porque não é isso que o seu usuário fará de verdade.
+
 ## Pricing and Signup
+- Sempre que você realizar uma mudança no seu app, pergunte-se se essa mudança está de acordo com a "personalidade" que você quer que seu app tenha.
+- Oferecer brindes é uma ótima forma de atrair clientes.
+- A assinatura de um plano e seu cancelamento devem ser possíveis sem dificuldades.
+- Evite contratos longos e difíceis.
+
 ## Promotion
+- [Hollywood Launch](https://basecamp.com/gettingreal/13.1-hollywood-launch)
+- Coisas para colocar na ladding page: overview, tour, screen captures and videos, manifesto, case studies, buzz, forum, pricing e sign up, weblog.
+- Blogs podem ser mais efetivos do que anúncios.
+- Dê um jeito de coletar emails.
+- Compartilhe seu conhecimento com o mundo. Isso te posiciona como expert na indústria.
+- Dê um nome fácil de lembrar para seu app. O nome tem que ser curto, catchy e lembrável.
+- É legal que o produto seja **fácil de descrevers, fácil de usar e fácil de comprar**. Isso tudo implica que o produto é **fácil de vender**.
+
 ## Support
+- O suporte está para a garçonete, assim como os devs estão para o chef de cozinha.
+- No entanto, acaba que o time de devs fica sem contato com os clientes. Isso é ruim porque interagir com os clientes é a melhor forma de descobrir os pontos fortes e os pontos fracos do seu produto. Em virtude disso, é interessante quebrar as barreiras entre o cliente e os devs. Você e todo seu time devem saber o que seus clientes estão dizendo.
+- Sempre responda muito rapidamente as queixas de seus usuários. Isso pode te destacar no mercado.
+- Crie um fórum para seus usuários se ajudarem.
+- Se acontecer algum bug terrível que derrube tudo temporariamente, seja transparente e honesto e avise teus usuários. Um usuários bem informado é seu melhor usuário.
+
 ## Post-Launch
+- Mantenha um blog após lançar teu produto. Você pode manter: FAQs, How-tos, tips and tricks, new features, updates, and fixess, and buzz/press.
+- Manter esse blog faz sua empresa parecer mais **_humana_**.
+- Perguntas a responder para categorizar uma prioridade para seus bugs: _How many people are affected? How bad is the problem? Does this bug deserve immediate attention or can it wait? What can you do right now that will have the greatest impact for the greatest number of people?_.
+- Bugs acontecem; aceite. Não precisa ficar procurando um culpado.
+- Siga, acompanhe as publicações de sua concorrência.
+- Em caso de alguma reação impulsiva, isto é, alguma resposta muito negativa, espere um pouco e esteja calmo para responder com tranquilidade.
+
 ## Conclusion
+- Sucesso é sobre uma excelente execução.
+- Você não pode apenas ter uma boa escrita e ainda assim falhar em cumprir as promessas em sua narrativa.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer"/>
 
