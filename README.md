@@ -1,8 +1,3 @@
-# Programa de Estágio da Cento Software 🟣👷‍♀️
-
-
-### Meu Digital Garden🪴
-
 > **_Este repositório é adepto da filosofia Digital Garden._**
 
 Assim como num jardim sistematicamente ordenado – com canteiros definidos, possuindo vasos de planta rotulados –, este repositório contém diretórios (canteiros) e documentos informativos (vasos de planta) que devem ser _cultivados_ ao longo do tempo. A seguir, algumas características de um jardim digital:
