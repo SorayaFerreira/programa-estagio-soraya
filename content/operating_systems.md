@@ -49,10 +49,37 @@ Mandriva), derivados do Debian (Ubuntu, Kubuntu, Linux Mint), e os derivados do 
 
 - Os módulos nada mais são do que os arquivos, que são armazenados dentro da pasta `/lib/modules/versão_do_kernel`. 
 - Três coisas para instalar: pacotes kernel-source e kernel-headers, e o compilador gcc.
+
+- **Wayland**: é um Protocolo de Servidor de Exibição.
+
+# Debian
+├── 🎯 Objetivo
+│   └── Ser o "Sistema Operacional Universal"
+├── 📜 Princípios
+│   ├── Debian Free Software Guidelines (DFSG)
+│   └── Contrato Social do Debian
+│       ├── 100% Software Livre (por padrão)
+│       ├── Transparência total
+│       ├── Colaboração com a comunidade livre
+│       └── Separação clara entre software livre e não-livre
+├── 👥 Comunidade
+│   ├── Projeto voluntário e democrático
+│   ├── Eleição anual de líder (DPL)
+│   └── Decisões por consenso e votação
+├── ⚙️ Desenvolvimento
+│   ├── Aberto e transparente
+│   ├── Código-fonte sempre disponível
+│   └── Qualidade e estabilidade priorizadas
+└── 💡 Filosofia Prática
+    ├── Liberdade de escolha
+    ├── Estabilidade acima da vanguarda
+    ├── Extensa documentação
+    └── Base para outras distros (Ubuntu, Kali, etc.)
+
   
 ## **Diretórios** 🗂️📂
 
-O diretório raiz tem as pastas do sistema e espera-se nossos arquivos pessoais sejam armazenados no diretório /home. 
+O diretório raiz tem as pastas do sistema e espera-se que nossos arquivos pessoais sejam armazenados no diretório /home. 
 Os discos e as partições não aparecem necessariamente como unidades diferentes. 
 Tudo faz parte de um diretório raiz chamado “/”.
 
@@ -111,6 +138,69 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - `reboot`: reinicia a máquina.
 - `cat local/arquivo`: mostra o conteúdo de um arquivo.
 - `sudo apt remove <nome do programa>` Para desinstalar programas.
+
+Daily Heroes:
+- `ps aux | grep {process}` - Encontre aquele processo furtivo
+- `lsof -i :{port}` - Quem está monopolizando aquela porta?
+- `df -h` - O clássico verificador de "estamos sem espaço"
+- `netstat -tulpn` - Detetive de conexão de rede
+- `kubectl get pods | grep -i error` - Localizador de problemas do K8s
+
+Log Warriors:
+- `tail -f /var/log/*` - Observador de log em tempo real
+- `journalctl -fu service-name` - Perseguidor de log do SystemD
+- `grep -r "error" .` - O caçador de erros
+- `zcat access.log.gz | grep "500"` - Ninja de log compactado
+- `less +F` - O melhor comando tail
+
+Container Whisperers:
+- `docker ps --format '{{.Names}} {{.Status}}'` - Verificação de status limpa
+- `docker stats --no-stream`  - Verificação rápida de recursos
+- `crictl logs {container}` - Histórias brutas de contêineres
+- `docker exec -it` - O backdoor do contêiner
+- `podman top` - Espiada de processos dentro de contêineres
+
+System Detectives:
+- `htop` - Contador de histórias de recursos do sistema
+- `iostat -xz 1` - Poeta de desempenho de disco
+- `free -h` - Solucionador de mistérios de memória
+- `vmstat 1` - Sinais vitais do sistema
+- `dmesg -T | tail` - Fofocas recentes do Kernel
+
+Network Ninjas:
+- `curl -v` - Depurador de conversação HTTP
+- `dig +short` - Pesquisa rápida de DNS
+- `ss -tunlp` - Estatísticas de socket simplificadas
+- `iptables -L` - Leitor de regras de firewall
+- `traceroute` - Localizador de caminho
+
+File Jugglers:
+- `find . -name "*.yaml"` -type f - Caçador de YAML
+- `rsync -avz` - Melhor copiador de arquivos
+- `tar -xvf` - O descompactador (sim, todos nós pesquisamos isso no Google)
+- `ln -s` - Assistente de Symlink
+- `chmod +x` - Torna executável
+
+Performance Profilers:
+- `strace -p {pid}` - Espião de chamada de sistema
+- `tcpdump -i any` - Farejador de pacotes de rede
+- `sar -n DEV 1` - Monitoramento de estatísticas de rede
+- `uptime` - Média de carga em resumo
+- `top -c` - Visualizador de processos clássico
+
+Git Essentials:
+- `git log --oneline` - Histórico simplificado
+- `git reset --hard HEAD^` - Apagador de "oops"
+- `git stash` - O ocultador de trabalho
+- `git diff --cached` - O que é preparado?
+- `git blame` - O resolvedor "quem fez isso?"
+
+Correções rápidas:
+- `sudo !!` - Execute o último comando com sudo
+- `ctrl+r` - Pesquisa de histórico de comandos
+- `history | grep` - Máquina do tempo de comando
+- `alias` - Criador de atalhos de comando
+- `watch` - Repetidor de comandos
 ------
 
 -  No linux, o root é o único que tem acesso a todos os arquivos e configurações do sistema.
@@ -122,5 +212,33 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - X: servidor gráfico que provê a infraestrutura, uma camada independente no sistema. Digite “X :2” no terminal e veja a base da interface gráfica. Depois digite “startx”.
 -  KDE e GNOME: são gerenciadores de janelas da categoria desktop environment.
 -  Se o sistema linux trava, aperte Ctrl+Alt+Esc, para ativar o xkill e encerrar o aplicativo defeituoso.
+
+# Arch Linux 📘💠
+A seguir, conhecimentos básicos necessários para a primeira aventura com Arch Linux!!!!!
+
+- O que é o **kernel** e como ele interage com o sistema.
+- O papel do **init system** (Arch usa `systemd`).
+- O que é um **bootloader** (ex: GRUB, systemd-boot).
+- A diferença entre **/etc**, **/var**, **/usr**, etc.
+- `pacman` (gerenciador de pacotes do Arch) – e entender o que são dependências, repositórios, etc.
+- `systemctl` e `journalctl` (comandos do `systemd`).
+- `ip`, `ping`, `dhcpcd`, `iwctl` ou `nmcli` para configurar rede (especialmente em modo texto).
+- `mkfs`, `mount`, `chroot`, `lsblk`, `fdisk` ou `parted` – pra lidar com partições e montagem de discos.
+- Leitura e edição de arquivos de configuração.
+- Editores de texto no terminal (`nano`, `vim`, `nvim`, `micro`, etc.).
+- Modificar arquivos como `/etc/fstab`, `/etc/locale.gen`, `/etc/hostname`, `/etc/hosts`, etc.
+- Particionar e formatar o disco.
+- Montar as partições na ordem correta.
+- Instalar o sistema base (`pacstrap`).
+- Configurar o `fstab`, `locale`, `timezone`, `hostname`, rede, bootloader.
+- Criar usuário, senha e instalar os pacotes essenciais.
+- Saber consultar e interpretar a documentação: Arch Wiki
+- Pratique buscar e seguir os tutoriais da Arch Wiki.
+- Entenda o que está fazendo antes de copiar comandos.
+- Falhas de boot.
+- Problemas de rede.
+- Quebras de pacotes.
+- Configurações manuais (X11, Wayland, drivers gráficos, etc).
+
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ffff00&height=120&section=footer"/>

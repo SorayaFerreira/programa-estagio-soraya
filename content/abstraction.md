@@ -14,6 +14,7 @@ tags:
 - [Modelo Mental](#modelo-mental-)
 - [Abstração](#abstração)
 - [Método de Estudo do Fernandin](#método-de-estudo-do-fernandin-️️)
+- [Expressões Regulare - RegEx](#expressões-regulare---regex)
 
 
 # Modelo Mental 🧠🧮
@@ -94,6 +95,20 @@ E uma que eu usava mais no vestibular era pegar um folha de papel e tentar escre
 Por fim, uma coisa que eu lembrei agora: complementação de conteúdo. Depois de eu ter terminado de ler os slides e estudar, eu gosto muito de ver uns conteúdos extras (livros, principalmente) pra eu me acostumar ainda mais com o conteúdo. Fiz isso em APSOO e Requisitos lendo o Engenharia de Software Moderna. Não precisa ESTUDAR a fundo, só ler normal mesmo. Vc vai vendo as informações e vai conectando com os slides e tudo fica muito mais natural. Essa é uma "técnica" que é boa se vc tiver tempo de sobra."
 
 # Engenharia de Software Baseada em Valor
+- o controle de feedback é essencial para a organização estimar, avaliar e adaptar-se às mudanças do mercado competitivo.
+- Os sistemas de valor agregado são uma forma de controlar feedbacks.
 
+# Expressões Regulare - RegEx
+Acesse https://regex101.com/ para aprender mais sobre.
+Aperte Ctrl + F e faça testes.
+- `[0]` busca o caractere 0
+- `[02]` busca os caracteres 0 OU 2.
+- `[0-9]` busca qualquer número entre 0 e 9.
+- `[0][0]` Busca 0s juntos: `00`.
+- `[0]{2}` O que está entre {} multiplica aquilo que está entre [].
+- `$` Fim da linha
+- `^` Início da linha
+- `+` Número qualquer de ocorrências
+- `([0-9]{2})[-]([0-9][2])[-]([0-9]{4})` Busca datas no formato `dd/mm/yyyy`
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=f2c438&height=120&section=footer"/>

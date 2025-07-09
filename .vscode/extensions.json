@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "foam.foam-vscode",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-preview-github-styles",
+        "denoland.vscode-deno"
+    ]
+}

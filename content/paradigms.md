@@ -22,7 +22,15 @@ tags:
 
 
 ## Programação Funcional
-*Programação Funcional*: existem linguagens puramente funcionais, como Closure, OCamel Haskell e Lisp. 
+- Existem linguagens puramente funcionais, como Closure, OCamel Haskell e Lisp. 
+
+Conceitos e diretrizes de programação funcional:
+- Imutabilidade: nenhuma variável pode ser modificada durante a execução. As variáveis são salvas como _somente leitura_, de modo que a depuração fica mais simples. 
+- Funções de Primeira Classe: as funções não tês restrições ou limitações e podem ser passadas como argumento a qualquer momento.
+- Funções puras: a função tem apenas um resultado possível, com base numa entrada.
+- Composição de Funções: isola lógicas em muitas funções pequenas, o que aumenta a facilidade de testar e dasacoplar lógicas.
+- Expressões: essa metodologia não aprova a criação de funções void, com procedimentos muito complexos.
+- Recursões: não usam laços, mas recursões, a fim de evitar bugs envolvendo laços de iteração.
 
 ## Programação Orientada a Objetos (POO)
 

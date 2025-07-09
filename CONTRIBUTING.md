@@ -89,14 +89,14 @@ As mensagens devem seguir as seguintes orientações, que seguem a analogia de j
    - `(watering)`: incrementa informações significativas para documentação já existente, _para que o jardim cresça bem_.
    - `(tidying)`: corrige detalhes na documentação já existente, isto é, _organiza melhor as plantinhas_.
 - Se o tipo do commit não se encaixa em nenhum dos especificados, ele é omitido.
-- A breve descrição explana o que o commit faz, logo, deve começar com um verbo conjugado na terceira pessoa do singular, no tempo presente do indicativo.
+- A breve descrição explana o que o commit faz, logo, deve começar com um verbo conjugado na terceira pessoa do singular, no tempo presente do indicativo. **A mensagem é opcional; somente o tipo é obrigatório.**
 - A mensagem deve começar com letra minúscula e não deve terminar com ponto "."
 - O footer é omitido se o commit não introduz uma BREAKING CHANGE, que deve ser escrito como `BREAKING CHANGE: <descrição>`.
 
 --------------------
 ### Nomenclatura de Branches 🌿
 
-Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas, que são inspiradas no Gitflow:s
+Caso seja necessário criar uma branch, sua nomenclatura deve seguir as seguintes normas, que são inspiradas no Gitflow:
 - É preciso elaborar um label, em português, que resume o objetivo da criação da branch, também utilizando Snake Case. Exemplo: `ciclos`, `entrega/titulo_entrega_resumido`, `aprovacao/ciclo_numero`.
 - O label _ciclos_ corresponde à branch _develop_, _entrega/_, à branch _feature_ e do padrão Gitflow. Não possui branch `release`. 
 
