@@ -11,6 +11,8 @@ tags:
   - pnpm
   - web enxuto
   - html
+  - livro
+  - getting real
 ---
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=header"/>
@@ -28,6 +30,7 @@ tags:
 - [fetch API](#fetch-api)
 - [Runtimes](#runtimes-️)
 - [Gerenciadores de Pacotes](#gerenciadores-de-pacotes)
+- [Getting Real](#getting-real-️)
 
 # Sistemas de Autenticação
 Autorização, às vezes identificada como `authz`, tem alta relação com a [Autorização](#sistemas-de-autorização), podendo ser confundida com ela. Entretanto, elas têm conceitos diferentes. Sumariamente, authz é responsável por _permissões_, enquanto que authn é responsável por _identidades_.
@@ -202,8 +205,6 @@ O NPM é o gerenciador de pacotes padrão da runtime [Node.js](#comparação-de-
 Este é outro gerenciador de pacotes também do ambiente `Node.js`, todavia é uma alternativa mais eficiente. Seu diferencial é não baixar bibliotecas completas, mas somente as diferenças entre versões. No console, ele mostra quantos pacotes e quanto espaço de disco foram economizados. 
 
 Uma desvantagem que ele apresenta é não suportar todos os pacotes possíveis.
-
----
 
 # Getting Real ⬛️🔳
 The smarter, faster, easier way to build a successful web application.
@@ -384,7 +385,7 @@ The smarter, faster, easier way to build a successful web application.
 
 ## Post-Launch
 - Mantenha um blog após lançar teu produto. Você pode manter: FAQs, How-tos, tips and tricks, new features, updates, and fixess, and buzz/press.
-- Manter esse blog faz sua empresa parecer mais **_humana_**.
+- Manter esse blog faz sua empresa parecer mais **_humana_**. 
 - Perguntas a responder para categorizar uma prioridade para seus bugs: _How many people are affected? How bad is the problem? Does this bug deserve immediate attention or can it wait? What can you do right now that will have the greatest impact for the greatest number of people?_.
 - Bugs acontecem; aceite. Não precisa ficar procurando um culpado.
 - Siga, acompanhe as publicações de sua concorrência.
