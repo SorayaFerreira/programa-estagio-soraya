@@ -3,7 +3,6 @@ title: shape_up
 description: Conteúdos sobre o método Shape-up para gerência de um projeto de software
 pubDate: Mar 18 2025
 tags:
-  - Gestão de Projetos
   - Shape up
   - Pitch
   - Getting Real
@@ -12,12 +11,8 @@ tags:
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=c8a2c8&height=120&section=header"/>
 
 # Sumário
-- [Gestão de Projetos](#gestão-de-projetos-)
 - [Shape Up](#shape-up)
 - [Getting Real](#getting-real-️)
-
-# Gestão de Projetos 🟪🟣
-O Shape Up é o framework utilizado para gerência desse projeto, visando organização e entrega de valor. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), todavia a seguir são descritos conceitos centrais que podem auxiliar a compreensão do método de maneira resumida.
 
 # Shape Up
 ## Shaping

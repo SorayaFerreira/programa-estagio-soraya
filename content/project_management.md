@@ -10,6 +10,8 @@ tags:
   - Cascata
   - Modelo Incremental
   - Processo
+  - Gerência de Prejeto
+  - Lean Inception
 ---
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=header"/>
 
@@ -20,6 +22,11 @@ tags:
 - [Scrum](#scrum)
 - [Cascata](#cascata)
 - [Modelo Incremental](#modelo-incremental)
+- [Gestão de Projetos](#gestão-de-projetos-)
+- [Lean Inception](#lean-inception)
+
+# Gestão de Projetos 🟪🟣
+O Shape Up é o framework utilizado para gerência desse projeto, visando organização e entrega de valor. O livro pode ser consultado [aqui](https://basecamp.com/shapeup), todavia a seguir são descritos conceitos centrais que podem auxiliar a compreensão do método de maneira resumida.
 
 # Metodologias de Desenvolvimento ⚙📈
 Métodologias de Desenvolvimento são técnicas utilizadas no processo de desenvolvimento de software. O "X Drive Development" refere-se à prioridade na construção do projeto:
@@ -28,7 +35,6 @@ Métodologias de Desenvolvimento são técnicas utilizadas no processo de desenv
 - **Date Driven Development**: prioriza a data de entrega em detrimento de implementar todas as features e passar em todos os testes.
 
 # Processos
-
 > [Engenharia Moderna](https://engsoftmoderna.info/cap2.html#import%C3%A2ncia-de-processos).
 
 Um processo de desenvolvimento de software define um conjunto de passos, tarefas, eventos e práticas que devem ser seguidos por desenvolvedores de software, na produção de um sistema. Sem um processo — mesmo que simplificado e leve, como os processos ágeis que estudaremos neste capítulo — existe o risco de que os times de desenvolvimento passem a trabalhar de forma descoordenada, gerando produtos sem valor para o negócio da empresa. Por fim, processos são importantes não apenas para a empresa, mas também para os desenvolvedores, pois permitem que eles tomem consciência das tarefas e resultados que se esperam deles. Sem um processo, os desenvolvedores podem se sentir perdidos, trabalhando de forma errática e sem alinhamento com os demais membros do time.
@@ -78,16 +84,24 @@ main()
 
 ```
 
-### Scrum
+## Scrum
 É uma metodologia ágil muito utilizada atualmente. 
 - Tem três pilares: transparência, inspeção e adaptação.
 - Há três papéis: scrum master, product owner e dev team.
 - Prevê alguns eventos: sprint planning, daily scrum, sprint, sprint review e retrospectiva.
 
-### Cascata
+## Cascata
 Esse modelo de processo é conhecido também como "Ciclo de Vida Clássico". É bastante antigo, um dos primeiros que surgiu. Ele sugere que cada etapa do processo seja feita por completo antes de progredir para a próxima. Nessa lógica, o modelo Cascata é recomendado para projetos muito estáveis, cujos requisitos são muito bem conhecidos. Ao contrário do TDD, no qual os testes ocorrem o tempo todo, nesse método o teste é apenas uma fase ao final.
 
-### Modelo Incremental
+## Modelo Incremental
 Já esta metodologia busca dividir o processo em ciclos, sendo que, em cada ciclo, existem as fases de Análise, Projeto, Implementação e Testes. A cada ciclo é entregue uma parte pronta, funcional do produto.
+
+# Lean Inception
+
+- Não é possível fazer um lean inception em menos de 3 dias.
+- É necessário interação, aprovações etc.
+- Vai começar com um kick-off.
+- O ideal é que dure 1 uma semana. 
+
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=054f77&height=120&section=footer"/>
