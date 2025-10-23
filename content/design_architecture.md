@@ -217,13 +217,13 @@ void main() {
 }
 ```
 - Tanto a classe do proxy, quanto a base deve implementar uma interface `BookSearchInterface`.
-- Outros bons casos de uso de proxies: comunicação com cliente remoto; alocação de memória apor demanda para objetos que consomem muito; controlar o acesso de diversos clientes a um objeto base.
+- Outros bons casos de uso de proxies: comunicação com cliente remoto; alocação de memória por demanda para objetos que consomem muito; controlar o acesso de diversos clientes a um objeto base.
 
 ## Adapter
 - No contexto desse temos que controlar projetores multimídia. Daí teremos que instanciar objetos de classes fornecidas pelos fabricantes de cada projetor:
 
 ```java
-class ProjetorSamsung {
+class ProjetorSamsung {s
   public void turnOn() { ... }
   ...
 }

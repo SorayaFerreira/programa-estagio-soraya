@@ -138,6 +138,7 @@ Tudo faz parte de um diretório raiz chamado “/”.
 - `reboot`: reinicia a máquina.
 - `cat local/arquivo`: mostra o conteúdo de um arquivo.
 - `sudo apt remove <nome do programa>` Para desinstalar programas.
+- `chown -r application:application tmp bin` *NÃO SEI O QUE FAZ*
 
 Daily Heroes:
 - `ps aux | grep {process}` - Encontre aquele processo furtivo

@@ -15,6 +15,7 @@ tags:
 
 # Documentação Técnica 👩‍💻📋️
 > Link de referência: https://grantslatton.com/how-to-design-document
+A escrita técnica é uma das áreas de DevRel.
 
 - Todas as decisões tomadas dentro duma empresa DEVEM ter objetivo de fazer a empresa crescer. Elas devem contribuir para o negócio.
 - O objetivo maior de uma documentação de design é informar ao leitor que aquele design é o melhor dadas as circunstâncias que o cercam.
